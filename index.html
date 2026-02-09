@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rifky Mardiansyah | Administrative & IT Support</title>
+    
+    <meta name="description" content="Portfolio of Rifky Mardiansyah - Digital Office Administration Student at UNJ.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+    <style>
+        /* --- VARIABLES --- */
+        :root {
+            --bg-color: #fcfcfc;
+            --text-main: #1a1a1a;
+            --text-sec: #555;
+            --card-bg: #ffffff;
+            --nav-bg: rgba(255, 255, 255, 0.85);
+            --shadow: rgba(0,0,0,0.05);
+            --shadow-hover: rgba(0,0,0,0.15);
+            --btn-bg: #111;
+            --btn-text: #fff;
+            --accent: #111;
+            --border-color: #eee;
+        }
+
+        [data-theme="dark"] {
+            --bg-color: #0b0c10;
+            --text-main: #f0f0f0;
+            --text-sec: #a0a0a0;
+            --card-bg: #151922;
+            --nav-bg: rgba(21, 25, 34, 0.85);
+            --shadow: rgba(0,0,0,0.4);
+            --shadow-hover: rgba(0,0,0,0.6);
+            --btn-bg: #fff;
+            --btn-text: #000;
+            --accent: #fff;
+            --border-color: #2a2f3a;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .progress-container { position: fixed; top: 0; left: 0; width: 100%; height: 4px; z-index: 10000; }
+        .progress-bar { height: 4px; background: var(--accent); width: 0%; transition: 0.1s; }
+
+        #preloader {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: var(--bg-color); z-index: 99999;
+            display: flex; justify-content: center; align-items: center;
+            transition: opacity 0.8s ease, visibility 0.8s ease;
+        }
+        .loader-logo { font-size: 2.5rem; font-weight: 800; animation: pulse 1.5s infinite; letter-spacing: -2px; }
+        @keyframes pulse { 0% { opacity: 0.5; transform: scale(0.95); } 50% { opacity: 1; transform: scale(1.05); } 100% { opacity: 0.5; transform: scale(0.95); } }
+
+        .navbar { padding: 15px 0; position: fixed; width: 100%; top: 20px; z-index: 999; }
+        .nav-capsule {
+            background: var(--nav-bg); backdrop-filter: blur(15px); padding: 10px 25px;
+            border-radius: 50px; box-shadow: 0 10px 30px var(--shadow);
+            display: flex; justify-content: space-between; align-items: center;
+            max-width: 550px; margin: 0 auto; border: 1px solid rgba(255,255,255,0.1);
+        }
+        .navbar-brand { font-weight: 800; font-size: 1.2rem; color: var(--text-main) !important; }
+        .nav-link { color: var(--text-sec) !important; font-weight: 600; margin: 0 10px; transition: 0.3s; font-size: 0.9rem; }
+        .nav-link:hover { color: var(--text-main) !important; }
+        .theme-btn { background: transparent; border: none; color: var(--text-main); font-size: 1.2rem; cursor: pointer; padding: 5px; transition: 0.3s; }
+
+        .hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; flex-direction: column; }
+        .hero-title { font-size: 4rem; font-weight: 800; line-height: 1.1; margin-bottom: 20px; color: var(--text-main); letter-spacing: -1.5px; }
+        
+        /* SKILL CARD (NO OUTLINE ON HOVER) */
+        .skill-card {
+            background: var(--card-bg); border: 1px solid var(--border-color);
+            padding: 25px 20px; border-radius: 16px; text-align: center;
+            transition: 0.3s; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;
+        }
+        .skill-card:hover { 
+            transform: translateY(-8px); 
+            box-shadow: 0 15px 40px var(--shadow-hover);
+            border-color: var(--border-color); /* Tetap warna border biasa, ga item */
+        }
+        .skill-img { width: 54px; height: 54px; margin-bottom: 15px; object-fit: contain; }
+        .skill-name { font-weight: 700; font-size: 0.9rem; color: var(--text-sec); text-transform: uppercase; letter-spacing: 1px; }
+
+        /* PROJECT CARD (NO OUTLINE ON HOVER) */
+        .project-card {
+            background: var(--card-bg); border-radius: 24px; padding: 25px;
+            transition: 0.3s; height: 100%; box-shadow: 0 10px 40px var(--shadow);
+            border: 1px solid var(--border-color); cursor: pointer; position: relative;
+        }
+        .project-card:hover { 
+            transform: translateY(-10px); 
+            box-shadow: 0 20px 50px var(--shadow-hover);
+            border-color: var(--border-color); /* Tetap warna border biasa, ga item */
+        }
+        .card-img-top { width: 100%; height: 220px; background-color: #ddd; border-radius: 16px; margin-bottom: 25px; object-fit: cover; }
+        .click-indicator { position: absolute; top: 25px; right: 25px; background: rgba(0,0,0,0.5); color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; opacity: 0; transition: 0.3s; }
+        .project-card:hover .click-indicator { opacity: 1; }
+        .project-category { font-size: 0.75rem; font-weight: 700; color: var(--text-sec); text-transform: uppercase; margin-bottom: 10px; display: block; letter-spacing: 1px; }
+        .project-title { font-weight: 800; font-size: 1.6rem; margin-bottom: 10px; color: var(--text-main); letter-spacing: -0.5px; }
+        .project-desc { color: var(--text-sec); font-size: 0.95rem; line-height: 1.7; }
+
+        .modal-content { background-color: var(--card-bg); color: var(--text-main); border-radius: 24px; border: none; }
+        .modal-header { border-bottom: 1px solid var(--border-color); }
+        .modal-footer { border-top: 1px solid var(--border-color); }
+        .btn-close { filter: invert(var(--invert-value)); }
+
+        .btn-modern { background: var(--btn-bg); color: var(--btn-text); padding: 15px 35px; border-radius: 50px; transition: 0.3s; text-decoration: none; display: inline-flex; align-items: center; font-weight: 600; gap: 10px; border: none; }
+        .btn-modern:hover { transform: translateY(-5px); box-shadow: 0 15px 30px var(--shadow); opacity: 0.9; color: var(--btn-text); }
+        .btn-outline { border: 2px solid var(--text-sec); background: transparent; color: var(--text-main); padding: 13px 30px; border-radius: 50px; text-decoration: none; font-weight: 600; margin-left: 10px; transition: 0.3s; }
+        .btn-outline:hover { border-color: var(--text-main); background: var(--text-main); color: var(--bg-color); }
+
+        footer { padding: 80px 0; margin-top: 100px; border-top: 1px solid var(--border-color); }
+        .social-btn { width: 50px; height: 50px; border-radius: 50%; background: var(--card-bg); box-shadow: 0 5px 15px var(--shadow); display: inline-flex; align-items: center; justify-content: center; color: var(--text-main); margin: 0 8px; transition: 0.3s; text-decoration: none; font-size: 1.2rem; }
+        .social-btn:hover { background: var(--btn-bg); color: var(--btn-text); transform: scale(1.1); }
+        
+        .profile-img { border-radius: 30px; box-shadow: 0 20px 50px var(--shadow); transition: 0.5s; animation: float 6s ease-in-out infinite; }
+        @keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-15px); } 100% { transform: translateY(0px); } }
+
+        #backToTop { position: fixed; bottom: 30px; right: 30px; z-index: 99; background: var(--btn-bg); color: var(--btn-text); width: 50px; height: 50px; border-radius: 50%; border: none; display: flex; justify-content: center; align-items: center; font-size: 1.2rem; opacity: 0; pointer-events: none; transition: 0.3s; box-shadow: 0 10px 20px var(--shadow); }
+        #backToTop.show { opacity: 1; pointer-events: all; transform: translateY(0); }
+
+        @media (max-width: 768px) { .hero-title { font-size: 2.8rem; } .nav-capsule { width: 90%; } .btn-outline { display: none; } }
+    </style>
+</head>
+<body>
+
+    <div id="preloader"><div class="loader-logo">RM.</div></div>
+    <div class="progress-container"><div class="progress-bar" id="myBar"></div></div>
+    <button onclick="topFunction()" id="backToTop"><i class="bi bi-arrow-up"></i></button>
+
+    <nav class="navbar">
+        <div class="nav-capsule">
+            <a class="navbar-brand" href="#">RM.</a>
+            <div class="d-flex align-items-center">
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#skills">Skills</a>
+                <a class="nav-link" href="#work">Work</a>
+                <button class="theme-btn ms-2" onclick="toggleTheme()">
+                    <i class="bi bi-moon-stars-fill" id="theme-icon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero text-center">
+        <div class="container" data-aos="fade-up">
+            <div style="margin-bottom: 20px;">
+                <span style="background: var(--card-bg); padding: 8px 20px; border-radius: 30px; font-size: 0.85rem; font-weight: 600; color: var(--text-sec); box-shadow: 0 5px 20px var(--shadow);">
+                    🚀 Available for Projects & Internship
+                </span>
+            </div>
+            <h1 class="hero-title">Admin Precision.<br>Digital Innovation.</h1>
+            <p class="mt-3 mb-5" style="font-size: 1.2rem; max-width: 600px; margin: 0 auto; color: var(--text-sec);">
+                Hi, I'm <span style="color: var(--text-main); font-weight: 700;">Rifky Mardiansyah</span>.<br>
+                <span id="typing-text"></span><span class="cursor">|</span>
+            </p>
+            <div>
+                <a href="#work" class="btn-modern">View Projects</a>
+                <a href="CV_RIFKY_MARDIANSYAH.pdf" download class="btn-outline"><i class="bi bi-download me-2"></i> Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-md-5 offset-md-1 mb-5 mb-md-0" data-aos="fade-right">
+                    <img src="foto-profil.jpg" alt="Rifky" class="img-fluid profile-img w-100">
+                </div>
+                <div class="col-md-5 ps-md-5" data-aos="fade-left">
+                    <h6 class="text-uppercase fw-bold text-primary mb-3" style="letter-spacing: 2px; font-size: 0.8rem;">Professional Summary</h6>
+                    <h2 class="fw-bold mb-4 display-6" style="color: var(--text-main);">Admin Expert &<br>Tech Savvy.</h2>
+                    <p class="mb-4" style="line-height: 1.8; color: var(--text-sec);">
+                        I am a <strong>Digital Office Administration</strong> student at Jakarta State University (UNJ) with a <strong>GPA of 3.82</strong>.
+                        <br><br>
+                        My expertise goes beyond traditional admin work. I blend <strong>IT Support</strong>, <strong>Data Management</strong>, and <strong>Visual Design</strong> to optimize workflows. 
+                        Proven experience at <strong>PT Telkom Indonesia</strong> and leading event operations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-5">
+        <div class="container py-5">
+            <div class="row mb-5" data-aos="fade-up">
+                <div class="col-lg-6">
+                     <h6 class="text-uppercase fw-bold text-primary mb-2" style="letter-spacing: 2px; font-size: 0.8rem;">Expertise</h6>
+                     <h2 class="fw-bold display-6" style="color: var(--text-main);">My Tech Stack</h2>
+                </div>
+            </div>
+            
+            <div class="row g-3">
+                <div class="col-6 col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-card">
+                        <img src="https://img.icons8.com/color/96/microsoft-office-2019.png" class="skill-img" alt="Office">
+                        <span class="skill-name">Microsoft Office 365</span>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4" data-aos="fade-up" data-aos-delay="150">
+                    <div class="skill-card">
+                        <img src="https://img.icons8.com/color/96/html-5--v1.png" class="skill-img" alt="HTML">
+                        <span class="skill-name">HTML & Web Dev</span>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-card">
+                        <img src="https://img.icons8.com/color/96/workstation.png" class="skill-img" alt="IT Support">
+                        <span class="skill-name">IT Support</span>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4" data-aos="fade-up" data-aos-delay="250">
+                    <div class="skill-card">
+                        <img src="https://img.icons8.com/color/96/adobe-creative-cloud--v1.png" class="skill-img" alt="Adobe">
+                        <span class="skill-name">Adobe Creative Cloud</span>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-card">
+                        <img src="https://img.icons8.com/color/96/clapperboard.png" class="skill-img" alt="CapCut">
+                        <span class="skill-name">CapCut / Editing</span>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4" data-aos="fade-up" data-aos-delay="350">
+                    <div class="skill-card">
+                        <img src="https://img.icons8.com/color/96/database.png" class="skill-img" alt="Database">
+                        <span class="skill-name">Archiving Systems</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="py-5">
+        <div class="container">
+            <div class="mb-5" data-aos="fade-up">
+                <h6 class="text-uppercase fw-bold text-primary mb-2" style="letter-spacing: 2px; font-size: 0.8rem;">Portfolio</h6>
+                <h2 class="fw-bold m-0 display-6" style="color: var(--text-main);">Selected Works</h2>
+            </div>
+            <div class="row g-4">
+                
+                <div class="col-md-6" data-aos="fade-up">
+                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#modalProject1">
+                        <div class="click-indicator">Click for Details</div>
+                        <img src="project1.jpg" class="card-img-top" alt="Archiving App">
+                        <span class="project-category">Web Development</span>
+                        <h3 class="project-title">Digital Archiving App</h3>
+                        <p class="project-desc">A responsive web-based application to streamline document tracking and management using Supabase.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#modalProject2">
+                        <div class="click-indicator">Click for Details</div>
+                        <img src="project2.jpg" class="card-img-top" alt="Telkom Indonesia">
+                        <span class="project-category">Internship • IT Support</span>
+                        <h3 class="project-title">PT Telkom Indonesia</h3>
+                        <p class="project-desc">Managed and verified technical data for 100+ Optical Network Terminal (ONT) devices.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-12" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#modalProject3">
+                        <div class="click-indicator">Click for Details</div>
+                        <img src="project3.jpg" class="card-img-top" style="height: 250px;" alt="Event">
+                        <span class="project-category">Event Management</span>
+                        <h3 class="project-title">LinkedTo Talk Event</h3>
+                        <p class="project-desc">Venue & Stage Manager. Orchestrated full venue operations and stage flow for a seamless event.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="text-center">
+        <div class="container" data-aos="fade-up">
+            <h2 class="fw-bold mb-4 display-5" style="color: var(--text-main);">Ready to make an impact?</h2>
+            <p class="mb-5" style="color: var(--text-sec);">Open for opportunities.</p>
+            <a href="mailto:rifkymardiansyah19@gmail.com" class="btn-modern mb-5"><i class="bi bi-envelope"></i> Contact Me</a>
+            <div class="d-flex justify-content-center mb-4">
+                <a href="https://linkedin.com/in/rifkymardi" target="_blank" class="social-btn"><i class="bi bi-linkedin"></i></a>
+                <a href="https://instagram.com/ikymars" target="_blank" class="social-btn"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="social-btn"><i class="bi bi-github"></i></a>
+            </div>
+            <p class="small" style="color: var(--text-sec);">&copy; 2026 Rifky Mardiansyah.</p>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="modalProject1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content p-4">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">Digital Archiving Application</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="project1.jpg" class="img-fluid rounded-4 mb-4 w-100" alt="Detail">
+                    <h3 class="fw-bold mb-3">Academic Project (2025)</h3>
+                    <p class="text-secondary">
+                        Developed a responsive web-based digital archiving application to streamline document tracking.
+                        Designed a functional dashboard prioritizing clean UI/UX and implemented automated archive expiration logic.
+                    </p>
+                    <ul class="list-unstyled mt-3 text-secondary">
+                        <li><strong>Role:</strong> Web Developer & Designer</li>
+                        <li><strong>Stack:</strong> HTML, CSS, Bootstrap, Supabase</li>
+                        <li><strong>Feature:</strong> Activity logs for system security</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalProject2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content p-4">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">PT Telkom Indonesia (Internship)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="project2.jpg" class="img-fluid rounded-4 mb-4 w-100" alt="Detail">
+                    <h3 class="fw-bold mb-3">Administrative & IT Support</h3>
+                    <p class="text-secondary">
+                        Collected, verified, and updated technical data for 100+ Optical Network Terminal (ONT) devices.
+                        Collaborated with field technicians to identify and rectify mismatched customer data on-site.
+                    </p>
+                    <ul class="list-unstyled mt-3 text-secondary">
+                        <li><strong>Period:</strong> Feb 2022 - Apr 2022</li>
+                        <li><strong>Key Achievement:</strong> Reduced database errors & streamlined reporting.</li>
+                        <li><strong>Tools:</strong> Internal Server System, Ms. Excel</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalProject3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content p-4">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">LinkedToTalk Event</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="project3.jpg" class="img-fluid rounded-4 mb-4 w-100" alt="Detail">
+                    <h3 class="fw-bold mb-3">Venue & Stage Manager</h3>
+                    <p class="text-secondary">
+                        Orchestrated full venue operations and stage flow. Led coordination between vendors, performers, and technical crews.
+                        Supervised safety procedures and resolved on-site technical issues instantly.
+                    </p>
+                    <ul class="list-unstyled mt-3 text-secondary">
+                        <li><strong>Period:</strong> Sep 2025 - Nov 2025</li>
+                        <li><strong>Skills:</strong> Crowd Control, Technical Coordination, Leadership</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({ once: true, offset: 100 });
+        window.addEventListener('load', function() {
+            var preloader = document.getElementById('preloader');
+            setTimeout(function() { preloader.style.opacity = '0'; preloader.style.visibility = 'hidden'; }, 1000);
+        });
+        let mybutton = document.getElementById("backToTop");
+        window.onscroll = function() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.width = scrolled + "%";
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) { mybutton.classList.add("show"); } else { mybutton.classList.remove("show"); }
+        };
+        function topFunction() { document.body.scrollTop = 0; document.documentElement.scrollTop = 0; }
+        const text = ["IT Support Specialist.", "Digital Administrator.", "Visual Designer."];
+        let count = 0; let index = 0; let currentText = ""; let letter = "";
+        (function type() {
+            if (count === text.length) { count = 0; }
+            currentText = text[count]; letter = currentText.slice(0, ++index);
+            document.getElementById("typing-text").textContent = letter;
+            if (letter.length === currentText.length) { count++; index = 0; setTimeout(type, 2000); } else { setTimeout(type, 100); }
+        }());
+        function toggleTheme() {
+            const body = document.body;
+            const icon = document.getElementById('theme-icon');
+            if (body.getAttribute('data-theme') === 'dark') {
+                body.setAttribute('data-theme', 'light');
+                icon.classList.remove('bi-sun-fill');
+                icon.classList.add('bi-moon-stars-fill');
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                icon.classList.remove('bi-moon-stars-fill');
+                icon.classList.add('bi-sun-fill');
+            }
+        }
+    </script>
+</body>
+</html>
