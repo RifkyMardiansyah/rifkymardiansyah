@@ -51,7 +51,7 @@
             --border-color: #2a2f3a;
         }
 
-        /* FIX Z-INDEX FANCYBOX (Biar Zoom di Atas Modal) */
+        /* FIX Z-INDEX FANCYBOX */
         .fancybox__container { z-index: 10000 !important; }
         .fancybox__backdrop { background: rgba(0,0,0,0.95); }
 
@@ -138,6 +138,9 @@
         .btn-outline { border: 2px solid var(--text-sec); background: transparent; color: var(--text-main); padding: 13px 30px; border-radius: 50px; text-decoration: none; font-weight: 600; margin-left: 10px; transition: 0.3s; }
         .btn-outline:hover { border-color: var(--text-main); background: var(--text-main); color: var(--bg-color); }
 
+        /* BUTTON CONTAINER DI HERO */
+        .hero-btns { display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; }
+
         footer { padding: 80px 0; margin-top: 100px; border-top: 1px solid var(--border-color); }
         .social-btn { width: 50px; height: 50px; border-radius: 50%; background: var(--card-bg); box-shadow: 0 5px 15px var(--shadow); display: inline-flex; align-items: center; justify-content: center; color: var(--text-main); margin: 0 8px; transition: 0.3s; text-decoration: none; font-size: 1.2rem; }
         .social-btn:hover { background: var(--btn-bg); color: var(--btn-text); transform: scale(1.1); }
@@ -148,10 +151,16 @@
         #backToTop { position: fixed; bottom: 30px; right: 30px; z-index: 99; background: var(--btn-bg); color: var(--btn-text); width: 50px; height: 50px; border-radius: 50%; border: none; display: flex; justify-content: center; align-items: center; font-size: 1.2rem; opacity: 0; pointer-events: none; transition: 0.3s; box-shadow: 0 10px 20px var(--shadow); }
         #backToTop.show { opacity: 1; pointer-events: all; transform: translateY(0); }
 
+        /* --- MOBILE OPTIMIZATION (FIXED DOWNLOAD BUTTON) --- */
         @media (max-width: 768px) { 
             .hero-title { font-size: 2.8rem; margin-top: 10px; } 
             .nav-capsule { width: 90%; padding: 10px 20px; } 
-            .btn-outline { display: none; } 
+            
+            /* FIX TOMBOL DI HP */
+            .hero-btns { flex-direction: column; width: 100%; padding: 0 30px; }
+            .btn-modern, .btn-outline { width: 100%; justify-content: center; margin: 0 !important; }
+            .btn-outline { display: flex; } /* PASTIKAN MUNCUL! */
+
             .profile-img { width: 80% !important; margin: 0 auto 30px auto; display: block; }
             .carousel-item img { height: 250px; } 
             #about .ps-md-5 { padding-left: 0 !important; text-align: center; }
@@ -191,7 +200,7 @@
                 Hi, I'm <span style="color: var(--text-main); font-weight: 700;">Rifky Mardiansyah</span>.<br>
                 <span id="typing-text"></span><span class="cursor">|</span>
             </p>
-            <div>
+            <div class="hero-btns">
                 <a href="#work" class="btn-modern">See My Work</a>
                 <a href="cv-rifky.pdf" download class="btn-outline"><i class="bi bi-download me-2"></i> Resume</a>
             </div>
@@ -305,7 +314,7 @@
                         <div class="click-indicator">View Gallery</div>
                         <img src="project3.jpg" class="card-img-top" style="height: 250px;" alt="Event">
                         <span class="project-category">Event Management</span>
-                        <h3 class="project-title">LinkedToTalk Event</h3>
+                        <h3 class="project-title">LinkedTo Talk Event</h3>
                         <p class="project-desc">Venue & Stage Manager. Ensuring smooth transitions and technical readiness for a talk show event.</p>
                     </div>
                 </div>
