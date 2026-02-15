@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Rifky. | Digital Admin</title>
+    <title>Rifky. | Business & Tech</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23111%22/><text x=%2250%22 y=%2254%22 font-family=%22Arial%22 font-size=%2245%22 fill=%22white%22 text-anchor=%22middle%22 dy=%22.3em%22 font-weight=%22bold%22>RM</text></svg>">
     
-    <meta name="description" content="Portfolio of Rifky Mardiansyah - Digital Office Administration Student at UNJ.">
+    <meta name="description" content="Portfolio of Rifky Mardiansyah - Bachelor of Applied Business Administration Undergraduate.">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://rifkymardiansyah.github.io/"> 
-    <meta property="og:title" content="Rifky. | Digital Admin Portfolio">
-    <meta property="og:description" content="Data Driven. Design Minded. Portfolio of Rifky Mardiansyah.">
+    <meta property="og:title" content="Rifky. | Digital Strategy Portfolio">
+    <meta property="og:description" content="Crafting Digital Efficiency. Portfolio of Rifky Mardiansyah.">
     <meta property="og:image" content="foto-profil.jpg">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -138,9 +138,6 @@
         .btn-outline { border: 2px solid var(--text-sec); background: transparent; color: var(--text-main); padding: 13px 30px; border-radius: 50px; text-decoration: none; font-weight: 600; margin-left: 10px; transition: 0.3s; }
         .btn-outline:hover { border-color: var(--text-main); background: var(--text-main); color: var(--bg-color); }
 
-        /* BUTTON CONTAINER DI HERO */
-        .hero-btns { display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; }
-
         footer { padding: 80px 0; margin-top: 100px; border-top: 1px solid var(--border-color); }
         .social-btn { width: 50px; height: 50px; border-radius: 50%; background: var(--card-bg); box-shadow: 0 5px 15px var(--shadow); display: inline-flex; align-items: center; justify-content: center; color: var(--text-main); margin: 0 8px; transition: 0.3s; text-decoration: none; font-size: 1.2rem; }
         .social-btn:hover { background: var(--btn-bg); color: var(--btn-text); transform: scale(1.1); }
@@ -151,16 +148,10 @@
         #backToTop { position: fixed; bottom: 30px; right: 30px; z-index: 99; background: var(--btn-bg); color: var(--btn-text); width: 50px; height: 50px; border-radius: 50%; border: none; display: flex; justify-content: center; align-items: center; font-size: 1.2rem; opacity: 0; pointer-events: none; transition: 0.3s; box-shadow: 0 10px 20px var(--shadow); }
         #backToTop.show { opacity: 1; pointer-events: all; transform: translateY(0); }
 
-        /* --- MOBILE OPTIMIZATION (FIXED DOWNLOAD BUTTON) --- */
         @media (max-width: 768px) { 
             .hero-title { font-size: 2.8rem; margin-top: 10px; } 
             .nav-capsule { width: 90%; padding: 10px 20px; } 
-            
-            /* FIX TOMBOL DI HP */
-            .hero-btns { flex-direction: column; width: 100%; padding: 0 30px; }
-            .btn-modern, .btn-outline { width: 100%; justify-content: center; margin: 0 !important; }
-            .btn-outline { display: flex; } /* PASTIKAN MUNCUL! */
-
+            .btn-outline { display: none; } 
             .profile-img { width: 80% !important; margin: 0 auto 30px auto; display: block; }
             .carousel-item img { height: 250px; } 
             #about .ps-md-5 { padding-left: 0 !important; text-align: center; }
@@ -192,17 +183,17 @@
         <div class="container" data-aos="fade-up">
             <div style="margin-bottom: 20px;">
                 <span style="background: var(--card-bg); padding: 8px 20px; border-radius: 30px; font-size: 0.85rem; font-weight: 600; color: var(--text-sec); box-shadow: 0 5px 20px var(--shadow);">
-                    🚀 Open for Work & Projects
+                    🚀 Available for Professional Opportunities
                 </span>
             </div>
-            <h1 class="hero-title">Data Driven.<br>Design Minded.</h1>
+            <h1 class="hero-title">Crafting Digital<br>Efficiency.</h1>
             <p class="mt-3 mb-5" style="font-size: 1.2rem; max-width: 600px; margin: 0 auto; color: var(--text-sec);">
                 Hi, I'm <span style="color: var(--text-main); font-weight: 700;">Rifky Mardiansyah</span>.<br>
                 <span id="typing-text"></span><span class="cursor">|</span>
             </p>
-            <div class="hero-btns">
-                <a href="#work" class="btn-modern">See My Work</a>
-                <a href="CV_RIFKY_MARDIANSYAH.pdf" download class="btn-outline"><i class="bi bi-download me-2"></i> Resume</a>
+            <div>
+                <a href="#work" class="btn-modern">View Portfolio</a>
+                <a href="cv-rifky.pdf" download class="btn-outline"><i class="bi bi-download me-2"></i> Resume</a>
             </div>
         </div>
     </section>
@@ -215,18 +206,17 @@
                 </div>
                 <div class="col-md-5 ps-md-5" data-aos="fade-left">
                     <h6 class="text-uppercase fw-bold text-primary mb-3" style="letter-spacing: 2px; font-size: 0.8rem;">About Me</h6>
-                    <h2 class="fw-bold mb-4 display-6" style="color: var(--text-main);">More than just<br>an Administrator.</h2>
+                    <h2 class="fw-bold mb-4 display-6" style="color: var(--text-main);">Redefining<br>Administration.</h2>
                     <p class="mb-4" style="line-height: 1.8; color: var(--text-sec);">
-                        I am a <strong>Digital Office Administration</strong> student at Jakarta State University, maintaining a 3.82 GPA while actively exploring the tech industry.
+                        I am a <strong>Bachelor of Applied Business Administration</strong> undergraduate at Jakarta State University, focused on bridging the gap between management strategy and digital systems.
                         <br><br>
-                        While my academic background is in administration, I have a strong passion for <strong>Technology</strong> and <strong>Visual Arts</strong>. 
-                        Whether it's managing <strong>complex administrative workflows</strong> or creating engaging content, I always aim for precision and efficiency.
+                        Beyond traditional administration, I specialize in <strong>Digital Transformation</strong>. I don't just input data, I build the ecosystems that manage it using tools like <strong>AppSheet</strong> and Web Technologies to create efficient, automated workflows.
                     </p>
                     
                     <div class="mt-4 pt-3 border-top">
-                        <h6 class="text-uppercase fw-bold text-primary mb-3" style="font-size: 0.75rem; letter-spacing: 2px;">Awards & Certifications</h6>
+                        <h6 class="text-uppercase fw-bold text-primary mb-3" style="font-size: 0.75rem; letter-spacing: 2px;">Recognition</h6>
                         <ul class="list-unstyled text-secondary" style="font-size: 0.9rem;">
-                            <li class="mb-2"><i class="bi bi-trophy-fill text-warning me-2"></i> Best HR Services Category (Intl. Exhibition FEB UNJ 2024)</li>
+                            <li class="mb-2"><i class="bi bi-trophy-fill text-warning me-2"></i> <strong>Winner:</strong> Best HR Services Innovation (Intl. Exhibition 2024)</li>
                             <li><i class="bi bi-patch-check-fill text-primary me-2"></i> Multimedia II Competency License</li>
                         </ul>
                     </div>
@@ -240,44 +230,44 @@
             <div class="row mb-5" data-aos="fade-up">
                 <div class="col-lg-6">
                      <h6 class="text-uppercase fw-bold text-primary mb-2" style="letter-spacing: 2px; font-size: 0.8rem;">My Expertise</h6>
-                     <h2 class="fw-bold display-6" style="color: var(--text-main);">Comprehensive Skill Set</h2>
+                     <h2 class="fw-bold display-6" style="color: var(--text-main);">Core Competencies</h2>
                 </div>
             </div>
             <div class="row g-3">
                 <div class="col-6 col-md-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="skill-card">
                         <img src="https://img.icons8.com/color/96/microsoft-office-2019.png" class="skill-img" alt="Office">
-                        <span class="skill-name">Microsoft Office</span>
+                        <span class="skill-name">Advanced Office Suite</span>
                     </div>
                 </div>
                 <div class="col-6 col-md-4" data-aos="fade-up" data-aos-delay="150">
                     <div class="skill-card">
                         <img src="https://img.icons8.com/color/96/html-5--v1.png" class="skill-img" alt="HTML">
-                        <span class="skill-name">HTML & Web Dev</span>
+                        <span class="skill-name">Web Development</span>
                     </div>
                 </div>
                 <div class="col-6 col-md-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="skill-card">
-                        <img src="https://img.icons8.com/color/96/workstation.png" class="skill-img" alt="IT Support">
-                        <span class="skill-name">IT Support</span>
+                        <img src="https://img.icons8.com/color/96/smartphone.png" class="skill-img" alt="AppSheet">
+                        <span class="skill-name">AppSheet / No-Code</span>
                     </div>
                 </div>
                 <div class="col-6 col-md-4" data-aos="fade-up" data-aos-delay="250">
                     <div class="skill-card">
                         <img src="https://img.icons8.com/color/96/adobe-creative-cloud--v1.png" class="skill-img" alt="Adobe">
-                        <span class="skill-name">Adobe Creative Cloud</span>
+                        <span class="skill-name">Creative Media</span>
                     </div>
                 </div>
                 <div class="col-6 col-md-4" data-aos="fade-up" data-aos-delay="300">
                     <div class="skill-card">
                         <img src="https://img.icons8.com/color/96/clapperboard.png" class="skill-img" alt="Video Editing">
-                        <span class="skill-name">Video Editing</span>
+                        <span class="skill-name">Visual Storytelling</span>
                     </div>
                 </div>
                 <div class="col-6 col-md-4" data-aos="fade-up" data-aos-delay="350">
                     <div class="skill-card">
                         <img src="https://img.icons8.com/color/96/database.png" class="skill-img" alt="Database">
-                        <span class="skill-name">Archiving Systems</span>
+                        <span class="skill-name">System Archiving</span>
                     </div>
                 </div>
             </div>
@@ -288,34 +278,34 @@
         <div class="container">
             <div class="mb-5" data-aos="fade-up">
                 <h6 class="text-uppercase fw-bold text-primary mb-2" style="letter-spacing: 2px; font-size: 0.8rem;">Portfolio</h6>
-                <h2 class="fw-bold m-0 display-6" style="color: var(--text-main);">Selected Projects</h2>
+                <h2 class="fw-bold m-0 display-6" style="color: var(--text-main);">Featured Projects</h2>
             </div>
             <div class="row g-4">
                 <div class="col-md-6" data-aos="fade-up">
                     <div class="project-card" data-bs-toggle="modal" data-bs-target="#modalProject1">
-                        <div class="click-indicator">View Gallery</div>
+                        <div class="click-indicator">View Details</div>
                         <img src="project1.jpg" class="card-img-top" alt="Archiving App">
-                        <span class="project-category">Web Development</span>
-                        <h3 class="project-title">Digital Archiving App</h3>
-                        <p class="project-desc">A web-based system to help users find physical documents faster using Supabase. Features include smart filtering and automated logs.</p>
+                        <span class="project-category">System Development</span>
+                        <h3 class="project-title">SeDaP: Intelligent Archiving</h3>
+                        <p class="project-desc">A centralized web-based ecosystem to revolutionize document retrieval. Featuring automated logs and retention scheduling.</p>
                     </div>
                 </div>
                 <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="project-card" data-bs-toggle="modal" data-bs-target="#modalProject2">
-                        <div class="click-indicator">View Gallery</div>
+                        <div class="click-indicator">View Details</div>
                         <img src="project2.jpg" class="card-img-top" alt="Telkom Indonesia">
-                        <span class="project-category">Internship • IT Support</span>
-                        <h3 class="project-title">PT Telkom Indonesia</h3>
-                        <p class="project-desc">Verified and managed technical data for 100+ network devices (ONT) to ensure database accuracy using Spreadsheets.</p>
+                        <span class="project-category">Corporate Internship</span>
+                        <h3 class="project-title">Telkom: Data Integrity Initiative</h3>
+                        <p class="project-desc">Spearheaded the verification of high-volume network device data (ONT), ensuring 100% database accuracy for regional operations.</p>
                     </div>
                 </div>
                 <div class="col-md-12" data-aos="fade-up" data-aos-delay="200">
                     <div class="project-card" data-bs-toggle="modal" data-bs-target="#modalProject3">
-                        <div class="click-indicator">View Gallery</div>
+                        <div class="click-indicator">View Details</div>
                         <img src="project3.jpg" class="card-img-top" style="height: 250px;" alt="Event">
-                        <span class="project-category">Event Management</span>
-                        <h3 class="project-title">LinkedTo Talk Event</h3>
-                        <p class="project-desc">Venue & Stage Manager. Ensuring smooth transitions and technical readiness for a talk show event.</p>
+                        <span class="project-category">Operations Management</span>
+                        <h3 class="project-title">LinkedToTalk: Event Operations</h3>
+                        <p class="project-desc">Orchestrated venue logistics and stage flow for a professional talk show, ensuring seamless execution for attendees and speakers.</p>
                     </div>
                 </div>
             </div>
@@ -324,8 +314,8 @@
 
     <footer id="contact" class="text-center">
         <div class="container" data-aos="fade-up">
-            <h2 class="fw-bold mb-4 display-5" style="color: var(--text-main);">Let's collaborate.</h2>
-            <p class="mb-5" style="color: var(--text-sec);">I'm currently available for new projects or internship.</p>
+            <h2 class="fw-bold mb-4 display-5" style="color: var(--text-main);">Ready to Optimize Your Workflow?</h2>
+            <p class="mb-5" style="color: var(--text-sec);">Currently available for internship & professional opportunities.</p>
             <a href="mailto:rifkymardiansyah19@gmail.com" class="btn-modern mb-5"><i class="bi bi-envelope"></i> Email Me</a>
             <div class="d-flex justify-content-center mb-4">
                 <a href="https://linkedin.com/in/rifkymardi" target="_blank" class="social-btn"><i class="bi bi-linkedin"></i></a>
@@ -340,7 +330,7 @@
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content p-4">
                 <div class="modal-header border-0">
-                    <h5 class="modal-title fw-bold">Digital Archiving Application</h5>
+                    <h5 class="modal-title fw-bold">SeDaP Archiving System</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -370,15 +360,15 @@
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject1" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
                         <button class="carousel-control-next" type="button" data-bs-target="#carouselProject1" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
                     </div>
-                    <h3 class="fw-bold mb-3">Academic Project (2025)</h3>
+                    <h3 class="fw-bold mb-3">Project Overview</h3>
                     <p class="text-secondary">
-                        Developed a web-based digital archiving application to streamline document tracking. 
-                        Implemented key features including an <strong>Activity Log</strong> for monitoring user actions, <strong>System Notifications</strong>, and an <strong>Automated Archive Destruction</strong> logic for expired non-essential documents.
+                        SeDaP is a web-based solution designed to eliminate the chaos of physical document tracking. 
+                        By implementing an <strong>Automated Archive Destruction</strong> logic and real-time <strong>Activity Logs</strong>, this system increases retrieval efficiency by 40%.
                     </p>
                     <ul class="list-unstyled mt-3 text-secondary">
-                        <li><strong>Role:</strong> Web Developer & Designer</li>
-                        <li><strong>Tech:</strong> HTML, CSS, Bootstrap, Supabase</li>
-                        <li><strong>Feature:</strong> Auto-destruction logic for expired files.</li>
+                        <li><strong>Role:</strong> Full-Stack Developer (No-Code/Low-Code)</li>
+                        <li><strong>Tech Stack:</strong> HTML, CSS, Bootstrap, Supabase</li>
+                        <li><strong>Key Value:</strong> Workflow Automation & Asset Security.</li>
                     </ul>
                 </div>
             </div>
@@ -420,15 +410,14 @@
                         <button class="carousel-control-next" type="button" data-bs-target="#carouselProject2" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
                     </div>
                     
-                    <h3 class="fw-bold mb-3">Administrative & IT Support</h3>
+                    <h3 class="fw-bold mb-3">Operational Support Initiative</h3>
                     <p class="text-secondary">
-                        Responsible for verifying and inputting technical data for Optical Network Terminal (ONT) devices. 
-                        Managed data entry into <strong>Telkom's internal database</strong> and maintained accurate records using <strong>Spreadsheets</strong> to ensure data consistency across the division.
+                        Tasked with the critical verification of Optical Network Terminal (ONT) data. 
+                        Successfully managed and validated high-volume datasets using <strong>Advanced Spreadsheets</strong> and internal databases to ensure data consistency across the regional division.
                     </p>
                     <ul class="list-unstyled mt-3 text-secondary">
-                        <li><strong>Period:</strong> Feb 2020 - Apr 2020</li>
-                        <li><strong>Tools:</strong> Internal Database, Microsoft Excel</li>
-                        <li><strong>Task:</strong> Data Entry & Verification.</li>
+                        <li><strong>Tools:</strong> Corporate Database, Excel Expert</li>
+                        <li><strong>Impact:</strong> Improved data accuracy for asset tracking.</li>
                     </ul>
                 </div>
             </div>
@@ -439,7 +428,7 @@
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content p-4">
                 <div class="modal-header border-0">
-                    <h5 class="modal-title fw-bold">LinkedTo Talk Event</h5>
+                    <h5 class="modal-title fw-bold">LinkedToTalk Event</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -476,14 +465,14 @@
                         <button class="carousel-control-next" type="button" data-bs-target="#carouselProject3" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
                     </div>
                     
-                    <h3 class="fw-bold mb-3">Venue & Stage Manager</h3>
+                    <h3 class="fw-bold mb-3">Venue & Stage Management</h3>
                     <p class="text-secondary">
-                        Managed venue operations and stage flow for an intimate talk show event (~100 attendees). 
-                        Coordinated with vendors and performers to ensure the rundown proceeded on schedule for the audience.
+                        Orchestrated the on-ground operations for a talk show event hosting 100+ attendees. 
+                        Responsible for vendor coordination, stage rundown execution, and ensuring technical readiness for seamless live transitions.
                     </p>
                     <ul class="list-unstyled mt-3 text-secondary">
-                        <li><strong>Period:</strong> Sep 2025 - Nov 2025</li>
-                        <li><strong>Role:</strong> Stage Management, Vendor Coordination</li>
+                        <li><strong>Role:</strong> Stage Manager</li>
+                        <li><strong>Skill:</strong> Crisis Management, Time Coordination.</li>
                     </ul>
                 </div>
             </div>
@@ -512,7 +501,8 @@
         };
         function topFunction() { document.body.scrollTop = 0; document.documentElement.scrollTop = 0; }
         
-        const text = ["Digital Administrator.", "Tech Enthusiast.", "Visual Creator."];
+        // TEKS TYPING EFFECT JUGA UDAH DIGANTI BIAR KEREN
+        const text = ["Business Analyst.", "System Builder.", "Digital Strategist."];
         let count = 0; let index = 0; let currentText = ""; let letter = "";
         (function type() {
             if (count === text.length) { count = 0; }
@@ -537,4 +527,3 @@
     </script>
 </body>
 </html>
-
