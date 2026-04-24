@@ -1,634 +1,885 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Rifky. | Business & Tech</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23111%22/><text x=%2250%22 y=%2254%22 font-family=%22Arial%22 font-size=%2245%22 fill=%22white%22 text-anchor=%22middle%22 dy=%22.3em%22 font-weight=%22bold%22>RM</text></svg>">
-    
-    <meta name="description" content="Portfolio of Rifky Mardiansyah - Bachelor of Applied Business Administration Undergraduate.">
-    <meta name="keywords" content="Rifky Mardiansyah, Digital Office Administration, Admin AppSheet, No-Code Developer, UNJ, Administrasi Perkantoran Digital, Web Developer Jakarta, Portofolio Mahasiswa">
+    <title>Rifky Mardiansyah — Digital Administration &amp; Data Analytics</title>
+    <meta name="description" content="Portfolio Rifky Mardiansyah — mahasiswa tingkat akhir D4 Administrasi Perkantoran Digital UNJ, spesialis sistem web, data analytics Excel, dan no-code AppSheet.">
+    <meta name="keywords" content="Rifky Mardiansyah, Administrasi Perkantoran Digital, Data Analyst, Excel Dashboard, TVRI, AppSheet, UNJ Jakarta, portfolio mahasiswa">
     <meta name="author" content="Rifky Mardiansyah">
-    
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://rifkymardiansyah.my.id">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://rifkymardiansyah.my.id"> 
-    <meta property="og:title" content="Rifky Mardiansyah | Digital Strategist & Tech">
-    <meta property="og:description" content="Bachelor of Applied Business Admin specializing in Digital Archiving, AppSheet, and System Efficiency. View my portfolio.">
-    <meta property="og:image" content="thumbnail-portfolio.jpg">
+    <meta property="og:url" content="https://rifkymardiansyah.my.id">
+    <meta property="og:title" content="Rifky Mardiansyah — Digital Administration &amp; Data Analytics">
+    <meta property="og:description" content="Sistem web, data analytics, dan no-code tools — dibangun untuk menyelesaikan masalah nyata di dunia kerja.">
+    <meta property="og:image" content="https://rifkymardiansyah.my.id/thumbnail-portfolio.jpg">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Person","name":"Rifky Mardiansyah","url":"https://rifkymardiansyah.my.id","email":"rifkymardiansyah19@gmail.com","jobTitle":"Digital Office Administration Student","alumniOf":{"@type":"CollegeOrUniversity","name":"Universitas Negeri Jakarta"},"sameAs":["https://linkedin.com/in/rifkymardi","https://github.com/rifkymardiansyah","https://medium.com/@rifky_mardi","https://instagram.com/ikymars"]}
+    </script>
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%230a0a0a%22/><text x=%2250%22 y=%2268%22 font-family=%22Georgia%22 font-size=%2252%22 fill=%22white%22 text-anchor=%22middle%22 font-weight=%22bold%22>R</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
 
-    <style>
-        /* --- VARIABLES --- */
-        :root {
-            --bg-color: #fcfcfc;
-            --text-main: #1a1a1a;
-            --text-sec: #555;
-            --card-bg: #ffffff;
-            --nav-bg: rgba(255, 255, 255, 0.85);
-            --shadow: rgba(0,0,0,0.05);
-            --shadow-hover: rgba(0,0,0,0.15);
-            --btn-bg: #111;
-            --btn-text: #fff;
-            --accent: #111;
-            --border-color: #eee;
-        }
+<style>
+:root {
+    --ink:    #0a0a0a;
+    --paper:  #f4f2eb;
+    --muted:  #6b6863;
+    --line:   #dfdcd5;
+    --accent: #d34524;
+    --card:   #ffffff;
+    --tag-bg: #ece9e1;
+    --serif:  'DM Serif Display', Georgia, serif;
+    --sans:   'DM Sans', system-ui, sans-serif;
+    --ease:   cubic-bezier(.16,1,.3,1);
+}
+[data-theme="dark"] {
+    --ink:    #f2efe9;
+    --paper:  #0a0a0a;
+    --muted:  #8b8782;
+    --line:   #1f1f1f;
+    --accent: #e85532;
+    --card:   #111111;
+    --tag-bg: #1a1a1a;
+}
 
-        [data-theme="dark"] {
-            --bg-color: #0b0c10;
-            --text-main: #f0f0f0;
-            --text-sec: #a0a0a0;
-            --card-bg: #151922;
-            --nav-bg: rgba(21, 25, 34, 0.85);
-            --shadow: rgba(0,0,0,0.4);
-            --shadow-hover: rgba(0,0,0,0.6);
-            --btn-bg: #fff;
-            --btn-text: #000;
-            --accent: #fff;
-            --border-color: #2a2f3a;
-        }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; scroll-padding-top: 100px; }
+body {
+    font-family: var(--sans); background: var(--paper); color: var(--ink);
+    transition: background .4s, color .4s; overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+body::before {
+    content: ''; position: fixed; inset: 0; z-index: 9999;
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="3" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23n)"/></svg>');
+    opacity: 0.04; pointer-events: none;
+}
+[data-theme="dark"] body::before { opacity: 0.03; }
+::selection { background: var(--ink); color: var(--paper); }
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
 
-        /* FIX Z-INDEX FANCYBOX */
-        .fancybox__container { z-index: 10000 !important; }
-        .fancybox__backdrop { background: rgba(0,0,0,0.95); }
+/* SCROLL + PRELOADER */
+#progress { position: fixed; top: 0; left: 0; height: 3px; background: var(--accent); width: 0%; z-index: 10000; transition: width .1s ease-out; }
+#preloader { position: fixed; inset: 0; z-index: 9999; background: var(--paper); display: flex; align-items: center; justify-content: center; transition: opacity .7s var(--ease), visibility .7s; }
+#preloader.gone { opacity: 0; visibility: hidden; }
+.pre-word { font-family: var(--serif); font-size: clamp(2rem, 5vw, 3.5rem); color: var(--ink); animation: preAnim 1.4s var(--ease) forwards; }
+@keyframes preAnim { 0%{opacity:0;transform:translateY(20px)} 40%{opacity:1;transform:translateY(0)} 80%{opacity:1;transform:translateY(0)} 100%{opacity:0;transform:translateY(-20px)} }
 
-        html { scroll-behavior: smooth; }
+/* NAVBAR */
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 900; display: flex; align-items: center; justify-content: space-between; padding: 24px 48px; transition: background .4s, border-color .4s, padding .4s var(--ease); }
+nav.scrolled { padding: 16px 48px; background: rgba(244,242,235,0.9); border-bottom: 1px solid var(--line); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
+[data-theme="dark"] nav.scrolled { background: rgba(10,10,10,0.9); }
+.nav-logo { font-family: var(--serif); font-size: 1.4rem; font-weight: 500; }
+.nav-links { display: flex; align-items: center; gap: 36px; }
+.nav-links a { font-size: .8rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); position: relative; transition: color .3s; }
+.nav-links a::after { content: ''; position: absolute; left: 0; bottom: -4px; width: 0; height: 1px; background: var(--ink); transition: width .3s var(--ease); }
+.nav-links a:hover::after, .nav-links a.nav-active::after { width: 100%; }
+.nav-links a:hover, .nav-links a.nav-active { color: var(--ink); }
+.theme-btn { background: none; border: none; cursor: pointer; color: var(--muted); font-size: 1.1rem; transition: color .2s, transform .2s; }
+.theme-btn:hover { color: var(--ink); transform: rotate(15deg); }
+.nav-hamburger { display: none; background: none; border: none; cursor: pointer; color: var(--ink); font-size: 1.5rem; padding: 4px; }
+.mobile-menu { display: none; position: fixed; inset: 0; z-index: 800; background: var(--paper); flex-direction: column; align-items: center; justify-content: center; gap: 40px; opacity: 0; transition: opacity .3s; }
+.mobile-menu.open { opacity: 1; }
+.mobile-menu a { font-family: var(--serif); font-size: 2.8rem; color: var(--ink); }
 
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            overflow-x: hidden;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
+#btt { position: fixed; bottom: 24px; right: 24px; z-index: 800; width: 48px; height: 48px; border-radius: 50%; background: var(--ink); color: var(--paper); border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: opacity .3s, transform .3s; }
+#btt.show { opacity: 1; pointer-events: all; }
+#btt:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,.15); }
 
-        /* PRELOADER */
-        #preloader {
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: var(--bg-color); z-index: 99999;
-            display: flex; justify-content: center; align-items: center;
-            transition: opacity 0.8s ease, visibility 0.8s ease;
-        }
-        .loader-logo { font-size: 2.5rem; font-weight: 800; animation: pulse 1.5s infinite; letter-spacing: -2px; }
-        @keyframes pulse { 0% { opacity: 0.5; transform: scale(0.95); } 50% { opacity: 1; transform: scale(1.05); } 100% { opacity: 0.5; transform: scale(0.95); } }
+/* UTILITIES */
+section { padding: 120px 0; }
+.container { max-width: 1140px; margin: 0 auto; padding: 0 48px; }
+.label { font-size: .75rem; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: var(--accent); display: block; margin-bottom: 16px; }
+.heading { font-family: var(--serif); font-size: clamp(2.5rem, 4vw, 3.8rem); line-height: 1.05; color: var(--ink); }
+.reveal { opacity: 0; transform: translateY(30px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
+.reveal.visible { opacity: 1; transform: none; }
 
-        /* SCROLL BAR */
-        .progress-container { position: fixed; top: 0; left: 0; width: 100%; height: 4px; z-index: 10000; }
-        .progress-bar { height: 4px; background: var(--accent); width: 0%; transition: 0.1s; }
+/* HERO */
+#hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; position: relative; padding-top: 80px; }
+.hero-eyebrow { display: inline-flex; align-items: center; gap: 10px; font-size: .8rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 24px; }
+.dot-live { width: 8px; height: 8px; border-radius: 50%; background: #22c55e; animation: pulseGlow 2s infinite; }
+@keyframes pulseGlow { 0%{box-shadow:0 0 0 0 rgba(34,197,94,.4)} 70%{box-shadow:0 0 0 10px rgba(34,197,94,0)} 100%{box-shadow:0 0 0 0 rgba(34,197,94,0)} }
+.hero-title { font-family: var(--serif); font-size: clamp(3rem, 7.5vw, 7rem); line-height: 1; color: var(--ink); margin-bottom: 32px; }
+.hero-title em { font-style: italic; color: var(--muted); }
+.hero-desc { font-size: 1.1rem; line-height: 1.8; color: var(--muted); max-width: 500px; margin-bottom: 48px; }
+.hero-actions { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.btn-primary { display: inline-flex; align-items: center; gap: 10px; background: var(--ink); color: var(--paper); padding: 16px 32px; border-radius: 4px; font-size: .9rem; font-weight: 600; transition: transform .3s var(--ease), box-shadow .3s; }
+.btn-primary:hover { transform: translateY(-4px); box-shadow: 0 15px 30px rgba(0,0,0,.15); color: var(--paper); }
+.btn-ghost { display: inline-flex; align-items: center; gap: 10px; border: 1px solid var(--line); color: var(--ink); padding: 16px 32px; border-radius: 4px; font-size: .9rem; font-weight: 600; transition: border-color .3s, transform .3s; }
+.btn-ghost:hover { border-color: var(--ink); transform: translateY(-4px); }
+#type-cursor { animation: blink 1s step-end infinite; }
+@keyframes blink { 50%{opacity:0} }
 
-        /* NAVBAR */
-        .navbar { padding: 15px 0; position: fixed; width: 100%; top: 20px; z-index: 999; }
-        .nav-capsule {
-            background: var(--nav-bg); backdrop-filter: blur(15px); padding: 10px 25px;
-            border-radius: 50px; box-shadow: 0 10px 30px var(--shadow);
-            display: flex; justify-content: space-between; align-items: center;
-            max-width: 550px; margin: 0 auto; border: 1px solid rgba(255,255,255,0.1);
-        }
-        .navbar-brand { font-weight: 800; font-size: 1.2rem; color: var(--text-main) !important; }
-        .nav-link { color: var(--text-sec) !important; font-weight: 600; margin: 0 10px; transition: 0.3s; font-size: 0.9rem; }
-        .nav-link:hover { color: var(--text-main) !important; }
-        .theme-btn { background: transparent; border: none; color: var(--text-main); font-size: 1.2rem; cursor: pointer; padding: 5px; transition: 0.3s; }
+/* ABOUT */
+#about .about-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 80px; align-items: center; }
+.about-img-wrap { position: relative; }
+.about-img-wrap img { width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 4px; filter: grayscale(15%); transition: .5s; }
+.about-img-wrap:hover img { filter: grayscale(0); }
+.about-img-label { position: absolute; bottom: -20px; right: -20px; background: var(--accent); color: #fff; font-size: .75rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; padding: 12px 20px; border-radius: 2px; }
+.about-text p { font-size: 1rem; line-height: 1.8; color: var(--muted); margin-bottom: 20px; }
+.about-text p strong { color: var(--ink); font-weight: 600; }
+.stats-row { display: flex; gap: 40px; margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--line); }
+.stat-n { font-family: var(--serif); font-size: 2.8rem; color: var(--ink); line-height: 1; transition: color .3s; }
+.stat:hover .stat-n { color: var(--accent); }
+.stat-l { font-size: .75rem; color: var(--muted); letter-spacing: .05em; margin-top: 8px; display: block; font-weight: 600; text-transform: uppercase; }
+.badges { display: flex; flex-direction: column; gap: 12px; margin-top: 40px; }
+.badge-item { display: flex; align-items: center; gap: 16px; font-size: .9rem; color: var(--muted); }
+.badge-icon { color: var(--accent); font-size: 1.1rem; }
 
-        /* HERO */
-        .hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; flex-direction: column; }
-        .hero-title { font-size: 4rem; font-weight: 800; line-height: 1.1; margin-bottom: 20px; color: var(--text-main); letter-spacing: -1.5px; }
-        
-        /* CARDS */
-        .skill-card {
-            background: var(--card-bg); border: 1px solid var(--border-color);
-            padding: 25px 20px; border-radius: 16px; text-align: center;
-            transition: 0.3s; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;
-        }
-        .skill-card:hover { transform: translateY(-8px); box-shadow: 0 15px 40px var(--shadow-hover); border-color: var(--border-color); }
-        .skill-img { width: 54px; height: 54px; margin-bottom: 15px; object-fit: contain; }
-        .skill-name { font-weight: 700; font-size: 0.9rem; color: var(--text-sec); text-transform: uppercase; letter-spacing: 1px; }
+/* SKILLS */
+.skills-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 64px; }
+.skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 4px; overflow: hidden; }
+.skill-item { background: var(--card); padding: 40px 32px; display: flex; flex-direction: column; position: relative; transition: transform .3s var(--ease), box-shadow .3s; z-index: 1; }
+.skill-item:hover { transform: scale(1.02); z-index: 2; box-shadow: 0 20px 40px rgba(0,0,0,.08); border-radius: 4px; }
+.skill-item img { width: 44px; height: 44px; object-fit: contain; margin-bottom: 24px; filter: grayscale(100%); opacity: .6; transition: .3s; }
+.skill-item:hover img { filter: grayscale(0%); opacity: 1; transform: scale(1.1); }
+.skill-n { font-weight: 600; font-size: .95rem; color: var(--ink); margin-bottom: 8px; }
+.skill-d { font-size: .85rem; color: var(--muted); line-height: 1.6; }
 
-        .project-card {
-            background: var(--card-bg); border-radius: 24px; padding: 25px;
-            transition: 0.3s; height: 100%; box-shadow: 0 10px 40px var(--shadow);
-            border: 1px solid var(--border-color); cursor: pointer; position: relative;
-        }
-        .project-card:hover { transform: translateY(-10px); box-shadow: 0 20px 50px var(--shadow-hover); border-color: var(--border-color); }
-        .card-img-top { width: 100%; height: 220px; background-color: #ddd; border-radius: 16px; margin-bottom: 25px; object-fit: cover; }
-        .click-indicator { position: absolute; top: 25px; right: 25px; background: rgba(0,0,0,0.5); color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; opacity: 0; transition: 0.3s; }
-        .project-card:hover .click-indicator { opacity: 1; }
-        .project-category { font-size: 0.75rem; font-weight: 700; color: var(--text-sec); text-transform: uppercase; margin-bottom: 10px; display: block; letter-spacing: 1px; }
-        .project-title { font-weight: 800; font-size: 1.6rem; margin-bottom: 10px; color: var(--text-main); letter-spacing: -0.5px; }
-        .project-desc { color: var(--text-sec); font-size: 0.95rem; line-height: 1.7; }
+/* WORK */
+.work-header { margin-bottom: 64px; }
+.group-label { display: flex; align-items: center; gap: 16px; font-size: .75rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; color: var(--muted); margin-bottom: 32px; margin-top: 80px; }
+.group-label:first-of-type { margin-top: 0; }
+.group-label::after { content: ''; flex: 1; height: 1px; background: var(--line); }
+.projects-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+.projects-grid.full { grid-template-columns: 1fr; }
+.proj-card { background: var(--card); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; cursor: pointer; transition: transform .4s var(--ease), box-shadow .4s, border-color .4s; position: relative; display: flex; flex-direction: column; }
+.proj-card:hover { transform: translateY(-8px); border-color: var(--muted); box-shadow: 0 30px 60px rgba(0,0,0,.08); }
+[data-theme="dark"] .proj-card:hover { box-shadow: 0 30px 60px rgba(0,0,0,.4); }
+.proj-thumb { width: 100%; height: 240px; overflow: hidden; background: var(--tag-bg); position: relative; }
+.proj-thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s var(--ease); filter: brightness(.95); }
+.proj-card:hover .proj-thumb img { transform: scale(1.05); filter: brightness(1); }
+.proj-thumb-placeholder { width: 100%; height: 240px; background: var(--tag-bg); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; }
+.proj-thumb-placeholder .emoji { font-size: 3.2rem; }
+.proj-body { padding: 28px 28px 32px; flex: 1; display: flex; flex-direction: column; }
+.proj-cat { font-size: .7rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; }
+.proj-title { font-family: var(--serif); font-size: 1.6rem; color: var(--ink); margin-bottom: 10px; line-height: 1.2; }
+.proj-desc { font-size: .92rem; line-height: 1.7; color: var(--muted); margin-bottom: 20px; flex: 1; }
+.proj-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.tag { font-size: .68rem; font-weight: 600; color: var(--muted); border: 1px solid var(--line); padding: 4px 10px; border-radius: 4px; background: var(--tag-bg); }
+.arrow-chip { position: absolute; top: 16px; right: 16px; width: 38px; height: 38px; border-radius: 50%; background: var(--card); color: var(--ink); display: flex; align-items: center; justify-content: center; font-size: .95rem; opacity: 0; transform: scale(.5) rotate(-45deg); transition: all .3s var(--ease); z-index: 2; box-shadow: 0 4px 10px rgba(0,0,0,.1); }
+.proj-card:hover .arrow-chip { opacity: 1; transform: scale(1) rotate(0deg); }
 
-        /* MODAL & CAROUSEL */
-        .modal-content { background-color: var(--card-bg); color: var(--text-main); border-radius: 24px; border: none; }
-        .modal-header { border-bottom: 1px solid var(--border-color); }
-        .modal-footer { border-top: 1px solid var(--border-color); }
-        .btn-close { filter: invert(var(--invert-value)); }
+/* FOOTER */
+footer { padding: 120px 0 60px; border-top: 1px solid var(--line); }
+.footer-grid { display: grid; grid-template-columns: 1fr auto; align-items: flex-end; gap: 48px; margin-bottom: 80px; }
+.footer-heading { font-family: var(--serif); font-size: clamp(3rem, 6vw, 5rem); line-height: 1.0; color: var(--ink); }
+.footer-heading a { text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 8px; transition: color .3s; }
+.footer-heading a:hover { color: var(--accent); }
+.footer-right p { font-size: 1rem; color: var(--muted); margin-bottom: 24px; }
+.social-row { display: flex; gap: 14px; justify-content: flex-end; }
+.social-btn { width: 46px; height: 46px; border-radius: 50%; border: 1px solid var(--line); display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: 1.05rem; transition: all .3s var(--ease); }
+.social-btn:hover { border-color: var(--ink); color: var(--paper); background: var(--ink); transform: translateY(-4px); }
+.email-chip { display: inline-flex; align-items: center; gap: 12px; border: 1px solid var(--line); padding: 12px 24px; border-radius: 4px; font-size: .9rem; color: var(--muted); margin-top: 24px; cursor: pointer; background: transparent; font-family: var(--sans); transition: all .3s; font-weight: 600; }
+.email-chip:hover { border-color: var(--ink); color: var(--ink); background: var(--tag-bg); }
+.email-chip i { color: var(--accent); }
+.footer-bottom { display: flex; justify-content: space-between; padding-top: 40px; border-top: 1px solid var(--line); font-size: .8rem; color: var(--muted); }
 
-        .carousel-item { background: #000; border-radius: 16px; overflow: hidden; position: relative; }
-        .carousel-item a { cursor: zoom-in; display: block; } 
-        .carousel-item img { width: 100%; height: 400px; object-fit: contain; transition: 0.3s; }
-        .carousel-item a:hover img { opacity: 0.9; }
-        .carousel-indicators [data-bs-target] { background-color: #fff; }
-        .carousel-control-prev-icon, .carousel-control-next-icon { filter: invert(1); }
+/* DRAWER */
+.modal-overlay { position: fixed; inset: 0; z-index: 9000; background: rgba(0,0,0,.7); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); opacity: 0; pointer-events: none; transition: opacity .4s ease; }
+.modal-overlay.open { opacity: 1; pointer-events: all; }
+.drawer { position: fixed; top: 0; right: 0; bottom: 0; z-index: 9001; width: min(650px, 100%); background: var(--card); overflow-y: auto; -webkit-overflow-scrolling: touch; transform: translateX(100%); transition: transform .5s var(--ease); padding: 48px 56px 80px; border-left: 1px solid var(--line); }
+.drawer.open { transform: translateX(0); }
+.drawer-close { position: sticky; top: 0; left: 0; width: 44px; height: 44px; background: var(--tag-bg); border: none; cursor: pointer; color: var(--ink); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; margin-bottom: 40px; transition: all .3s; z-index: 10; }
+.drawer-close:hover { background: var(--ink); color: var(--paper); transform: rotate(90deg); }
+.drawer-cat { font-size: .75rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
+.drawer-title { font-family: var(--serif); font-size: 2.4rem; color: var(--ink); line-height: 1.1; margin-bottom: 24px; }
+.drawer-meta { display: flex; align-items: center; gap: 12px; font-size: .9rem; color: var(--muted); margin-bottom: 32px; padding-bottom: 32px; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+.drawer-meta i { color: var(--accent); }
+.drawer-carousel { margin-bottom: 40px; border-radius: 6px; overflow: hidden; background: var(--tag-bg); border: 1px solid var(--line); }
+.drawer-carousel img, .drawer-carousel .dc-placeholder { width: 100%; height: 300px; object-fit: cover; cursor: zoom-in; }
+.drawer-carousel .dc-placeholder { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; cursor: default; }
+.dc-thumbs { display: flex; gap: 8px; margin-top: 8px; overflow-x: auto; padding: 0 8px 8px; }
+.dc-thumb { width: 72px; height: 52px; object-fit: cover; border-radius: 4px; cursor: pointer; opacity: .4; border: 2px solid transparent; transition: all .3s; flex-shrink: 0; }
+.dc-thumb:hover { opacity: .8; }
+.dc-thumb.active { opacity: 1; border-color: var(--accent); }
+.drawer h4 { font-family: var(--serif); font-size: 1.4rem; color: var(--ink); margin-bottom: 16px; margin-top: 40px; }
+.drawer p { font-size: 1rem; line-height: 1.8; color: var(--muted); margin-bottom: 20px; }
+.drawer-list { list-style: none; margin: 0 0 24px; }
+.drawer-list li { font-size: .95rem; line-height: 1.7; color: var(--muted); padding: 12px 0; border-bottom: 1px solid var(--line); display: flex; align-items: flex-start; gap: 12px; }
+.drawer-list li i { color: var(--accent); margin-top: 4px; flex-shrink: 0; }
+.drawer-list li:last-child { border-bottom: none; }
+.drawer-actions { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 40px; }
+.drawer-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
 
-        /* BUTTONS */
-        .btn-modern { background: var(--btn-bg); color: var(--btn-text); padding: 15px 35px; border-radius: 50px; transition: 0.3s; text-decoration: none; display: inline-flex; align-items: center; font-weight: 600; gap: 10px; border: none; }
-        .btn-modern:hover { transform: translateY(-5px); box-shadow: 0 15px 30px var(--shadow); opacity: 0.9; color: var(--btn-text); }
-        .btn-outline { border: 2px solid var(--text-sec); background: transparent; color: var(--text-main); padding: 13px 30px; border-radius: 50px; text-decoration: none; font-weight: 600; margin-left: 10px; transition: 0.3s; }
-        .btn-outline:hover { border-color: var(--text-main); background: var(--text-main); color: var(--bg-color); }
+/* ════════════════════
+   MOBILE — RESPONSIVE
+════════════════════ */
+@media (max-width: 900px) {
+    nav { padding: 18px 20px; }
+    nav.scrolled { padding: 14px 20px; }
+    .nav-links { display: none; }
+    .nav-hamburger { display: block; }
+    .container { padding: 0 20px; }
+    section { padding: 80px 0; }
+    
+    /* Hero */
+    #hero { padding-top: 100px; text-align: center; }
+    .hero-title { font-size: clamp(2.6rem, 10vw, 4rem) !important; }
+    .hero-desc { margin-left: auto; margin-right: auto; }
+    .hero-actions { justify-content: center; }
+    .hero-eyebrow { justify-content: center; }
+    
+    /* About */
+    #about .about-grid { grid-template-columns: 1fr; gap: 48px; }
+    .about-img-wrap { max-width: 360px; margin: 0 auto; }
+    .about-img-label { display: none; }
+    .stats-row { gap: 24px; }
+    
+    /* Skills */
+    .skills-grid { grid-template-columns: repeat(2, 1fr); }
+    .skills-header { margin-bottom: 40px; }
+    
+    /* Projects */
+    .group-label { margin-top: 56px; }
+    .projects-grid { grid-template-columns: 1fr; gap: 20px; }
+    .projects-grid.full { grid-template-columns: 1fr; }
+    .proj-thumb, .proj-thumb-placeholder { height: 200px; }
+    .proj-thumb-placeholder .emoji { font-size: 2.5rem; }
+    .proj-body { padding: 20px 20px 24px; }
+    .proj-title { font-size: 1.4rem; }
+    
+    /* Footer */
+    footer { padding: 80px 0 48px; }
+    .footer-grid { grid-template-columns: 1fr; gap: 40px; }
+    .footer-right { text-align: left; }
+    .social-row { justify-content: flex-start; }
+    .footer-bottom { flex-direction: column; gap: 8px; }
+    
+    /* Drawer */
+    .drawer { width: 100%; padding: 28px 20px 80px; border-left: none; }
+    .drawer-title { font-size: 1.8rem; }
+    .drawer-carousel img { height: 220px; }
+    .drawer-actions { flex-direction: column; }
+    .drawer-actions .btn-primary, .drawer-actions .btn-ghost { justify-content: center; }
+    
+    /* BTT */
+    #btt { bottom: 20px; right: 16px; width: 44px; height: 44px; }
+}
 
-        footer { padding: 80px 0; margin-top: 100px; border-top: 1px solid var(--border-color); }
-        .social-btn { width: 50px; height: 50px; border-radius: 50%; background: var(--card-bg); box-shadow: 0 5px 15px var(--shadow); display: inline-flex; align-items: center; justify-content: center; color: var(--text-main); margin: 0 8px; transition: 0.3s; text-decoration: none; font-size: 1.2rem; }
-        .social-btn:hover { background: var(--btn-bg); color: var(--btn-text); transform: scale(1.1); }
-        
-        .profile-img { border-radius: 30px; box-shadow: 0 20px 50px var(--shadow); transition: 0.5s; animation: float 6s ease-in-out infinite; }
-        @keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-15px); } 100% { transform: translateY(0px); } }
-
-        #backToTop { position: fixed; bottom: 30px; right: 30px; z-index: 99; background: var(--btn-bg); color: var(--btn-text); width: 50px; height: 50px; border-radius: 50%; border: none; display: flex; justify-content: center; align-items: center; font-size: 1.2rem; opacity: 0; pointer-events: none; transition: 0.3s; box-shadow: 0 10px 20px var(--shadow); }
-        #backToTop.show { opacity: 1; pointer-events: all; transform: translateY(0); }
-
-        @media (max-width: 768px) { 
-            .hero-title { font-size: 2.8rem; margin-top: 10px; } 
-            .nav-capsule { width: 90%; padding: 10px 20px; } 
-            
-            /* INI PERBAIKANNYA: Tombol Outline dimunculin lagi & dikasih jarak */
-            .btn-outline { display: inline-flex; margin-left: 0; margin-top: 15px; } 
-            
-            .profile-img { width: 80% !important; margin: 0 auto 30px auto; display: block; }
-            .carousel-item img { height: 250px; } 
-            #about .ps-md-5 { padding-left: 0 !important; text-align: center; }
-            #about .text-md-start { text-align: center; }
-        }
-    </style>
+@media (max-width: 480px) {
+    .skills-grid { grid-template-columns: 1fr; }
+    .stats-row { flex-direction: column; gap: 20px; }
+    .hero-title { font-size: 2.4rem !important; }
+    .btn-primary, .btn-ghost { padding: 14px 24px; font-size: .85rem; width: 100%; justify-content: center; }
+    .mobile-menu a { font-size: 2rem; }
+}
+</style>
 </head>
 <body>
 
-    <div id="preloader"><div class="loader-logo">RM.</div></div>
-    <div class="progress-container"><div class="progress-bar" id="myBar"></div></div>
-    <button onclick="topFunction()" id="backToTop"><i class="bi bi-arrow-up"></i></button>
+<div id="progress"></div>
+<div id="preloader"><span class="pre-word">Rifky Mardiansyah</span></div>
+<button id="btt" onclick="scrollTo(0,0)" title="Back to top"><i class="bi bi-arrow-up"></i></button>
 
-    <nav class="navbar">
-        <div class="nav-capsule">
-            <a class="navbar-brand" href="#">RM.</a>
-            <div class="d-flex align-items-center">
-                <a class="nav-link" href="#about">About</a>
-                <a class="nav-link" href="#skills">Skills</a>
-                <a class="nav-link" href="#work">Work</a>
-                <button class="theme-btn ms-2" onclick="toggleTheme()">
-                    <i class="bi bi-moon-stars-fill" id="theme-icon"></i>
-                </button>
+<div id="mobile-menu" class="mobile-menu">
+    <a href="#about" onclick="closeMobile()">About</a>
+    <a href="#skills" onclick="closeMobile()">Skills</a>
+    <a href="#work" onclick="closeMobile()">Work</a>
+    <a href="#contact" onclick="closeMobile()">Contact</a>
+    <button class="theme-btn" onclick="toggleTheme();closeMobile();" style="margin-top:20px;font-size:1.5rem"><i id="theme-icon-m" class="bi bi-moon-stars-fill"></i></button>
+</div>
+
+<nav id="navbar">
+    <a class="nav-logo" href="#">Rifky<em style="font-style:italic;color:var(--accent)">.</em></a>
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-btn" onclick="toggleTheme()"><i class="bi bi-moon-stars-fill" id="theme-icon"></i></button>
+    </div>
+    <button class="nav-hamburger" onclick="openMobile()"><i class="bi bi-list"></i></button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+    <div class="container">
+        <div class="hero-eyebrow reveal"><span class="dot-live"></span>Available — Internship & Professional Roles</div>
+        <h1 class="hero-title reveal" style="transition-delay:.1s">Turning Office Chaos<br>Into <em>Clean Systems.</em></h1>
+        <p class="hero-desc reveal" style="transition-delay:.2s">
+            Hi, I'm <strong style="color:var(--ink);font-weight:600">Rifky Mardiansyah</strong>.<br>
+            <span style="color:var(--accent);font-weight:600">></span> <span id="typed"></span><span id="type-cursor">|</span>
+        </p>
+        <div class="hero-actions reveal" style="transition-delay:.3s">
+            <a href="#work" class="btn-primary">See My Work <i class="bi bi-arrow-down"></i></a>
+            <a href="CV_Rifky_Mardiansyah_v2.pdf" download class="btn-ghost"><i class="bi bi-download"></i> Download CV</a>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-img-wrap reveal">
+                <img src="foto-profil.jpg" alt="Rifky Mardiansyah" loading="lazy">
+                <div class="about-img-label">Jakarta, 2026</div>
+            </div>
+            <div class="about-text">
+                <span class="label reveal">About Me</span>
+                <h2 class="heading reveal" style="transition-delay:.1s">More Than<br>Just Admin.</h2>
+                <div class="reveal" style="transition-delay:.2s">
+                    <p>Final-year student of <strong>D4 Digital Office Administration</strong> at Universitas Negeri Jakarta, GPA 3.82. I sit at the intersection of administration and technology — I don't just manage documents, I build the systems that manage them.</p>
+                    <p>Currently completing my internship at <strong>TVRI</strong>, Indonesia's national broadcaster, where I catalogue decades of broadcast archives and maintain real-time documentation systems.</p>
+                </div>
+                <div class="stats-row reveal" style="transition-delay:.3s">
+                    <div class="stat"><span class="stat-n">3.82</span><span class="stat-l">GPA / 4.00</span></div>
+                    <div class="stat"><span class="stat-n">10+</span><span class="stat-l">Tools Mastered</span></div>
+                    <div class="stat"><span class="stat-n">9+</span><span class="stat-l">Projects Built</span></div>
+                </div>
+                <div class="badges reveal" style="transition-delay:.4s">
+                    <div class="badge-item"><i class="bi bi-trophy-fill badge-icon"></i><span><strong style="color:var(--ink);font-weight:600">Winner</strong> — Best HR Services Innovation, Intl. Exhibition FEB UNJ 2024</span></div>
+                    <div class="badge-item"><i class="bi bi-patch-check-fill badge-icon"></i><span>Multimedia II Competency License</span></div>
+                </div>
             </div>
         </div>
-    </nav>
+    </div>
+</section>
 
-    <section class="hero text-center">
-        <div class="container" data-aos="fade-up">
-            <div style="margin-bottom: 20px;">
-                <span style="background: var(--card-bg); padding: 8px 20px; border-radius: 30px; font-size: 0.85rem; font-weight: 600; color: var(--text-sec); box-shadow: 0 5px 20px var(--shadow);">
-                    🚀 Available for Professional Opportunities
-                </span>
+<!-- SKILLS -->
+<section id="skills">
+    <div class="container">
+        <div class="skills-header reveal">
+            <div><span class="label">What I Work With</span><h2 class="heading">Core Skills.</h2></div>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-item reveal"><img src="https://img.icons8.com/color/96/microsoft-excel-2019--v1.png" alt="Excel"><div class="skill-n">Data Analysis & Excel</div><div class="skill-d">SUMIF, VLOOKUP, PivotTables, dashboard design with real datasets</div></div>
+            <div class="skill-item reveal" style="transition-delay:.05s"><img src="https://img.icons8.com/color/96/microsoft-office-2019.png" alt="Office"><div class="skill-n">Office Suite</div><div class="skill-d">Word, PowerPoint, advanced document formatting and automation</div></div>
+            <div class="skill-item reveal" style="transition-delay:.1s"><img src="https://img.icons8.com/color/96/html-5--v1.png" alt="HTML"><div class="skill-n">Web Development</div><div class="skill-d">HTML, CSS, Bootstrap, Supabase — functional web apps from scratch</div></div>
+            <div class="skill-item reveal" style="transition-delay:.15s"><img src="https://img.icons8.com/color/96/smartphone.png" alt="AppSheet"><div class="skill-n">No-Code / AppSheet</div><div class="skill-d">GPS attendance, role-based apps, automated PDF reports — zero code</div></div>
+            <div class="skill-item reveal" style="transition-delay:.2s"><img src="https://img.icons8.com/color/96/adobe-creative-cloud--v1.png" alt="Adobe"><div class="skill-n">Creative Media</div><div class="skill-d">Adobe Suite, visual communication, event documentation</div></div>
+            <div class="skill-item reveal" style="transition-delay:.25s"><img src="https://img.icons8.com/color/96/database.png" alt="Archive"><div class="skill-n">Digital Archiving</div><div class="skill-d">Metadata systems, document retention policy, broadcast archives</div></div>
+        </div>
+    </div>
+</section>
+
+<!-- WORK -->
+<section id="work">
+    <div class="container">
+        <div class="work-header reveal">
+            <span class="label">Portfolio</span>
+            <h2 class="heading">Selected Work.</h2>
+        </div>
+
+        <!-- INTERNSHIP -->
+        <div class="group-label reveal"><i class="bi bi-building"></i> Internship Experience</div>
+        <div class="projects-grid reveal">
+            <div class="proj-card" onclick="openDrawer('tvri')">
+                <div class="arrow-chip"><i class="bi bi-arrow-right"></i></div>
+                <div class="proj-thumb-placeholder"><span class="emoji">📺</span><span style="font-size:.68rem;font-weight:700;color:var(--muted)">TVRI · Feb – Mei 2026</span></div>
+                <div class="proj-body">
+                    <span class="proj-cat">Broadcast & Archive</span>
+                    <h3 class="proj-title">TVRI: Broadcast Archive</h3>
+                    <p class="proj-desc">Managing historical physical assets and daily digital broadcast records at Indonesia's national broadcaster.</p>
+                    <div class="proj-tags"><span class="tag">Metadata</span><span class="tag">Archiving</span><span class="tag">SPS System</span></div>
+                </div>
             </div>
-            <h1 class="hero-title">Crafting Digital<br>Efficiency.</h1>
-            <p class="mt-3 mb-5" style="font-size: 1.2rem; max-width: 600px; margin: 0 auto; color: var(--text-sec);">
-                Hi, I'm <span style="color: var(--text-main); font-weight: 700;">Rifky Mardiansyah</span>.<br>
-                <span id="typing-text"></span><span class="cursor">|</span>
-            </p>
+            <div class="proj-card" onclick="openDrawer('telkom')">
+                <div class="arrow-chip"><i class="bi bi-arrow-right"></i></div>
+                <div class="proj-thumb"><img src="project2.jpg" alt="Telkom" loading="lazy"></div>
+                <div class="proj-body">
+                    <span class="proj-cat">IT & Admin</span>
+                    <h3 class="proj-title">Telkom: Network Data Audit</h3>
+                    <p class="proj-desc">Verified 100+ ONT device records at PT Telkom Indonesia, cleaning regional asset data to eliminate inconsistencies.</p>
+                    <div class="proj-tags"><span class="tag">Excel</span><span class="tag">Audit</span><span class="tag">IT Support</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SYSTEMS -->
+        <div class="group-label reveal"><i class="bi bi-gear"></i> Systems & Development</div>
+        <div class="projects-grid reveal">
+            <div class="proj-card" onclick="openDrawer('sedap')">
+                <div class="arrow-chip"><i class="bi bi-arrow-right"></i></div>
+                <div class="proj-thumb"><img src="project1.jpg" alt="SeDaP" loading="lazy"></div>
+                <div class="proj-body">
+                    <span class="proj-cat">Web App</span>
+                    <h3 class="proj-title">SeDaP: Digital Archiving</h3>
+                    <p class="proj-desc">Web-based document management with automated archive expiry, real-time activity logs, and role-based access.</p>
+                    <div class="proj-tags"><span class="tag">HTML/CSS</span><span class="tag">Supabase</span><span class="tag">System Design</span></div>
+                </div>
+            </div>
+            <div class="proj-card" onclick="openDrawer('hris')">
+                <div class="arrow-chip"><i class="bi bi-arrow-right"></i></div>
+                <div class="proj-thumb"><img src="project4.jpg" alt="HRIS" loading="lazy"></div>
+                <div class="proj-body">
+                    <span class="proj-cat">No-Code App</span>
+                    <h3 class="proj-title">Mobile HRIS (AppSheet)</h3>
+                    <p class="proj-desc">A full HR mobile app — GPS attendance, photo check-in, role-based views, auto PDF reports. Built without code.</p>
+                    <div class="proj-tags"><span class="tag">AppSheet</span><span class="tag">No-Code</span><span class="tag">Automation</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DATA ANALYTICS -->
+        <div class="group-label reveal"><i class="bi bi-bar-chart"></i> Data Analytics</div>
+        <div class="projects-grid reveal">
+            <!-- Olist -->
+            <div class="proj-card" onclick="openDrawer('olist')">
+                <div class="arrow-chip"><i class="bi bi-arrow-right"></i></div>
+                <div class="proj-thumb-placeholder"><span class="emoji">📊</span><span style="font-size:.68rem;font-weight:700;color:var(--muted)">Real Dataset · 99k Rows</span></div>
+                <div class="proj-body">
+                    <span class="proj-cat">Excel Dashboard</span>
+                    <h3 class="proj-title">E-Commerce Sales Dashboard</h3>
+                    <p class="proj-desc">99,441 real orders from Olist (Kaggle), turned into a multi-sheet Excel dashboard with 1,263 formulas.</p>
+                    <div class="proj-tags"><span class="tag">Excel</span><span class="tag">SUMIF</span><span class="tag">Real Data</span></div>
+                </div>
+            </div>
+            <!-- Electronics -->
+            <div class="proj-card" onclick="openDrawer('elec')">
+                <div class="arrow-chip"><i class="bi bi-arrow-right"></i></div>
+                <div class="proj-thumb-placeholder"><span class="emoji">🛒</span><span style="font-size:.68rem;font-weight:700;color:var(--muted)">Structured Dummy</span></div>
+                <div class="proj-body">
+                    <span class="proj-cat">Excel Dashboard</span>
+                    <h3 class="proj-title">Electronics Sales Dashboard</h3>
+                    <p class="proj-desc">KPI cards, monthly trends, product and regional breakdown for a fictional retailer using clean SUMIF structures.</p>
+                    <div class="proj-tags"><span class="tag">Excel</span><span class="tag">VLOOKUP</span><span class="tag">Dashboard</span></div>
+                </div>
+            </div>
+            <!-- Broadcast Archive -->
+            <div class="proj-card" onclick="openDrawer('archive')">
+                <div class="arrow-chip"><i class="bi bi-arrow-right"></i></div>
+                <div class="proj-thumb-placeholder"><span class="emoji">📼</span><span style="font-size:.68rem;font-weight:700;color:var(--muted)">Broadcast Simulation</span></div>
+                <div class="proj-body">
+                    <span class="proj-cat">Excel Dashboard</span>
+                    <h3 class="proj-title">Broadcast Archive Tracker</h3>
+                    <p class="proj-desc">Simulated TVRI-style archive system tracking inactive tapes and active news rundowns with COUNTIF-based dashboards.</p>
+                    <div class="proj-tags"><span class="tag">Excel</span><span class="tag">COUNTIF</span><span class="tag">Archive Data</span></div>
+                </div>
+            </div>
+            <!-- HR Payroll -->
+            <div class="proj-card" onclick="openDrawer('hrpay')">
+                <div class="arrow-chip"><i class="bi bi-arrow-right"></i></div>
+                <div class="proj-thumb-placeholder"><span class="emoji">👥</span><span style="font-size:.68rem;font-weight:700;color:var(--muted)">20 Employees · April 2026</span></div>
+                <div class="proj-body">
+                    <span class="proj-cat">Excel Dashboard</span>
+                    <h3 class="proj-title">HR & Payroll Tracker</h3>
+                    <p class="proj-desc">Employee master data, attendance recap, and automated payroll using VLOOKUP across sheets — simulating a real HR workflow.</p>
+                    <div class="proj-tags"><span class="tag">Excel</span><span class="tag">VLOOKUP</span><span class="tag">Payroll</span></div>
+                </div>
+            </div>
+            <!-- Inventory -->
+            <div class="proj-card" onclick="openDrawer('inventory')">
+                <div class="arrow-chip"><i class="bi bi-arrow-right"></i></div>
+                <div class="proj-thumb-placeholder"><span class="emoji">📦</span><span style="font-size:.68rem;font-weight:700;color:var(--muted)">20 Items · 50 Mutations</span></div>
+                <div class="proj-body">
+                    <span class="proj-cat">Excel Dashboard</span>
+                    <h3 class="proj-title">Inventory & Stock Management</h3>
+                    <p class="proj-desc">Stock tracking with automatic reorder alerts, stock movement log, and category breakdown — all formula-driven.</p>
+                    <div class="proj-tags"><span class="tag">Excel</span><span class="tag">IF / SUMIF</span><span class="tag">Inventory</span></div>
+                </div>
+            </div>
+            <!-- Budget -->
+            <div class="proj-card" onclick="openDrawer('budget')">
+                <div class="arrow-chip"><i class="bi bi-arrow-right"></i></div>
+                <div class="proj-thumb-placeholder"><span class="emoji">💰</span><span style="font-size:.68rem;font-weight:700;color:var(--muted)">Q2 2026 Simulation</span></div>
+                <div class="proj-body">
+                    <span class="proj-cat">Excel Dashboard</span>
+                    <h3 class="proj-title">Budget & Expense Report</h3>
+                    <p class="proj-desc">Budget plan vs actual spending per division, with variance analysis and automatic On Track / Over Budget status.</p>
+                    <div class="proj-tags"><span class="tag">Excel</span><span class="tag">SUMIF</span><span class="tag">Budget Analysis</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- OPERATIONS -->
+        <div class="group-label reveal"><i class="bi bi-calendar-event"></i> Operations</div>
+        <div class="projects-grid full reveal">
+            <div class="proj-card" onclick="openDrawer('event')">
+                <div class="arrow-chip"><i class="bi bi-arrow-right"></i></div>
+                <div class="proj-thumb"><img src="project3.jpg" alt="Event" loading="lazy"></div>
+                <div class="proj-body">
+                    <span class="proj-cat">Event Operations</span>
+                    <h3 class="proj-title">LinkedToTalk: Stage Manager</h3>
+                    <p class="proj-desc">Full venue setup and stage flow for a 100+ person talk show — zero broadcast delays.</p>
+                    <div class="proj-tags"><span class="tag">Stage Management</span><span class="tag">Operations</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact">
+    <div class="container">
+        <div class="footer-grid reveal">
             <div>
-                <a href="#work" class="btn-modern">View Portfolio</a>
-                <a href="cv-rifky.pdf" download class="btn-outline"><i class="bi bi-download me-2"></i> Resume</a>
+                <span class="label">Get in Touch</span>
+                <h2 class="footer-heading">Let's build<br>something<br><a href="mailto:rifkymardiansyah19@gmail.com">together.</a></h2>
+                <button class="email-chip" onclick="copyEmail()">
+                    <i class="bi bi-envelope"></i> rifkymardiansyah19@gmail.com
+                </button>
+                <span id="copy-fb" style="display:block;font-size:12px;color:var(--accent);margin-top:8px;opacity:0;transition:opacity .3s">Copied ✓</span>
             </div>
-        </div>
-    </section>
-
-    <section id="about" class="py-5">
-        <div class="container py-5">
-            <div class="row align-items-center">
-                <div class="col-md-5 offset-md-1 mb-5 mb-md-0" data-aos="fade-right">
-                    <img src="foto-profil.jpg" alt="Rifky" class="img-fluid profile-img w-100">
-                </div>
-                <div class="col-md-5 ps-md-5" data-aos="fade-left">
-                    <h6 class="text-uppercase fw-bold text-primary mb-3" style="letter-spacing: 2px; font-size: 0.8rem;">About Me</h6>
-                    <h2 class="fw-bold mb-4 display-6" style="color: var(--text-main);">Redefining<br>Administration.</h2>
-                    <p class="mb-4" style="line-height: 1.8; color: var(--text-sec);">
-                        I am a <strong>Bachelor of Applied Business Administration</strong> undergraduate at Jakarta State University, focused on bridging the gap between management strategy and digital systems.
-                        <br><br>
-                        Beyond traditional administration, I specialize in <strong>Digital Transformation</strong>. I don't just input data, I build the ecosystems that manage it using tools like <strong>AppSheet</strong> and Web Technologies to create efficient, automated workflows.
-                    </p>
-                    
-                    <div class="mt-4 pt-3 border-top">
-                        <h6 class="text-uppercase fw-bold text-primary mb-3" style="font-size: 0.75rem; letter-spacing: 2px;">Recognition</h6>
-                        <ul class="list-unstyled text-secondary" style="font-size: 0.9rem;">
-                            <li class="mb-2"><i class="bi bi-trophy-fill text-warning me-2"></i> <strong>Winner:</strong> Best HR Services Innovation (Intl. Exhibition 2024)</li>
-                            <li><i class="bi bi-patch-check-fill text-primary me-2"></i> Multimedia II Competency License</li>
-                        </ul>
-                    </div>
+            <div class="footer-right reveal" style="transition-delay:.1s">
+                <p>Open for internships,<br>freelance, and collaborations.</p>
+                <div class="social-row">
+                    <a href="https://linkedin.com/in/rifkymardi" target="_blank" class="social-btn"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://instagram.com/ikymars" target="_blank" class="social-btn"><i class="bi bi-instagram"></i></a>
+                    <a href="https://github.com/rifkymardiansyah" target="_blank" class="social-btn"><i class="bi bi-github"></i></a>
+                    <a href="https://medium.com/@rifky_mardi" target="_blank" class="social-btn"><i class="bi bi-medium"></i></a>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section id="skills" class="py-5">
-        <div class="container py-5">
-            <div class="row mb-5" data-aos="fade-up">
-                <div class="col-lg-6">
-                     <h6 class="text-uppercase fw-bold text-primary mb-2" style="letter-spacing: 2px; font-size: 0.8rem;">My Expertise</h6>
-                     <h2 class="fw-bold display-6" style="color: var(--text-main);">Core Competencies</h2>
-                </div>
-            </div>
-            <div class="row g-3">
-                <div class="col-6 col-md-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="skill-card">
-                        <img src="https://img.icons8.com/color/96/microsoft-office-2019.png" class="skill-img" alt="Office">
-                        <span class="skill-name">Advanced Office Suite</span>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4" data-aos="fade-up" data-aos-delay="150">
-                    <div class="skill-card">
-                        <img src="https://img.icons8.com/color/96/html-5--v1.png" class="skill-img" alt="HTML">
-                        <span class="skill-name">Web Development</span>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="skill-card">
-                        <img src="https://img.icons8.com/color/96/smartphone.png" class="skill-img" alt="AppSheet">
-                        <span class="skill-name">AppSheet / No-Code</span>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4" data-aos="fade-up" data-aos-delay="250">
-                    <div class="skill-card">
-                        <img src="https://img.icons8.com/color/96/adobe-creative-cloud--v1.png" class="skill-img" alt="Adobe">
-                        <span class="skill-name">Creative Media</span>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="skill-card">
-                        <img src="https://img.icons8.com/color/96/clapperboard.png" class="skill-img" alt="Video Editing">
-                        <span class="skill-name">Visual Storytelling</span>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4" data-aos="fade-up" data-aos-delay="350">
-                    <div class="skill-card">
-                        <img src="https://img.icons8.com/color/96/database.png" class="skill-img" alt="Database">
-                        <span class="skill-name">System Archiving</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="work" class="py-5">
-        <div class="container">
-            <div class="mb-5" data-aos="fade-up">
-                <h6 class="text-uppercase fw-bold text-primary mb-2" style="letter-spacing: 2px; font-size: 0.8rem;">Portfolio</h6>
-                <h2 class="fw-bold m-0 display-6" style="color: var(--text-main);">Featured Projects</h2>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-6" data-aos="fade-up">
-                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#modalProject1">
-                        <div class="click-indicator">View Details</div>
-                        <img src="project1.jpg" class="card-img-top" alt="Archiving App">
-                        <span class="project-category">System Development</span>
-                        <h3 class="project-title">SeDaP: Intelligent Archiving</h3>
-                        <p class="project-desc">A centralized web-based ecosystem to revolutionize document retrieval. Featuring automated logs and retention scheduling.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#modalProject2">
-                        <div class="click-indicator">View Details</div>
-                        <img src="project2.jpg" class="card-img-top" alt="Telkom Indonesia">
-                        <span class="project-category">Corporate Internship</span>
-                        <h3 class="project-title">Telkom: Data Integrity</h3>
-                        <p class="project-desc">Spearheaded the verification of high-volume network device data (ONT), ensuring 100% database accuracy for regional operations.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#modalProject3">
-                        <div class="click-indicator">View Details</div>
-                        <img src="project3.jpg" class="card-img-top" alt="Event">
-                        <span class="project-category">Operations Management</span>
-                        <h3 class="project-title">LinkedToTalk: Event Ops</h3>
-                        <p class="project-desc">Orchestrated venue logistics and stage flow for a professional talk show, ensuring seamless execution for attendees and speakers.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#modalProject4">
-                        <div class="click-indicator">View Details</div>
-                        <img src="project4.jpg" class="card-img-top" alt="AppSheet HRIS">
-                        <span class="project-category">No-Code Development</span>
-                        <h3 class="project-title">Mobile HRIS Solution</h3>
-                        <p class="project-desc">Built a custom mobile application for employee attendance & tracking using AppSheet. 100% digitized manual paperwork.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer id="contact" class="text-center">
-        <div class="container" data-aos="fade-up">
-            <h2 class="fw-bold mb-4 display-5" style="color: var(--text-main);">Ready to Optimize Your Workflow?</h2>
-            <p class="mb-5" style="color: var(--text-sec);">Currently available for internship & professional opportunities.</p>
-            <a href="mailto:rifkymardiansyah19@gmail.com" class="btn-modern mb-5"><i class="bi bi-envelope"></i> Email Me</a>
-            <div class="d-flex justify-content-center mb-4">
-                <a href="https://linkedin.com/in/rifkymardi" target="_blank" class="social-btn"><i class="bi bi-linkedin"></i></a>
-                <a href="https://instagram.com/ikymars" target="_blank" class="social-btn"><i class="bi bi-instagram"></i></a>
-                <a href="https://github.com/rifkymardiansyah" target="_blank" class="social-btn"><i class="bi bi-github"></i></a>
-                <a href="https://medium.com/@rifky_mardi" target="_blank" class="social-btn"><i class="bi bi-medium"></i></a>
-            </div>
-            <p class="small" style="color: var(--text-sec);">&copy; 2026 Rifky Mardiansyah.</p>
-        </div>
-    </footer>
-
-    <div class="modal fade" id="modalProject1" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content p-4">
-                <div class="modal-header border-0">
-                    <h5 class="modal-title fw-bold">SeDaP Archiving System</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div id="carouselProject1" class="carousel slide mb-4" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselProject1" data-bs-slide-to="0" class="active"></button>
-                            <button type="button" data-bs-target="#carouselProject1" data-bs-slide-to="1"></button>
-                            <button type="button" data-bs-target="#carouselProject1" data-bs-slide-to="2"></button>
-                            <button type="button" data-bs-target="#carouselProject1" data-bs-slide-to="3"></button>
-                            <button type="button" data-bs-target="#carouselProject1" data-bs-slide-to="4"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <a href="project1.jpg" data-fancybox="gallery-project1" data-caption="Login Page">
-                                    <img src="project1.jpg" class="d-block w-100" alt="Login Page">
-                                </a>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="project1-b.jpg" data-fancybox="gallery-project1" data-caption="Main Dashboard">
-                                    <img src="project1-b.jpg" class="d-block w-100" alt="Main Dashboard">
-                                </a>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="project1-c.jpg" data-fancybox="gallery-project1" data-caption="Incoming Mail Digitization Module">
-                                    <img src="project1-c.jpg" class="d-block w-100" alt="Incoming Mail Digitization Module">
-                                </a>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="project1-d.jpg" data-fancybox="gallery-project1" data-caption="Search">
-                                    <img src="project1-d.jpg" class="d-block w-100" alt="Search">
-                                </a>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="project1-e.jpg" data-fancybox="gallery-project1" data-caption="Manajemen User">
-                                    <img src="project1-e.jpg" class="d-block w-100" alt="Manajemen User">
-                                </a>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject1" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselProject1" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
-                    </div>
-
-                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-3">
-                        <h3 class="fw-bold mb-2 mb-md-0">Project Overview</h3>
-                        
-                        <a href="manual-sedap.pdf" data-fancybox data-type="pdf" class="btn btn-sm btn-outline-dark rounded-pill px-4">
-                            <i class="bi bi-book-half me-2"></i> Read Manual Book
-                        </a>
-                    </div>
-
-                    <p class="text-secondary">
-                        SeDaP is a web-based solution designed to eliminate the chaos of physical document tracking. 
-                        By implementing an <strong>Automated Archive Destruction</strong> logic and real-time <strong>Activity Logs</strong>, this system increases retrieval efficiency by 40%.
-                    </p>
-                    <ul class="list-unstyled mt-3 text-secondary">
-                        <li><strong>Role:</strong> Full-Stack Developer (No-Code/Low-Code)</li>
-                        <li><strong>Tech Stack:</strong> HTML, CSS, Bootstrap, Supabase</li>
-                        <li><strong>Key Value:</strong> Workflow Automation & Asset Security.</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="footer-bottom">
+            <p>© 2026 Rifky Mardiansyah</p>
+            <p>rifkymardiansyah.my.id</p>
         </div>
     </div>
+</footer>
 
-    <div class="modal fade" id="modalProject2" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content p-4">
-                <div class="modal-header border-0">
-                    <h5 class="modal-title fw-bold">PT Telkom Indonesia (Internship)</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div id="carouselProject2" class="carousel slide mb-4" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselProject2" data-bs-slide-to="0" class="active"></button>
-                            <button type="button" data-bs-target="#carouselProject2" data-bs-slide-to="1"></button>
-                            <button type="button" data-bs-target="#carouselProject2" data-bs-slide-to="2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <a href="project2.jpg" data-fancybox="gallery-project2" data-caption="Telkom Main Activity">
-                                    <img src="project2.jpg" class="d-block w-100" alt="Telkom Main">
-                                </a>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="project2-b.jpg" data-fancybox="gallery-project2" data-caption="Data Verification Process">
-                                    <img src="project2-b.jpg" class="d-block w-100" alt="Telkom Activity">
-                                </a>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="project2-c.jpg" data-fancybox="gallery-project2" data-caption="Team Documentation">
-                                    <img src="project2-c.jpg" class="d-block w-100" alt="Telkom Extra">
-                                </a>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject2" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselProject2" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
-                    </div>
-                    
-                    <h3 class="fw-bold mb-3">Operational Support Initiative</h3>
-                    <p class="text-secondary">
-                        Tasked with the critical verification of Optical Network Terminal (ONT) data. 
-                        Successfully managed and validated high-volume datasets using <strong>Advanced Spreadsheets</strong> and internal databases to ensure data consistency across the regional division.
-                    </p>
-                    <ul class="list-unstyled mt-3 text-secondary">
-                        <li><strong>Tools:</strong> Corporate Database, Excel Expert</li>
-                        <li><strong>Impact:</strong> Improved data accuracy for asset tracking.</li>
-                    </ul>
-                </div>
-            </div>
+<div class="modal-overlay" id="overlay" onclick="closeDrawer()"></div>
+
+<!-- DRAWERS -->
+<div class="drawer" id="d-tvri">
+    <button class="drawer-close" onclick="closeDrawer()"><i class="bi bi-x"></i></button>
+    <div class="drawer-cat">Broadcast & Archive</div>
+    <h2 class="drawer-title">TVRI — Student Intern</h2>
+    <div class="drawer-meta"><i class="bi bi-building"></i> Pengelola Materi Audio Visual (PMAV) &nbsp;·&nbsp; <i class="bi bi-calendar3"></i> Feb – Mei 2026</div>
+    <div class="drawer-carousel"><div class="dc-placeholder"><span style="font-size:3rem">📺</span></div></div>
+    <h4>What I Did Here</h4>
+    <p>As a Student Intern at the PMAV division, my role covered both inactive physical tape archives and active daily digital broadcast documentation — keeping everything catalogued and findable.</p>
+    <ul class="drawer-list">
+        <li><i class="bi bi-check2-circle"></i>Entered <strong>active metadata</strong> — daily news rundowns and broadcast scripts — into the SPS system in real time</li>
+        <li><i class="bi bi-check2-circle"></i>Catalogued <strong>inactive physical tape archives</strong>, labelling cassettes and entering structured metadata into a centralised spreadsheet</li>
+        <li><i class="bi bi-check2-circle"></i>Performed content transcription from broadcast materials for TVRI's digital platforms (YouTube)</li>
+        <li><i class="bi bi-check2-circle"></i>Maintained consistency between physical tape records and their digital documentation counterparts</li>
+        <li><i class="bi bi-check2-circle"></i>Supported the division's data entry workflow across both inactive archive and active broadcast materials</li>
+    </ul>
+    <div class="drawer-tags"><span class="tag">Metadata</span><span class="tag">Archiving</span><span class="tag">SPS System</span><span class="tag">Transcription</span><span class="tag">Spreadsheet DB</span></div>
+</div>
+
+<div class="drawer" id="d-telkom">
+    <button class="drawer-close" onclick="closeDrawer()"><i class="bi bi-x"></i></button>
+    <div class="drawer-cat">IT & Admin</div>
+    <h2 class="drawer-title">PT Telkom Indonesia — Data Audit</h2>
+    <div class="drawer-meta"><i class="bi bi-building"></i> Internship &nbsp;·&nbsp; <i class="bi bi-calendar3"></i> Feb – Apr 2020</div>
+    <div class="drawer-carousel" id="dc-telkom">
+        <a href="project2.jpg" data-fancybox="gallery-telkom" id="main-link-telkom"><img src="project2.jpg" alt="Telkom" id="main-img-telkom"></a>
+        <div class="dc-thumbs">
+            <img src="project2.jpg" class="dc-thumb active" onclick="setSlide('telkom',this,'project2.jpg')" alt="">
+            <img src="project2-b.jpg" class="dc-thumb" onclick="setSlide('telkom',this,'project2-b.jpg')" alt="">
+            <img src="project2-c.jpg" class="dc-thumb" onclick="setSlide('telkom',this,'project2-c.jpg')" alt="">
         </div>
     </div>
+    <h4>What I Did Here</h4>
+    <p>Tasked with auditing Optical Network Terminal (ONT) device records for Telkom's regional division — the data was inconsistent with mismatched IDs and outdated statuses.</p>
+    <ul class="drawer-list">
+        <li><i class="bi bi-check2-circle"></i>Cross-checked 100+ ONT device records against field technician reports</li>
+        <li><i class="bi bi-check2-circle"></i>Consolidated everything into a clean, verified Excel report for regional management</li>
+        <li><i class="bi bi-check2-circle"></i>Coordinated directly with field technicians to resolve on-site data discrepancies</li>
+        <li><i class="bi bi-check2-circle"></i>Streamlined the reporting process with timely status updates to supervisors</li>
+    </ul>
+    <div class="drawer-tags"><span class="tag">Excel</span><span class="tag">Database Audit</span><span class="tag">IT Support</span><span class="tag">Regional Reporting</span></div>
+</div>
 
-    <div class="modal fade" id="modalProject3" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content p-4">
-                <div class="modal-header border-0">
-                    <h5 class="modal-title fw-bold">LinkedToTalk Event</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div id="carouselProject3" class="carousel slide mb-4" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselProject3" data-bs-slide-to="0" class="active"></button>
-                            <button type="button" data-bs-target="#carouselProject3" data-bs-slide-to="1"></button>
-                            <button type="button" data-bs-target="#carouselProject3" data-bs-slide-to="2"></button>
-                            <button type="button" data-bs-target="#carouselProject3" data-bs-slide-to="3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <a href="project3.jpg" data-fancybox="gallery-project3" data-caption="Event Main Stage">
-                                    <img src="project3.jpg" class="d-block w-100" alt="Event Main">
-                                </a>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="project3-b.jpg" data-fancybox="gallery-project3" data-caption="Technical Coordination">
-                                    <img src="project3-b.jpg" class="d-block w-100" alt="Event Stage">
-                                </a>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="project3-c.jpg" data-fancybox="gallery-project3" data-caption="Crowd Management">
-                                    <img src="project3-c.jpg" class="d-block w-100" alt="Event Crowd">
-                                </a>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="project3-d.jpg" data-fancybox="gallery-project3" data-caption="Certificate of Completion">
-                                    <img src="project3-d.jpg" class="d-block w-100" alt="Event Extra">
-                                </a>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject3" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselProject3" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
-                    </div>
-                    
-                    <h3 class="fw-bold mb-3">Venue & Stage Management</h3>
-                    <p class="text-secondary">
-                        Orchestrated the on-ground operations for a talk show event hosting 100+ attendees. 
-                        Responsible for vendor coordination, stage rundown execution, and ensuring technical readiness for seamless live transitions.
-                    </p>
-                    <ul class="list-unstyled mt-3 text-secondary">
-                        <li><strong>Role:</strong> Stage Manager</li>
-                        <li><strong>Skill:</strong> Crisis Management, Time Coordination.</li>
-                    </ul>
-                </div>
-            </div>
+<div class="drawer" id="d-sedap">
+    <button class="drawer-close" onclick="closeDrawer()"><i class="bi bi-x"></i></button>
+    <div class="drawer-cat">Web App</div>
+    <h2 class="drawer-title">SeDaP — Smart Archiving System</h2>
+    <div class="drawer-meta"><i class="bi bi-code-square"></i> HTML / CSS / Bootstrap / Supabase &nbsp;·&nbsp; <i class="bi bi-calendar3"></i> Mar – Jun 2025</div>
+    <div class="drawer-carousel" id="dc-sedap">
+        <a href="project1.jpg" data-fancybox="gallery-sedap" id="main-link-sedap"><img src="project1.jpg" alt="SeDaP" id="main-img-sedap"></a>
+        <div class="dc-thumbs">
+            <img src="project1.jpg" class="dc-thumb active" onclick="setSlide('sedap',this,'project1.jpg')" alt="">
+            <img src="project1-b.jpg" class="dc-thumb" onclick="setSlide('sedap',this,'project1-b.jpg')" alt="">
+            <img src="project1-c.jpg" class="dc-thumb" onclick="setSlide('sedap',this,'project1-c.jpg')" alt="">
+            <img src="project1-d.jpg" class="dc-thumb" onclick="setSlide('sedap',this,'project1-d.jpg')" alt="">
+            <img src="project1-e.jpg" class="dc-thumb" onclick="setSlide('sedap',this,'project1-e.jpg')" alt="">
         </div>
     </div>
+    <h4>The Problem I Solved</h4>
+    <p>SeDaP replaces messy physical filing with a centralised web system featuring automated archive expiry and full activity logs.</p>
+    <ul class="drawer-list">
+        <li><i class="bi bi-check2-circle"></i>Built a responsive web app for centralised document tracking and retrieval</li>
+        <li><i class="bi bi-check2-circle"></i>Implemented automated archive destruction logic based on document retention rules</li>
+        <li><i class="bi bi-check2-circle"></i>Engineered real-time activity logs for every user action — security and audit ready</li>
+        <li><i class="bi bi-check2-circle"></i>Integrated Supabase for database operations and user authentication</li>
+        <li><i class="bi bi-check2-circle"></i>Designed clean dashboard UI using Bootstrap — no prototyping tools</li>
+    </ul>
+    <div class="drawer-actions">
+        <a href="manual-sedap.pdf" data-fancybox data-type="pdf" class="btn-primary"><i class="bi bi-file-earmark-pdf"></i> Read Manual</a>
+    </div>
+</div>
 
-    <div class="modal fade" id="modalProject4" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content p-4">
-                <div class="modal-header border-0">
-                    <h5 class="modal-title fw-bold">Mobile HRIS (AppSheet)</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div id="carouselProject4" class="carousel slide mb-4" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselProject4" data-bs-slide-to="0" class="active"></button>
-                            <button type="button" data-bs-target="#carouselProject4" data-bs-slide-to="1"></button>
-                            <button type="button" data-bs-target="#carouselProject4" data-bs-slide-to="2"></button>
-                            <button type="button" data-bs-target="#carouselProject4" data-bs-slide-to="3"></button>
-                            <button type="button" data-bs-target="#carouselProject4" data-bs-slide-to="4"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <a href="project4.jpg" data-fancybox="gallery-project4" data-caption="Role-Based Access Control (RBAC) Interface">
-                                    <img src="project4.jpg" class="d-block w-100" alt="App UI">
-                                </a>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="project4-b.jpg" data-fancybox="gallery-project4" data-caption="Centralized Employee Data Management (Admin View)">
-                                    <img src="project4-b.jpg" class="d-block w-100" alt="Database">
-                                </a>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="project4-c.jpg" data-fancybox="gallery-project4" data-caption="Employee Data Management (User View)">
-                                    <img src="project4-c.jpg" class="d-block w-100" alt="Database">
-                                </a>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="project4-d.jpg" data-fancybox="gallery-project4" data-caption="Absence & Real-Time Data Log">
-                                    <img src="project4-d.jpg" class="d-block w-100" alt="Database">
-                                </a>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="project4-e.jpg" data-fancybox="gallery-project4" data-caption="Smart Attendance Interface: Real-Time Camera & GPS Verification">
-                                    <img src="project4-e.jpg" class="d-block w-100" alt="Database">
-                                </a>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject4" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselProject4" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
-                    </div>
-                    
-                    <h3 class="fw-bold mb-3">No-Code Digital Transformation</h3>
-                    <p class="text-secondary">
-                        Designed and deployed a fully functional Mobile HRIS application without writing complex code. 
-                        The app leverages <strong>Google AppSheet</strong> to manage employee data, utilizing GPS-based attendance tracking and automated PDF report generation.
-                    </p>
-                    <ul class="list-unstyled mt-3 text-secondary">
-                        <li><strong>Platform:</strong> Google AppSheet & Google Sheets Database</li>
-                        <li><strong>Key Features:</strong> GPS Geofencing, Photo Verification, Auto-Reporting.</li>
-                        <li><strong>Impact:</strong> Reduced paper usage by 100% and real-time data monitoring.</li>
-                    </ul>
-                </div>
-            </div>
+<div class="drawer" id="d-hris">
+    <button class="drawer-close" onclick="closeDrawer()"><i class="bi bi-x"></i></button>
+    <div class="drawer-cat">No-Code App</div>
+    <h2 class="drawer-title">Mobile HRIS — AppSheet</h2>
+    <div class="drawer-meta"><i class="bi bi-phone"></i> Google AppSheet &nbsp;·&nbsp; <i class="bi bi-trophy-fill" style="color:var(--accent)"></i> Award Winner 2024</div>
+    <div class="drawer-carousel" id="dc-hris">
+        <a href="project4.jpg" data-fancybox="gallery-hris" id="main-link-hris"><img src="project4.jpg" alt="HRIS" id="main-img-hris"></a>
+        <div class="dc-thumbs">
+            <img src="project4.jpg" class="dc-thumb active" onclick="setSlide('hris',this,'project4.jpg')" alt="">
+            <img src="project4-b.jpg" class="dc-thumb" onclick="setSlide('hris',this,'project4-b.jpg')" alt="">
+            <img src="project4-c.jpg" class="dc-thumb" onclick="setSlide('hris',this,'project4-c.jpg')" alt="">
+            <img src="project4-d.jpg" class="dc-thumb" onclick="setSlide('hris',this,'project4-d.jpg')" alt="">
+            <img src="project4-e.jpg" class="dc-thumb" onclick="setSlide('hris',this,'project4-e.jpg')" alt="">
         </div>
     </div>
+    <h4>No Code. Full Functionality.</h4>
+    <p>Replaced paper-based HR processes with a functional mobile app using Google AppSheet — no custom backend needed.</p>
+    <ul class="drawer-list">
+        <li><i class="bi bi-check2-circle"></i>GPS geofencing to verify attendance location in real time</li>
+        <li><i class="bi bi-check2-circle"></i>Mandatory photo verification for every clock-in and clock-out</li>
+        <li><i class="bi bi-check2-circle"></i>Role-based access control — separate admin and employee views</li>
+        <li><i class="bi bi-check2-circle"></i>Automated monthly PDF attendance reports — zero manual compiling</li>
+        <li><i class="bi bi-check2-circle"></i>Result: 100% elimination of paper-based HR forms</li>
+    </ul>
+    <div class="drawer-tags"><span class="tag">AppSheet</span><span class="tag">Google Sheets</span><span class="tag">GPS Geofencing</span><span class="tag">Auto PDF</span></div>
+</div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<div class="drawer" id="d-olist">
+    <button class="drawer-close" onclick="closeDrawer()"><i class="bi bi-x"></i></button>
+    <div class="drawer-cat">Excel Dashboard</div>
+    <h2 class="drawer-title">E-Commerce Sales Dashboard</h2>
+    <div class="drawer-meta"><i class="bi bi-table"></i> 99,441 Real Orders &nbsp;·&nbsp; <i class="bi bi-database"></i> Kaggle / Olist Dataset</div>
+    <div class="drawer-carousel"><div class="dc-placeholder"><span style="font-size:3rem">📊</span></div></div>
+    <h4>What This Is</h4>
+    <p>Olist's public e-commerce dataset turned into a proper multi-sheet Excel dashboard. Every number is formula-driven — no hardcoded values.</p>
+    <ul class="drawer-list">
+        <li><i class="bi bi-check2-circle"></i>5-sheet workbook: Dashboard, Data helpers, Monthly Summary, Category Summary</li>
+        <li><i class="bi bi-check2-circle"></i>1,263 real Excel formulas — SUMIF, COUNTIF, IF, cross-sheet references</li>
+        <li><i class="bi bi-check2-circle"></i>73 product categories analyzed across 3 years (2016–2018)</li>
+        <li><i class="bi bi-check2-circle"></i>Year-on-year growth, monthly trends, and delivery performance included</li>
+    </ul>
+    <div class="drawer-actions">
+        <a href="Olist_WithFormulas_Rifky.xlsx" download class="btn-primary"><i class="bi bi-download"></i> Download .xlsx</a>
+        <a href="https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce" target="_blank" class="btn-ghost"><i class="bi bi-database"></i> Data Source</a>
+    </div>
+</div>
 
-    <script>
-        Fancybox.bind("[data-fancybox]", {});
+<div class="drawer" id="d-elec">
+    <button class="drawer-close" onclick="closeDrawer()"><i class="bi bi-x"></i></button>
+    <div class="drawer-cat">Excel Dashboard</div>
+    <h2 class="drawer-title">Electronics Sales Dashboard</h2>
+    <div class="drawer-meta"><i class="bi bi-table"></i> 480 Rows &nbsp;·&nbsp; Structured Dummy Data</div>
+    <div class="drawer-carousel"><div class="dc-placeholder"><span style="font-size:3rem">🛒</span></div></div>
+    <h4>What This Is</h4>
+    <p>A practice dashboard for a fictional electronics retailer — demonstrating clean data structure, aggregation logic, and professional visual reporting.</p>
+    <ul class="drawer-list">
+        <li><i class="bi bi-check2-circle"></i>4 sheets: Dashboard, Raw Data, Product Summary, Regional Summary</li>
+        <li><i class="bi bi-check2-circle"></i>480 rows across 8 products, 5 cities, and 12 months</li>
+        <li><i class="bi bi-check2-circle"></i>KPI cards: Total Revenue, Total Orders, Avg Gross Profit Margin</li>
+        <li><i class="bi bi-check2-circle"></i>Auto-filter and conditional formatting applied throughout</li>
+    </ul>
+    <div class="drawer-actions">
+        <a href="Sales_Dashboard_RifkyMardiansyah.xlsx" download class="btn-primary"><i class="bi bi-download"></i> Download .xlsx</a>
+    </div>
+</div>
 
-        AOS.init({ once: true, offset: 100 });
-        window.addEventListener('load', function() {
-            var preloader = document.getElementById('preloader');
-            setTimeout(function() { preloader.style.opacity = '0'; preloader.style.visibility = 'hidden'; }, 1000);
-        });
-        let mybutton = document.getElementById("backToTop");
-        window.onscroll = function() {
-            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            var scrolled = (winScroll / height) * 100;
-            document.getElementById("myBar").style.width = scrolled + "%";
-            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) { mybutton.classList.add("show"); } else { mybutton.classList.remove("show"); }
-        };
-        function topFunction() { document.body.scrollTop = 0; document.documentElement.scrollTop = 0; }
-        
-        // TEKS TYPING EFFECT JUGA UDAH DIGANTI BIAR KEREN
-        const text = ["Business Analyst.", "System Builder.", "Digital Strategist."];
-        let count = 0; let index = 0; let currentText = ""; let letter = "";
-        (function type() {
-            if (count === text.length) { count = 0; }
-            currentText = text[count]; letter = currentText.slice(0, ++index);
-            document.getElementById("typing-text").textContent = letter;
-            if (letter.length === currentText.length) { count++; index = 0; setTimeout(type, 2000); } else { setTimeout(type, 100); }
-        }());
-        
-        function toggleTheme() {
-            const body = document.body;
-            const icon = document.getElementById('theme-icon');
-            if (body.getAttribute('data-theme') === 'dark') {
-                body.setAttribute('data-theme', 'light');
-                icon.classList.remove('bi-sun-fill');
-                icon.classList.add('bi-moon-stars-fill');
-            } else {
-                body.setAttribute('data-theme', 'dark');
-                icon.classList.remove('bi-moon-stars-fill');
-                icon.classList.add('bi-sun-fill');
-            }
-        }
-    </script>
+<div class="drawer" id="d-archive">
+    <button class="drawer-close" onclick="closeDrawer()"><i class="bi bi-x"></i></button>
+    <div class="drawer-cat">Excel Dashboard</div>
+    <h2 class="drawer-title">Broadcast Archive Tracker</h2>
+    <div class="drawer-meta"><i class="bi bi-camera-video"></i> TVRI Simulation &nbsp;·&nbsp; 60 Tapes · 80 Rundowns</div>
+    <div class="drawer-carousel"><div class="dc-placeholder"><span style="font-size:3rem">📼</span></div></div>
+    <h4>What This Is</h4>
+    <p>A simulated archive management system inspired by real workflows at TVRI's PMAV division. Tracks both inactive tape archives and active news rundown metadata.</p>
+    <ul class="drawer-list">
+        <li><i class="bi bi-check2-circle"></i>3 sheets: Summary Dashboard, Arsip Inaktif (Kaset), Arsip Aktif (Rundown)</li>
+        <li><i class="bi bi-check2-circle"></i>60 inactive tape records with status: Aktif Tersimpan / Perlu Restorasi / Rusak</li>
+        <li><i class="bi bi-check2-circle"></i>80 active rundown records with SPS input status tracking</li>
+        <li><i class="bi bi-check2-circle"></i>COUNTIF & COUNTIFS dashboard showing breakdown by category, status, and program</li>
+        <li><i class="bi bi-check2-circle"></i>Color-coded status cells for immediate visual scan</li>
+    </ul>
+    <div class="drawer-actions">
+        <a href="Broadcast_Archive_Tracker_Rifky.xlsx" download class="btn-primary"><i class="bi bi-download"></i> Download .xlsx</a>
+    </div>
+</div>
+
+<div class="drawer" id="d-hrpay">
+    <button class="drawer-close" onclick="closeDrawer()"><i class="bi bi-x"></i></button>
+    <div class="drawer-cat">Excel Dashboard</div>
+    <h2 class="drawer-title">HR & Payroll Tracker</h2>
+    <div class="drawer-meta"><i class="bi bi-people"></i> 20 Employees &nbsp;·&nbsp; April 2026 Simulation</div>
+    <div class="drawer-carousel"><div class="dc-placeholder"><span style="font-size:3rem">👥</span></div></div>
+    <h4>What This Is</h4>
+    <p>End-to-end HR simulation covering employee master data, attendance, and automated payroll — all connected via VLOOKUP across sheets.</p>
+    <ul class="drawer-list">
+        <li><i class="bi bi-check2-circle"></i>4 sheets: HR Dashboard, Data Karyawan, Rekap Absensi, Slip Gaji</li>
+        <li><i class="bi bi-check2-circle"></i>Payroll auto-calculates gaji bersih using VLOOKUP from employee master data</li>
+        <li><i class="bi bi-check2-circle"></i>Attendance IF formula labels each employee: Baik / Cukup / Perlu Perhatian</li>
+        <li><i class="bi bi-check2-circle"></i>SUMIF breakdown of salary totals and headcount per division</li>
+        <li><i class="bi bi-check2-circle"></i>265 real Excel formulas — VLOOKUP, SUMIF, COUNTIF, AVERAGE, IF</li>
+    </ul>
+    <div class="drawer-actions">
+        <a href="HR_Payroll_Tracker_Rifky.xlsx" download class="btn-primary"><i class="bi bi-download"></i> Download .xlsx</a>
+    </div>
+</div>
+
+<div class="drawer" id="d-inventory">
+    <button class="drawer-close" onclick="closeDrawer()"><i class="bi bi-x"></i></button>
+    <div class="drawer-cat">Excel Dashboard</div>
+    <h2 class="drawer-title">Inventory & Stock Management</h2>
+    <div class="drawer-meta"><i class="bi bi-box-seam"></i> 20 Items · 50 Mutations &nbsp;·&nbsp; April 2026</div>
+    <div class="drawer-carousel"><div class="dc-placeholder"><span style="font-size:3rem">📦</span></div></div>
+    <h4>What This Is</h4>
+    <p>A stock management dashboard tracking 20 office supply items with automatic reorder alerts, movement logs, and category breakdown.</p>
+    <ul class="drawer-list">
+        <li><i class="bi bi-check2-circle"></i>3 sheets: Inventory Dashboard, Stok Barang, Mutasi Barang</li>
+        <li><i class="bi bi-check2-circle"></i>IF formula auto-flags status: Aman / REORDER / HABIS based on minimum stock</li>
+        <li><i class="bi bi-check2-circle"></i>VLOOKUP pulls item price into every mutation transaction automatically</li>
+        <li><i class="bi bi-check2-circle"></i>50 stock movement records (in/out) with total value calculation</li>
+        <li><i class="bi bi-check2-circle"></i>SUMIF breakdown of total stock value per category</li>
+    </ul>
+    <div class="drawer-actions">
+        <a href="Inventory_Stock_Rifky.xlsx" download class="btn-primary"><i class="bi bi-download"></i> Download .xlsx</a>
+    </div>
+</div>
+
+<div class="drawer" id="d-budget">
+    <button class="drawer-close" onclick="closeDrawer()"><i class="bi bi-x"></i></button>
+    <div class="drawer-cat">Excel Dashboard</div>
+    <h2 class="drawer-title">Budget & Expense Report</h2>
+    <div class="drawer-meta"><i class="bi bi-currency-dollar"></i> Q2 2026 &nbsp;·&nbsp; 6 Divisions · 45 Transactions</div>
+    <div class="drawer-carousel"><div class="dc-placeholder"><span style="font-size:3rem">💰</span></div></div>
+    <h4>What This Is</h4>
+    <p>A Q2 budget planning and expense tracking workbook with automatic variance analysis — showing exactly where each division is over or under budget.</p>
+    <ul class="drawer-list">
+        <li><i class="bi bi-check2-circle"></i>4 sheets: Budget Dashboard, Anggaran, Realisasi, Budget vs Aktual</li>
+        <li><i class="bi bi-check2-circle"></i>IF formula auto-assigns status: On Track / Over Budget / Under Utilized</li>
+        <li><i class="bi bi-check2-circle"></i>VLOOKUP pulls division and category from budget plan into expense records</li>
+        <li><i class="bi bi-check2-circle"></i>SUMIF aggregates actual spending per division for real-time comparison</li>
+        <li><i class="bi bi-check2-circle"></i>236 real Excel formulas — SUMIF, VLOOKUP, IF, cross-sheet references</li>
+    </ul>
+    <div class="drawer-actions">
+        <a href="Budget_Expense_Report_Rifky.xlsx" download class="btn-primary"><i class="bi bi-download"></i> Download .xlsx</a>
+    </div>
+</div>
+
+<div class="drawer" id="d-event">
+    <button class="drawer-close" onclick="closeDrawer()"><i class="bi bi-x"></i></button>
+    <div class="drawer-cat">Event Operations</div>
+    <h2 class="drawer-title">LinkedToTalk — Stage Manager</h2>
+    <div class="drawer-meta"><i class="bi bi-people"></i> 100+ Attendees &nbsp;·&nbsp; <i class="bi bi-calendar3"></i> Sep – Nov 2025</div>
+    <div class="drawer-carousel" id="dc-event">
+        <a href="project3.jpg" data-fancybox="gallery-event" id="main-link-event"><img src="project3.jpg" alt="Event" id="main-img-event"></a>
+        <div class="dc-thumbs">
+            <img src="project3.jpg" class="dc-thumb active" onclick="setSlide('event',this,'project3.jpg')" alt="">
+            <img src="project3-b.jpg" class="dc-thumb" onclick="setSlide('event',this,'project3-b.jpg')" alt="">
+            <img src="project3-c.jpg" class="dc-thumb" onclick="setSlide('event',this,'project3-c.jpg')" alt="">
+            <img src="project3-d.jpg" class="dc-thumb" onclick="setSlide('event',this,'project3-d.jpg')" alt="">
+        </div>
+    </div>
+    <h4>What I Did Here</h4>
+    <p>Made sure every segment ran on cue and every technical element was in place before the lights went up.</p>
+    <ul class="drawer-list">
+        <li><i class="bi bi-check2-circle"></i>Managed full venue setup and stage flow across all event segments</li>
+        <li><i class="bi bi-check2-circle"></i>Coordinated vendors, performers, and technical crew pre-show</li>
+        <li><i class="bi bi-check2-circle"></i>Resolved on-site technical issues in real time — zero delays</li>
+        <li><i class="bi bi-check2-circle"></i>Supervised crowd movement and safety around the stage area</li>
+    </ul>
+    <div class="drawer-tags"><span class="tag">Event Management</span><span class="tag">Stage Coordination</span><span class="tag">Live Operations</span></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script>
+Fancybox.bind("[data-fancybox]", {});
+
+/* Preloader */
+window.addEventListener('load', () => setTimeout(() => document.getElementById('preloader').classList.add('gone'), 1200));
+
+/* Scroll */
+const navSections = ['hero','about','skills','work','contact'];
+const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+window.addEventListener('scroll', () => {
+    const s = document.documentElement.scrollTop;
+    const h = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    document.getElementById('progress').style.width = (s/h*100) + '%';
+    document.getElementById('navbar').classList.toggle('scrolled', s > 60);
+    document.getElementById('btt').classList.toggle('show', s > 400);
+    let cur = '';
+    navSections.forEach(id => { const el = document.getElementById(id); if (el && el.offsetTop - 150 <= s) cur = id; });
+    navLinks.forEach(a => a.classList.toggle('nav-active', a.getAttribute('href') === '#' + cur));
+});
+
+/* Reveal */
+const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+}, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+/* Theme */
+function toggleTheme() {
+    const isDark = document.body.getAttribute('data-theme') === 'dark';
+    document.body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+    const icon = isDark ? 'bi-moon-stars-fill' : 'bi-sun-fill';
+    document.getElementById('theme-icon').className = 'bi ' + icon;
+    document.getElementById('theme-icon-m').className = 'bi ' + icon;
+    localStorage.setItem('theme', isDark ? 'light' : 'dark');
+}
+if (localStorage.getItem('theme') === 'dark') {
+    document.body.setAttribute('data-theme', 'dark');
+    document.getElementById('theme-icon').className = 'bi bi-sun-fill';
+    document.getElementById('theme-icon-m').className = 'bi bi-sun-fill';
+}
+
+/* Typing */
+const lines = ["Digital Administration Student", "Data Analytics Enthusiast", "System Builder & No-Code Developer"];
+let li=0, ci=0, del=false;
+(function type() {
+    const txt = lines[li];
+    document.getElementById('typed').textContent = del ? txt.slice(0,--ci) : txt.slice(0,++ci);
+    if (!del && ci===txt.length) { setTimeout(()=>{ del=true; type(); }, 2000); return; }
+    if (del && ci===0) { del=false; li=(li+1)%lines.length; setTimeout(type,400); return; }
+    setTimeout(type, del?30:60);
+}());
+
+/* Drawer */
+function openDrawer(id) {
+    const d = document.getElementById('d-'+id);
+    if (!d) return;
+    d.classList.add('open');
+    document.getElementById('overlay').classList.add('open');
+    document.body.style.overflow = 'hidden';
+}
+function closeDrawer() {
+    document.querySelectorAll('.drawer.open').forEach(d => d.classList.remove('open'));
+    document.getElementById('overlay').classList.remove('open');
+    document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => { if (e.key==='Escape') closeDrawer(); });
+
+/* Slide */
+function setSlide(gid, el, src) {
+    const img = document.getElementById('main-img-'+gid);
+    const lnk = document.getElementById('main-link-'+gid);
+    if (img) img.src = src;
+    if (lnk) lnk.href = src;
+    el.parentElement.querySelectorAll('.dc-thumb').forEach(t => t.classList.remove('active'));
+    el.classList.add('active');
+}
+
+/* Copy Email */
+function copyEmail() {
+    navigator.clipboard.writeText('rifkymardiansyah19@gmail.com').then(() => {
+        const fb = document.getElementById('copy-fb');
+        fb.style.opacity = '1';
+        setTimeout(() => fb.style.opacity = '0', 2000);
+    });
+}
+
+/* Mobile Menu */
+function openMobile() {
+    document.getElementById('mobile-menu').style.display = 'flex';
+    setTimeout(() => document.getElementById('mobile-menu').classList.add('open'), 10);
+    document.body.style.overflow = 'hidden';
+}
+function closeMobile() {
+    document.getElementById('mobile-menu').classList.remove('open');
+    setTimeout(() => document.getElementById('mobile-menu').style.display = 'none', 300);
+    document.body.style.overflow = '';
+}
+</script>
 </body>
 </html>
-
-
-
-
-
