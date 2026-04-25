@@ -1,884 +1,1712 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rifky Mardiansyah — Digital Administration &amp; Data Analytics</title>
-    <meta name="description" content="Portfolio Rifky Mardiansyah — mahasiswa tingkat akhir D4 Administrasi Perkantoran Digital UNJ, spesialis sistem web, data analytics Excel, dan no-code AppSheet.">
-    <meta name="keywords" content="Rifky Mardiansyah, Administrasi Perkantoran Digital, Data Analyst, Excel Dashboard, TVRI, AppSheet, UNJ Jakarta, portfolio mahasiswa">
-    <meta name="author" content="Rifky Mardiansyah">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://rifkymardiansyah.my.id">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://rifkymardiansyah.my.id">
-    <meta property="og:title" content="Rifky Mardiansyah — Digital Administration &amp; Data Analytics">
-    <meta property="og:description" content="Sistem web, data analytics, dan no-code tools — dibangun untuk menyelesaikan masalah nyata di dunia kerja.">
-    <meta property="og:image" content="https://rifkymardiansyah.my.id/thumbnail-portfolio.jpg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rifky Mardiansyah — Digital Administration & Data Analytics</title>
+<meta name="description" content="Portfolio Rifky Mardiansyah — mahasiswa tingkat akhir D4 Administrasi Perkantoran Digital UNJ, spesialis sistem web, data analytics Excel, dan no-code AppSheet.">
+<meta name="keywords" content="Rifky Mardiansyah, Administrasi Perkantoran Digital, Data Analyst, Excel Dashboard, TVRI, AppSheet, UNJ Jakarta, portfolio mahasiswa">
+<meta name="author" content="Rifky Mardiansyah">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://rifkymardiansyah.my.id">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rifkymardiansyah.my.id">
+<meta property="og:title" content="Rifky Mardiansyah — Digital Administration & Data Analytics">
+<meta property="og:description" content="Sistem web, data analytics, dan no-code tools — dibangun untuk menyelesaikan masalah nyata di dunia kerja.">
 
-    <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"Person","name":"Rifky Mardiansyah","url":"https://rifkymardiansyah.my.id","email":"rifkymardiansyah19@gmail.com","jobTitle":"Digital Office Administration Student","alumniOf":{"@type":"CollegeOrUniversity","name":"Universitas Negeri Jakarta"},"sameAs":["https://linkedin.com/in/rifkymardi","https://github.com/rifkymardiansyah","https://medium.com/@rifky_mardi","https://instagram.com/ikymars"]}
-    </script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Rifky Mardiansyah","url":"https://rifkymardiansyah.my.id","email":"rifkymardiansyah19@gmail.com","jobTitle":"Digital Office Administration Student","alumniOf":{"@type":"CollegeOrUniversity","name":"Universitas Negeri Jakarta"},"sameAs":["https://linkedin.com/in/rifkymardi","https://github.com/rifkymardiansyah","https://medium.com/@rifky_mardi","https://instagram.com/ikymars"]}
+</script>
 
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%230a0a0a%22/><text x=%2250%22 y=%2268%22 font-family=%22Georgia%22 font-size=%2252%22 fill=%22white%22 text-anchor=%22middle%22 font-weight=%22bold%22>R</text></svg>">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2216%22 fill=%22%23080808%22/><text x=%2250%22 y=%2272%22 font-family=%22Georgia%22 font-size=%2256%22 fill=%22%23c41230%22 text-anchor=%22middle%22 font-weight=%22bold%22>R</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
 
 <style>
+/* ══════════════════════════════════════════════════════
+   TOKENS
+══════════════════════════════════════════════════════ */
 :root {
-    --ink:    #0a0a0a;
-    --paper:  #f4f2eb;
-    --muted:  #6b6863;
-    --line:   #dfdcd5;
-    --accent: #d34524;
-    --card:   #ffffff;
-    --tag-bg: #ece9e1;
-    --serif:  'DM Serif Display', Georgia, serif;
-    --sans:   'DM Sans', system-ui, sans-serif;
-    --ease:   cubic-bezier(.16,1,.3,1);
-}
-[data-theme="dark"] {
-    --ink:    #f2efe9;
-    --paper:  #0a0a0a;
-    --muted:  #8b8782;
-    --line:   #1f1f1f;
-    --accent: #e85532;
-    --card:   #111111;
-    --tag-bg: #1a1a1a;
+  --black:   #080808;
+  --white:   #f5f4f0;
+  --grey1:   #111111;
+  --grey2:   #1a1a1a;
+  --grey3:   #2a2a2a;
+  --grey4:   #3d3d3d;
+  --muted:   #888;
+  --red:     #c41230;
+  --red-dim: rgba(196,18,48,.12);
+
+  --bg:      var(--black);
+  --surface: var(--grey1);
+  --ink:     var(--white);
+  --border:  var(--grey3);
+
+  --serif:   'DM Serif Display', Georgia, serif;
+  --sans:    'DM Sans', system-ui, sans-serif;
+  --ease:    cubic-bezier(.16,1,.3,1);
+  --ease2:   cubic-bezier(.34,1.56,.64,1);
+  --r:       6px;
 }
 
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; font-size: 16px; scroll-padding-top: 100px; }
+[data-theme="light"] {
+  --bg:      #f5f4f0;
+  --surface: #ffffff;
+  --ink:     #080808;
+  --border:  #ddd;
+  --grey1:   #f0efeb;
+  --grey2:   #e8e7e3;
+  --grey3:   #d5d4d0;
+  --grey4:   #bbb;
+  --muted:   #777;
+}
+
+/* ══════════════════════════════════════════════════════
+   RESET
+══════════════════════════════════════════════════════ */
+*,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+  font-size: 16px;
+  overflow-x: hidden;
+}
 body {
-    font-family: var(--sans); background: var(--paper); color: var(--ink);
-    transition: background .4s, color .4s; overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
+  font-family: var(--sans);
+  background: var(--bg);
+  color: var(--ink);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  transition: background .4s, color .4s;
 }
-body::before {
-    content: ''; position: fixed; inset: 0; z-index: 9999;
-    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="3" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23n)"/></svg>');
-    opacity: 0.04; pointer-events: none;
+
+/* grain */
+body::after {
+  content:'';
+  position: fixed; inset: 0; z-index: 9999;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+  opacity: .03;
+  pointer-events: none;
 }
-[data-theme="dark"] body::before { opacity: 0.03; }
-::selection { background: var(--ink); color: var(--paper); }
-img { display: block; max-width: 100%; }
+
+::selection { background: var(--red); color: #fff; }
 a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
 
-/* SCROLL + PRELOADER */
-#progress { position: fixed; top: 0; left: 0; height: 3px; background: var(--accent); width: 0%; z-index: 10000; transition: width .1s ease-out; }
-#preloader { position: fixed; inset: 0; z-index: 9999; background: var(--paper); display: flex; align-items: center; justify-content: center; transition: opacity .7s var(--ease), visibility .7s; }
+/* ══════════════════════════════════════════════════════
+   PRELOADER
+══════════════════════════════════════════════════════ */
+#preloader {
+  position: fixed; inset: 0; z-index: 9998;
+  background: var(--black);
+  display: flex; align-items: center; justify-content: center;
+  flex-direction: column; gap: 32px;
+  transition: opacity .9s var(--ease), visibility .9s;
+}
 #preloader.gone { opacity: 0; visibility: hidden; }
-.pre-word { font-family: var(--serif); font-size: clamp(2rem, 5vw, 3.5rem); color: var(--ink); animation: preAnim 1.4s var(--ease) forwards; }
-@keyframes preAnim { 0%{opacity:0;transform:translateY(20px)} 40%{opacity:1;transform:translateY(0)} 80%{opacity:1;transform:translateY(0)} 100%{opacity:0;transform:translateY(-20px)} }
 
-/* NAVBAR */
-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 900; display: flex; align-items: center; justify-content: space-between; padding: 24px 48px; transition: background .4s, border-color .4s, padding .4s var(--ease); }
-nav.scrolled { padding: 16px 48px; background: rgba(244,242,235,0.9); border-bottom: 1px solid var(--line); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
-[data-theme="dark"] nav.scrolled { background: rgba(10,10,10,0.9); }
-.nav-logo { font-family: var(--serif); font-size: 1.4rem; font-weight: 500; }
-.nav-links { display: flex; align-items: center; gap: 36px; }
-.nav-links a { font-size: .8rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); position: relative; transition: color .3s; }
-.nav-links a::after { content: ''; position: absolute; left: 0; bottom: -4px; width: 0; height: 1px; background: var(--ink); transition: width .3s var(--ease); }
-.nav-links a:hover::after, .nav-links a.nav-active::after { width: 100%; }
-.nav-links a:hover, .nav-links a.nav-active { color: var(--ink); }
-.theme-btn { background: none; border: none; cursor: pointer; color: var(--muted); font-size: 1.1rem; transition: color .2s, transform .2s; }
-.theme-btn:hover { color: var(--ink); transform: rotate(15deg); }
-.nav-hamburger { display: none; background: none; border: none; cursor: pointer; color: var(--ink); font-size: 1.5rem; padding: 4px; }
-.mobile-menu { display: none; position: fixed; inset: 0; z-index: 800; background: var(--paper); flex-direction: column; align-items: center; justify-content: center; gap: 40px; opacity: 0; transition: opacity .3s; }
-.mobile-menu.open { opacity: 1; }
-.mobile-menu a { font-family: var(--serif); font-size: 2.8rem; color: var(--ink); }
+.pre-line {
+  overflow: hidden;
+}
+.pre-name {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 400;
+  color: var(--white);
+  display: block;
+  transform: translateY(110%);
+  animation: preUp 1s var(--ease) .2s forwards;
+}
+.pre-name em { font-style: italic; color: var(--red); }
+.pre-bar-wrap {
+  width: 200px; height: 1px;
+  background: var(--grey3);
+  overflow: hidden;
+  opacity: 0;
+  animation: fadeIn .4s .5s forwards;
+}
+.pre-bar {
+  height: 100%; width: 0%;
+  background: var(--red);
+  animation: barFill 1s var(--ease) .5s forwards;
+}
 
-#btt { position: fixed; bottom: 24px; right: 24px; z-index: 800; width: 48px; height: 48px; border-radius: 50%; background: var(--ink); color: var(--paper); border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: opacity .3s, transform .3s; }
+@keyframes preUp {
+  to { transform: translateY(0); }
+}
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+@keyframes barFill {
+  to { width: 100%; }
+}
+
+/* ══════════════════════════════════════════════════════
+   SCROLL PROGRESS
+══════════════════════════════════════════════════════ */
+#progress {
+  position: fixed; top: 0; left: 0; height: 2px; z-index: 10000;
+  background: var(--red);
+  width: 0%;
+  transition: width .1s linear;
+}
+
+/* ══════════════════════════════════════════════════════
+   NAVBAR
+══════════════════════════════════════════════════════ */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 900;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 28px 60px;
+  transition: padding .4s var(--ease), background .4s, border-color .4s;
+}
+nav.scrolled {
+  padding: 16px 60px;
+  background: rgba(8,8,8,.9);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+[data-theme="light"] nav.scrolled {
+  background: rgba(245,244,240,.92);
+}
+
+.nav-logo {
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  color: var(--ink);
+  letter-spacing: .01em;
+}
+.nav-logo em { font-style: italic; color: var(--red); }
+
+.nav-center {
+  display: flex; align-items: center; gap: 48px;
+}
+.nav-center a {
+  font-size: .7rem; font-weight: 600;
+  letter-spacing: .2em; text-transform: uppercase;
+  color: var(--muted);
+  position: relative;
+  transition: color .25s;
+}
+.nav-center a::after {
+  content: '';
+  position: absolute; bottom: -4px; left: 0;
+  width: 0; height: 1px; background: var(--red);
+  transition: width .35s var(--ease);
+}
+.nav-center a:hover,
+.nav-center a.active { color: var(--ink); }
+.nav-center a:hover::after,
+.nav-center a.active::after { width: 100%; }
+
+.nav-right { display: flex; align-items: center; gap: 16px; }
+
+.theme-btn {
+  background: none; border: 1px solid var(--border);
+  color: var(--muted); cursor: pointer;
+  width: 36px; height: 36px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: .9rem;
+  transition: all .25s;
+}
+.theme-btn:hover { color: var(--ink); border-color: var(--ink); }
+
+.nav-cta {
+  font-size: .7rem; font-weight: 700;
+  letter-spacing: .15em; text-transform: uppercase;
+  color: var(--ink);
+  border: 1px solid var(--border);
+  padding: 9px 20px; border-radius: 40px;
+  transition: all .3s var(--ease);
+}
+.nav-cta:hover {
+  background: var(--red); border-color: var(--red); color: #fff;
+}
+
+.hamburger {
+  display: none; background: none; border: none;
+  color: var(--ink); font-size: 1.4rem; cursor: pointer;
+}
+
+/* ══════════════════════════════════════════════════════
+   MOBILE MENU
+══════════════════════════════════════════════════════ */
+.mob-menu {
+  display: none;
+  position: fixed; inset: 0; z-index: 850;
+  background: var(--black);
+  flex-direction: column; align-items: flex-start; justify-content: center;
+  padding: 80px 40px;
+  opacity: 0;
+  transition: opacity .35s;
+}
+.mob-menu.open { opacity: 1; }
+.mob-menu a {
+  font-family: var(--serif);
+  font-size: clamp(2.4rem, 8vw, 3.5rem);
+  font-weight: 400;
+  color: var(--white);
+  line-height: 1.3;
+  border-bottom: 1px solid var(--grey3);
+  width: 100%; padding: 20px 0;
+  transition: color .2s;
+}
+.mob-menu a:hover { color: var(--red); }
+.mob-menu-close {
+  position: absolute; top: 24px; right: 24px;
+  background: var(--grey2); border: 1px solid var(--grey3);
+  color: var(--white); width: 44px; height: 44px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem; cursor: pointer; transition: all .25s;
+}
+.mob-menu-close:hover { background: var(--red); border-color: var(--red); }
+
+/* ══════════════════════════════════════════════════════
+   BACK TO TOP
+══════════════════════════════════════════════════════ */
+#btt {
+  position: fixed; bottom: 28px; right: 28px; z-index: 800;
+  width: 44px; height: 44px; border-radius: 50%;
+  background: var(--ink); color: var(--bg); border: none; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  font-size: .9rem;
+  opacity: 0; pointer-events: none;
+  transition: opacity .3s, transform .3s var(--ease);
+  box-shadow: 0 4px 24px rgba(0,0,0,.3);
+}
 #btt.show { opacity: 1; pointer-events: all; }
-#btt:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,.15); }
+#btt:hover { transform: translateY(-4px); }
 
-/* UTILITIES */
-section { padding: 120px 0; }
-.container { max-width: 1140px; margin: 0 auto; padding: 0 48px; }
-.label { font-size: .75rem; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: var(--accent); display: block; margin-bottom: 16px; }
-.heading { font-family: var(--serif); font-size: clamp(2.5rem, 4vw, 3.8rem); line-height: 1.05; color: var(--ink); }
-.reveal { opacity: 0; transform: translateY(30px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
-.reveal.visible { opacity: 1; transform: none; }
+/* ══════════════════════════════════════════════════════
+   UTILITIES
+══════════════════════════════════════════════════════ */
+section { padding: 140px 0; }
+.container { max-width: 1120px; margin: 0 auto; padding: 0 60px; }
 
-/* HERO */
-#hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; position: relative; padding-top: 80px; }
-.hero-eyebrow { display: inline-flex; align-items: center; gap: 10px; font-size: .8rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 24px; }
-.dot-live { width: 8px; height: 8px; border-radius: 50%; background: #22c55e; animation: pulseGlow 2s infinite; }
-@keyframes pulseGlow { 0%{box-shadow:0 0 0 0 rgba(34,197,94,.4)} 70%{box-shadow:0 0 0 10px rgba(34,197,94,0)} 100%{box-shadow:0 0 0 0 rgba(34,197,94,0)} }
-.hero-title { font-family: var(--serif); font-size: clamp(3rem, 7.5vw, 7rem); line-height: 1; color: var(--ink); margin-bottom: 32px; }
-.hero-title em { font-style: italic; color: var(--muted); }
-.hero-desc { font-size: 1.1rem; line-height: 1.8; color: var(--muted); max-width: 500px; margin-bottom: 48px; }
-.hero-actions { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
-.btn-primary { display: inline-flex; align-items: center; gap: 10px; background: var(--ink); color: var(--paper); padding: 16px 32px; border-radius: 4px; font-size: .9rem; font-weight: 600; transition: transform .3s var(--ease), box-shadow .3s; }
-.btn-primary:hover { transform: translateY(-4px); box-shadow: 0 15px 30px rgba(0,0,0,.15); color: var(--paper); }
-.btn-ghost { display: inline-flex; align-items: center; gap: 10px; border: 1px solid var(--line); color: var(--ink); padding: 16px 32px; border-radius: 4px; font-size: .9rem; font-weight: 600; transition: border-color .3s, transform .3s; }
-.btn-ghost:hover { border-color: var(--ink); transform: translateY(-4px); }
-#type-cursor { animation: blink 1s step-end infinite; }
-@keyframes blink { 50%{opacity:0} }
+.eyebrow {
+  font-size: .65rem; font-weight: 700; letter-spacing: .3em;
+  text-transform: uppercase; color: var(--red);
+  display: flex; align-items: center; gap: 12px;
+  margin-bottom: 20px;
+}
+.eyebrow::before { content: ''; width: 24px; height: 1px; background: var(--red); }
 
-/* ABOUT */
-#about .about-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 80px; align-items: center; }
-.about-img-wrap { position: relative; }
-.about-img-wrap img { width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 4px; filter: grayscale(15%); transition: .5s; }
-.about-img-wrap:hover img { filter: grayscale(0); }
-.about-img-label { position: absolute; bottom: -20px; right: -20px; background: var(--accent); color: #fff; font-size: .75rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; padding: 12px 20px; border-radius: 2px; }
-.about-text p { font-size: 1rem; line-height: 1.8; color: var(--muted); margin-bottom: 20px; }
-.about-text p strong { color: var(--ink); font-weight: 600; }
-.stats-row { display: flex; gap: 40px; margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--line); }
-.stat-n { font-family: var(--serif); font-size: 2.8rem; color: var(--ink); line-height: 1; transition: color .3s; }
-.stat:hover .stat-n { color: var(--accent); }
-.stat-l { font-size: .75rem; color: var(--muted); letter-spacing: .05em; margin-top: 8px; display: block; font-weight: 600; text-transform: uppercase; }
-.badges { display: flex; flex-direction: column; gap: 12px; margin-top: 40px; }
-.badge-item { display: flex; align-items: center; gap: 16px; font-size: .9rem; color: var(--muted); }
-.badge-icon { color: var(--accent); font-size: 1.1rem; }
+/* Big display heading */
+.display {
+  font-family: var(--serif);
+  font-size: clamp(3rem, 5.5vw, 5rem);
+  font-weight: 400;
+  line-height: 1.05;
+  color: var(--ink);
+  letter-spacing: -.01em;
+}
+.display em { font-style: italic; color: var(--muted); }
 
-/* SKILLS */
-.skills-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 64px; }
-.skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 4px; overflow: hidden; }
-.skill-item { background: var(--card); padding: 40px 32px; display: flex; flex-direction: column; position: relative; transition: transform .3s var(--ease), box-shadow .3s; z-index: 1; }
-.skill-item:hover { transform: scale(1.02); z-index: 2; box-shadow: 0 20px 40px rgba(0,0,0,.08); border-radius: 4px; }
-.skill-item img { width: 44px; height: 44px; object-fit: contain; margin-bottom: 24px; filter: grayscale(100%); opacity: .6; transition: .3s; }
-.skill-item:hover img { filter: grayscale(0%); opacity: 1; transform: scale(1.1); }
-.skill-n { font-weight: 600; font-size: .95rem; color: var(--ink); margin-bottom: 8px; }
-.skill-d { font-size: .85rem; color: var(--muted); line-height: 1.6; }
+/* Reveal animation */
+.rv {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity .9s var(--ease), transform .9s var(--ease);
+}
+.rv.on { opacity: 1; transform: none; }
+.rv-l { opacity: 0; transform: translateX(-32px); transition: opacity .9s var(--ease), transform .9s var(--ease); }
+.rv-l.on { opacity: 1; transform: none; }
 
-/* WORK */
-.work-header { margin-bottom: 64px; }
-.group-label { display: flex; align-items: center; gap: 16px; font-size: .75rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; color: var(--muted); margin-bottom: 32px; margin-top: 80px; }
-.group-label:first-of-type { margin-top: 0; }
-.group-label::after { content: ''; flex: 1; height: 1px; background: var(--line); }
-.projects-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
-.projects-grid.full { grid-template-columns: 1fr; }
-.proj-card { background: var(--card); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; cursor: pointer; transition: transform .4s var(--ease), box-shadow .4s, border-color .4s; position: relative; display: flex; flex-direction: column; }
-.proj-card:hover { transform: translateY(-8px); border-color: var(--muted); box-shadow: 0 30px 60px rgba(0,0,0,.08); }
-[data-theme="dark"] .proj-card:hover { box-shadow: 0 30px 60px rgba(0,0,0,.4); }
-.proj-thumb { width: 100%; height: 240px; overflow: hidden; background: var(--tag-bg); position: relative; }
-.proj-thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s var(--ease); filter: brightness(.95); }
-.proj-card:hover .proj-thumb img { transform: scale(1.05); filter: brightness(1); }
-.proj-thumb-placeholder { width: 100%; height: 240px; background: var(--tag-bg); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; }
-.proj-thumb-placeholder .emoji { font-size: 3.2rem; }
-.proj-body { padding: 28px 28px 32px; flex: 1; display: flex; flex-direction: column; }
-.proj-cat { font-size: .7rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; }
-.proj-title { font-family: var(--serif); font-size: 1.6rem; color: var(--ink); margin-bottom: 10px; line-height: 1.2; }
-.proj-desc { font-size: .92rem; line-height: 1.7; color: var(--muted); margin-bottom: 20px; flex: 1; }
-.proj-tags { display: flex; flex-wrap: wrap; gap: 6px; }
-.tag { font-size: .68rem; font-weight: 600; color: var(--muted); border: 1px solid var(--line); padding: 4px 10px; border-radius: 4px; background: var(--tag-bg); }
-.arrow-chip { position: absolute; top: 16px; right: 16px; width: 38px; height: 38px; border-radius: 50%; background: var(--card); color: var(--ink); display: flex; align-items: center; justify-content: center; font-size: .95rem; opacity: 0; transform: scale(.5) rotate(-45deg); transition: all .3s var(--ease); z-index: 2; box-shadow: 0 4px 10px rgba(0,0,0,.1); }
-.proj-card:hover .arrow-chip { opacity: 1; transform: scale(1) rotate(0deg); }
+/* Horizontal rule */
+.hr { height: 1px; background: var(--border); margin: 0; border: none; }
 
-/* FOOTER */
-footer { padding: 120px 0 60px; border-top: 1px solid var(--line); }
-.footer-grid { display: grid; grid-template-columns: 1fr auto; align-items: flex-end; gap: 48px; margin-bottom: 80px; }
-.footer-heading { font-family: var(--serif); font-size: clamp(3rem, 6vw, 5rem); line-height: 1.0; color: var(--ink); }
-.footer-heading a { text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 8px; transition: color .3s; }
-.footer-heading a:hover { color: var(--accent); }
-.footer-right p { font-size: 1rem; color: var(--muted); margin-bottom: 24px; }
-.social-row { display: flex; gap: 14px; justify-content: flex-end; }
-.social-btn { width: 46px; height: 46px; border-radius: 50%; border: 1px solid var(--line); display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: 1.05rem; transition: all .3s var(--ease); }
-.social-btn:hover { border-color: var(--ink); color: var(--paper); background: var(--ink); transform: translateY(-4px); }
-.email-chip { display: inline-flex; align-items: center; gap: 12px; border: 1px solid var(--line); padding: 12px 24px; border-radius: 4px; font-size: .9rem; color: var(--muted); margin-top: 24px; cursor: pointer; background: transparent; font-family: var(--sans); transition: all .3s; font-weight: 600; }
-.email-chip:hover { border-color: var(--ink); color: var(--ink); background: var(--tag-bg); }
-.email-chip i { color: var(--accent); }
-.footer-bottom { display: flex; justify-content: space-between; padding-top: 40px; border-top: 1px solid var(--line); font-size: .8rem; color: var(--muted); }
+/* ══════════════════════════════════════════════════════
+   HERO
+══════════════════════════════════════════════════════ */
+#hero {
+  min-height: 100svh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  padding-top: 100px;
+  position: relative;
+  overflow: hidden;
+}
 
-/* DRAWER */
-.modal-overlay { position: fixed; inset: 0; z-index: 9000; background: rgba(0,0,0,.7); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); opacity: 0; pointer-events: none; transition: opacity .4s ease; }
-.modal-overlay.open { opacity: 1; pointer-events: all; }
-.drawer { position: fixed; top: 0; right: 0; bottom: 0; z-index: 9001; width: min(650px, 100%); background: var(--card); overflow-y: auto; -webkit-overflow-scrolling: touch; transform: translateX(100%); transition: transform .5s var(--ease); padding: 48px 56px 80px; border-left: 1px solid var(--line); }
+
+
+.hero-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 80px;
+  z-index: 1;
+  position: relative;
+}
+
+.hero-status {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-size: .65rem; font-weight: 700; letter-spacing: .2em;
+  text-transform: uppercase; color: var(--muted);
+  margin-bottom: 36px;
+  opacity: 0; transform: translateY(20px);
+  animation: fadeUp .8s var(--ease) 1.5s forwards;
+}
+.live-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 0 0 rgba(34,197,94,.5);
+  animation: livePulse 2s ease-in-out infinite;
+}
+@keyframes livePulse {
+  0%,100% { box-shadow: 0 0 0 0 rgba(34,197,94,.5); }
+  50% { box-shadow: 0 0 0 7px rgba(34,197,94,0); }
+}
+
+.hero-title {
+  font-family: var(--serif);
+  font-size: clamp(3.8rem, 9.5vw, 8.5rem);
+  font-weight: 400;
+  line-height: .95;
+  letter-spacing: -.02em;
+  color: var(--ink);
+  margin-bottom: 52px;
+  opacity: 0; transform: translateY(30px);
+  animation: fadeUp .9s var(--ease) 1.7s forwards;
+}
+.hero-title .outline {
+  -webkit-text-stroke: 1px var(--grey4);
+  color: transparent;
+  font-style: italic;
+}
+.hero-title .red { color: var(--red); font-style: italic; }
+
+.hero-foot {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: end;
+  border-top: 1px solid var(--border);
+  padding-top: 32px;
+  opacity: 0; transform: translateY(20px);
+  animation: fadeUp .8s var(--ease) 2s forwards;
+}
+
+.hero-desc {
+  font-size: .95rem;
+  line-height: 1.9;
+  color: var(--muted);
+  max-width: 380px;
+}
+.hero-desc strong { color: var(--ink); font-weight: 600; }
+
+#typed-cursor { color: var(--red); animation: blink 1s step-end infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+
+.hero-actions {
+  display: flex; align-items: center; gap: 16px;
+  justify-content: flex-end; flex-wrap: wrap;
+}
+
+@keyframes fadeUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ══════════════════════════════════════════════════════
+   BUTTONS
+══════════════════════════════════════════════════════ */
+.btn {
+  display: inline-flex; align-items: center; gap: 9px;
+  font-family: var(--sans); font-size: .72rem; font-weight: 700;
+  letter-spacing: .12em; text-transform: uppercase;
+  padding: 14px 28px; border-radius: 40px;
+  border: none; cursor: pointer;
+  transition: transform .35s var(--ease2), box-shadow .35s, background .25s, color .25s;
+}
+.btn:hover { transform: translateY(-3px); }
+
+.btn-primary {
+  background: var(--ink); color: var(--bg);
+  box-shadow: 0 2px 0 var(--grey4);
+}
+.btn-primary:hover {
+  background: var(--red); color: #fff;
+  box-shadow: 0 12px 32px rgba(196,18,48,.3);
+}
+.btn-ghost {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--muted);
+}
+.btn-ghost:hover { border-color: var(--ink); color: var(--ink); }
+
+
+
+/* ══════════════════════════════════════════════════════
+   ABOUT
+══════════════════════════════════════════════════════ */
+#about {
+  background: var(--surface);
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 100px;
+  align-items: start;
+}
+
+/* Image block */
+.about-img-outer {
+  position: relative;
+}
+.about-img-frame {
+  position: relative;
+  border-radius: var(--r);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+.about-img-frame img {
+  width: 100%; aspect-ratio: 3/4; object-fit: cover;
+  filter: grayscale(30%);
+  transition: filter .6s var(--ease);
+}
+.about-img-frame:hover img { filter: grayscale(0%); }
+.about-img-frame::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(to bottom, transparent 50%, rgba(196,18,48,.15));
+  pointer-events: none;
+}
+
+/* Floating label */
+.img-label {
+  position: absolute; bottom: -16px; right: -16px;
+  background: var(--red); color: #fff;
+  font-size: .6rem; font-weight: 700; letter-spacing: .15em;
+  text-transform: uppercase;
+  padding: 10px 18px; border-radius: var(--r);
+  z-index: 2;
+}
+
+/* Stats strip */
+.stats-strip {
+  display: grid; grid-template-columns: repeat(3,1fr);
+  gap: 1px; background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  overflow: hidden;
+  margin: 48px 0 40px;
+}
+.stat {
+  background: var(--bg);
+  padding: 24px 20px;
+  transition: background .3s;
+}
+.stat:hover { background: var(--grey2); }
+.stat-n {
+  display: block;
+  font-family: var(--serif);
+  font-size: 2.6rem; font-weight: 400;
+  color: var(--ink); line-height: 1;
+}
+.stat-l {
+  display: block;
+  font-size: .6rem; font-weight: 700;
+  letter-spacing: .14em; text-transform: uppercase;
+  color: var(--muted); margin-top: 8px;
+}
+
+.about-body p {
+  font-size: .95rem; line-height: 1.9;
+  color: var(--muted); margin-bottom: 20px;
+}
+.about-body strong { color: var(--ink); font-weight: 600; }
+
+/* Achievement chips */
+.achieve-list { display: flex; flex-direction: column; gap: 12px; }
+.achieve-item {
+  display: flex; align-items: flex-start; gap: 14px;
+  padding: 16px 18px;
+  background: var(--bg); border: 1px solid var(--border);
+  border-radius: var(--r);
+  font-size: .88rem; line-height: 1.6; color: var(--muted);
+  transition: border-color .3s, transform .3s var(--ease);
+}
+.achieve-item:hover { border-color: var(--red); transform: translateX(4px); }
+.achieve-icon { color: var(--red); font-size: .95rem; margin-top: 2px; flex-shrink: 0; }
+.achieve-item strong { color: var(--ink); font-weight: 600; }
+
+/* ══════════════════════════════════════════════════════
+   SKILLS
+══════════════════════════════════════════════════════ */
+#skills { position: relative; overflow: hidden; }
+
+.skills-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.skills-sticky {
+  position: sticky;
+  top: 120px;
+}
+.skills-sticky p {
+  font-size: .9rem; line-height: 1.8;
+  color: var(--muted); margin-top: 20px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.sk-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 28px 24px 24px;
+  position: relative; overflow: hidden;
+  transition: border-color .35s, transform .35s var(--ease);
+  cursor: default;
+}
+.sk-card::after {
+  content: '';
+  position: absolute; bottom: 0; left: 0; right: 0; height: 2px;
+  background: var(--red);
+  transform: scaleX(0); transform-origin: left;
+  transition: transform .4s var(--ease);
+}
+.sk-card:hover { border-color: var(--grey4); transform: translateY(-4px); }
+.sk-card:hover::after { transform: scaleX(1); }
+
+.sk-icon { width: 38px; height: 38px; object-fit: contain; margin-bottom: 16px; transition: .3s; }
+.sk-card:hover .sk-icon { transform: scale(1.1); }
+.sk-name { font-size: .88rem; font-weight: 700; color: var(--ink); margin-bottom: 7px; }
+.sk-desc { font-size: .79rem; line-height: 1.65; color: var(--muted); }
+
+/* ══════════════════════════════════════════════════════
+   WORK
+══════════════════════════════════════════════════════ */
+#work { background: var(--surface); }
+
+.work-header {
+  display: flex; align-items: flex-end; justify-content: space-between;
+  margin-bottom: 80px; gap: 24px; flex-wrap: wrap;
+}
+.work-count {
+  font-size: .7rem; font-weight: 700; letter-spacing: .15em;
+  text-transform: uppercase; color: var(--muted);
+  border: 1px solid var(--border); padding: 8px 16px;
+  border-radius: 40px;
+}
+
+/* Section label */
+.sec-label {
+  display: flex; align-items: center; gap: 14px;
+  font-size: .62rem; font-weight: 700; letter-spacing: .22em;
+  text-transform: uppercase; color: var(--muted);
+  margin-bottom: 24px; margin-top: 64px;
+}
+.sec-label:first-of-type { margin-top: 0; }
+.sec-label::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+.sec-label i { color: var(--red); }
+
+/* Project grid */
+.proj-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+.proj-grid.one { grid-template-columns: 1fr; }
+
+.pc {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  overflow: hidden; cursor: pointer;
+  display: flex; flex-direction: column;
+  transition: border-color .35s, transform .4s var(--ease);
+  position: relative;
+}
+.pc:hover { border-color: var(--grey4); transform: translateY(-6px); }
+
+.pc-thumb {
+  width: 100%; height: 216px; overflow: hidden;
+  background: var(--grey2); position: relative; flex-shrink: 0;
+}
+.pc-thumb img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform .65s var(--ease), filter .4s;
+  filter: brightness(.75) saturate(.8);
+}
+.pc:hover .pc-thumb img { transform: scale(1.06); filter: brightness(.92) saturate(1); }
+
+.pc-placeholder {
+  width: 100%; height: 216px;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 8px;
+}
+.pc-placeholder span { font-size: 2.5rem; }
+
+/* Arrow chip */
+.pc-arrow {
+  position: absolute; top: 14px; right: 14px; z-index: 2;
+  width: 34px; height: 34px; border-radius: 50%;
+  background: var(--bg); color: var(--ink);
+  display: flex; align-items: center; justify-content: center;
+  font-size: .8rem;
+  opacity: 0; transform: scale(.3) rotate(-45deg);
+  transition: all .35s var(--ease2);
+  box-shadow: 0 4px 16px rgba(0,0,0,.3);
+}
+.pc:hover .pc-arrow { opacity: 1; transform: scale(1) rotate(0deg); }
+
+.pc-body { padding: 22px 22px 26px; flex: 1; display: flex; flex-direction: column; }
+.pc-cat {
+  font-size: .58rem; font-weight: 700; letter-spacing: .22em;
+  text-transform: uppercase; color: var(--red); margin-bottom: 8px;
+}
+.pc-title {
+  font-family: var(--serif);
+  font-size: 1.45rem; font-weight: 400;
+  color: var(--ink); line-height: 1.2; margin-bottom: 10px;
+}
+.pc-desc { font-size: .83rem; line-height: 1.75; color: var(--muted); flex: 1; margin-bottom: 16px; }
+.tag-row { display: flex; flex-wrap: wrap; gap: 6px; }
+.tag {
+  font-size: .58rem; font-weight: 700; letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--muted); border: 1px solid var(--border);
+  padding: 4px 10px; border-radius: 4px;
+  background: var(--grey2);
+}
+
+/* ══════════════════════════════════════════════════════
+   FOOTER / CONTACT
+══════════════════════════════════════════════════════ */
+footer {
+  padding: 140px 0 60px;
+  border-top: 1px solid var(--border);
+  position: relative; overflow: hidden;
+}
+footer::before {
+  content: '';
+  position: absolute; bottom: -300px; left: -200px;
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(196,18,48,.05) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: flex-end;
+  gap: 60px; margin-bottom: 80px;
+}
+
+.contact-big {
+  font-family: var(--serif);
+  font-size: clamp(3.2rem, 7vw, 6.5rem);
+  font-weight: 400;
+  line-height: .98;
+  color: var(--ink);
+}
+.contact-big a {
+  display: inline-block;
+  border-bottom: 2px solid var(--red);
+  padding-bottom: 4px;
+  transition: color .3s;
+}
+.contact-big a:hover { color: var(--red); }
+
+.email-row {
+  display: flex; align-items: center; gap: 14px;
+  margin-top: 32px;
+}
+.email-pill {
+  display: inline-flex; align-items: center; gap: 10px;
+  border: 1px solid var(--border);
+  padding: 12px 22px; border-radius: 40px;
+  font-size: .83rem; color: var(--muted);
+  cursor: pointer; background: transparent;
+  font-family: var(--sans); font-weight: 500;
+  transition: all .3s;
+}
+.email-pill:hover { border-color: var(--ink); color: var(--ink); background: var(--grey2); }
+.email-pill i { color: var(--red); }
+#copy-fb { font-size: .72rem; color: var(--red); opacity: 0; transition: opacity .3s; }
+
+.contact-right { text-align: right; }
+.contact-right p { font-size: .9rem; line-height: 1.8; color: var(--muted); margin-bottom: 28px; }
+
+.social-row { display: flex; gap: 10px; justify-content: flex-end; }
+.soc-btn {
+  width: 44px; height: 44px; border-radius: 50%;
+  border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--muted); font-size: 1rem;
+  transition: all .35s var(--ease2);
+}
+.soc-btn:hover {
+  background: var(--ink); border-color: var(--ink);
+  color: var(--bg); transform: translateY(-4px);
+}
+
+.footer-bar {
+  display: flex; justify-content: space-between; align-items: center;
+  padding-top: 32px; border-top: 1px solid var(--border);
+  font-size: .7rem; color: var(--muted); letter-spacing: .06em;
+}
+
+/* ══════════════════════════════════════════════════════
+   DRAWER (SIDE PANEL)
+══════════════════════════════════════════════════════ */
+.overlay {
+  position: fixed; inset: 0; z-index: 9000;
+  background: rgba(0,0,0,.8);
+  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+  opacity: 0; pointer-events: none;
+  transition: opacity .4s;
+}
+.overlay.open { opacity: 1; pointer-events: all; }
+
+.drawer {
+  position: fixed; top: 0; right: 0; bottom: 0; z-index: 9001;
+  width: min(680px, 100%);
+  background: var(--bg);
+  border-left: 1px solid var(--border);
+  overflow-y: auto; -webkit-overflow-scrolling: touch;
+  padding: 44px 56px 100px;
+  transform: translateX(110%);
+  transition: transform .55s var(--ease);
+}
 .drawer.open { transform: translateX(0); }
-.drawer-close { position: sticky; top: 0; left: 0; width: 44px; height: 44px; background: var(--tag-bg); border: none; cursor: pointer; color: var(--ink); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; margin-bottom: 40px; transition: all .3s; z-index: 10; }
-.drawer-close:hover { background: var(--ink); color: var(--paper); transform: rotate(90deg); }
-.drawer-cat { font-size: .75rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
-.drawer-title { font-family: var(--serif); font-size: 2.4rem; color: var(--ink); line-height: 1.1; margin-bottom: 24px; }
-.drawer-meta { display: flex; align-items: center; gap: 12px; font-size: .9rem; color: var(--muted); margin-bottom: 32px; padding-bottom: 32px; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
-.drawer-meta i { color: var(--accent); }
-.drawer-carousel { margin-bottom: 40px; border-radius: 6px; overflow: hidden; background: var(--tag-bg); border: 1px solid var(--line); }
-.drawer-carousel img, .drawer-carousel .dc-placeholder { width: 100%; height: 300px; object-fit: cover; cursor: zoom-in; }
-.drawer-carousel .dc-placeholder { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; cursor: default; }
-.dc-thumbs { display: flex; gap: 8px; margin-top: 8px; overflow-x: auto; padding: 0 8px 8px; }
-.dc-thumb { width: 72px; height: 52px; object-fit: cover; border-radius: 4px; cursor: pointer; opacity: .4; border: 2px solid transparent; transition: all .3s; flex-shrink: 0; }
-.dc-thumb:hover { opacity: .8; }
-.dc-thumb.active { opacity: 1; border-color: var(--accent); }
-.drawer h4 { font-family: var(--serif); font-size: 1.4rem; color: var(--ink); margin-bottom: 16px; margin-top: 40px; }
-.drawer p { font-size: 1rem; line-height: 1.8; color: var(--muted); margin-bottom: 20px; }
-.drawer-list { list-style: none; margin: 0 0 24px; }
-.drawer-list li { font-size: .95rem; line-height: 1.7; color: var(--muted); padding: 12px 0; border-bottom: 1px solid var(--line); display: flex; align-items: flex-start; gap: 12px; }
-.drawer-list li i { color: var(--accent); margin-top: 4px; flex-shrink: 0; }
-.drawer-list li:last-child { border-bottom: none; }
-.drawer-actions { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 40px; }
-.drawer-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
 
-/* ════════════════════
-   MOBILE — RESPONSIVE
-════════════════════ */
-@media (max-width: 900px) {
-    nav { padding: 18px 20px; }
-    nav.scrolled { padding: 14px 20px; }
-    .nav-links { display: none; }
-    .nav-hamburger { display: block; }
-    .container { padding: 0 20px; }
-    section { padding: 80px 0; }
-    
-    /* Hero */
-    #hero { padding-top: 100px; text-align: center; }
-    .hero-title { font-size: clamp(2.6rem, 10vw, 4rem) !important; }
-    .hero-desc { margin-left: auto; margin-right: auto; }
-    .hero-actions { justify-content: center; }
-    .hero-eyebrow { justify-content: center; }
-    
-    /* About */
-    #about .about-grid { grid-template-columns: 1fr; gap: 48px; }
-    .about-img-wrap { max-width: 360px; margin: 0 auto; }
-    .about-img-label { display: none; }
-    .stats-row { gap: 24px; }
-    
-    /* Skills */
-    .skills-grid { grid-template-columns: repeat(2, 1fr); }
-    .skills-header { margin-bottom: 40px; }
-    
-    /* Projects */
-    .group-label { margin-top: 56px; }
-    .projects-grid { grid-template-columns: 1fr; gap: 20px; }
-    .projects-grid.full { grid-template-columns: 1fr; }
-    .proj-thumb, .proj-thumb-placeholder { height: 200px; }
-    .proj-thumb-placeholder .emoji { font-size: 2.5rem; }
-    .proj-body { padding: 20px 20px 24px; }
-    .proj-title { font-size: 1.4rem; }
-    
-    /* Footer */
-    footer { padding: 80px 0 48px; }
-    .footer-grid { grid-template-columns: 1fr; gap: 40px; }
-    .footer-right { text-align: left; }
-    .social-row { justify-content: flex-start; }
-    .footer-bottom { flex-direction: column; gap: 8px; }
-    
-    /* Drawer */
-    .drawer { width: 100%; padding: 28px 20px 80px; border-left: none; }
-    .drawer-title { font-size: 1.8rem; }
-    .drawer-carousel img { height: 220px; }
-    .drawer-actions { flex-direction: column; }
-    .drawer-actions .btn-primary, .drawer-actions .btn-ghost { justify-content: center; }
-    
-    /* BTT */
-    #btt { bottom: 20px; right: 16px; width: 44px; height: 44px; }
+.dr-close {
+  position: sticky; top: 0; left: 0;
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 40px; height: 40px;
+  background: var(--grey2); border: 1px solid var(--border);
+  border-radius: 50%; color: var(--ink); font-size: 1.05rem;
+  cursor: pointer; margin-bottom: 36px; z-index: 2;
+  transition: all .25s;
+}
+.dr-close:hover { background: var(--red); border-color: var(--red); color: #fff; transform: rotate(90deg); }
+
+.dr-cat { font-size: .62rem; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--red); margin-bottom: 10px; }
+.dr-title { font-family: var(--serif); font-size: 2.4rem; font-weight: 400; color: var(--ink); line-height: 1.1; margin-bottom: 20px; }
+.dr-meta {
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  font-size: .82rem; color: var(--muted);
+  margin-bottom: 28px; padding-bottom: 28px;
+  border-bottom: 1px solid var(--border);
+}
+.dr-meta i { color: var(--red); }
+
+/* Carousel */
+.dr-car {
+  border-radius: var(--r); overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--grey2);
+  margin-bottom: 36px;
+}
+.dr-car img { width: 100%; height: 280px; object-fit: cover; cursor: zoom-in; }
+.dr-ph {
+  height: 280px; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 10px;
+  font-size: 2.8rem;
+}
+.dr-ph small { font-size: .65rem; color: var(--muted); }
+.dr-thumbs { display: flex; gap: 6px; padding: 8px; overflow-x: auto; }
+.dr-thumb {
+  width: 66px; height: 48px; object-fit: cover;
+  border-radius: 4px; cursor: pointer;
+  opacity: .35; border: 2px solid transparent;
+  transition: all .3s; flex-shrink: 0;
+}
+.dr-thumb.on { opacity: 1; border-color: var(--red); }
+.dr-thumb:hover { opacity: .7; }
+
+.drawer h4 { font-family: var(--serif); font-size: 1.3rem; font-weight: 400; color: var(--ink); margin: 32px 0 14px; }
+.drawer p { font-size: .9rem; line-height: 1.85; color: var(--muted); margin-bottom: 16px; }
+.dr-list { list-style: none; margin-bottom: 20px; }
+.dr-list li {
+  font-size: .88rem; line-height: 1.75; color: var(--muted);
+  padding: 12px 0; border-bottom: 1px solid var(--border);
+  display: flex; align-items: flex-start; gap: 12px;
+}
+.dr-list li:last-child { border-bottom: none; }
+.dr-list li i { color: var(--red); margin-top: 3px; flex-shrink: 0; }
+.dr-list li strong { color: var(--ink); font-weight: 600; }
+.dr-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 20px; }
+.dr-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 36px; }
+
+/* ══════════════════════════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════════════════════════ */
+@media (max-width: 960px) {
+  nav { padding: 16px 20px; }
+  nav.scrolled { padding: 12px 20px; }
+  .nav-center, .nav-cta { display: none; }
+  .hamburger { display: flex; align-items: center; justify-content: center; }
+
+  .container { padding: 0 20px; }
+  section { padding: 72px 0; }
+
+  /* HERO */
+  #hero {
+    padding-top: 72px;
+    min-height: 100svh;
+  }
+  .hero-inner { padding-bottom: 48px; }
+  .hero-status { margin-bottom: 24px; font-size: .6rem; }
+  .hero-title {
+    font-size: clamp(2.6rem, 11vw, 4rem);
+    margin-bottom: 36px;
+    line-height: 1.0;
+  }
+  .hero-foot {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding-top: 24px;
+  }
+  .hero-desc { font-size: .88rem; max-width: 100%; }
+  .hero-actions {
+    justify-content: flex-start;
+    gap: 12px;
+  }
+  .hero-actions .btn {
+    flex: 1;
+    justify-content: center;
+    min-width: 130px;
+    font-size: .65rem;
+    padding: 13px 16px;
+  }
+
+  /* ABOUT */
+  .about-grid { grid-template-columns: 1fr; gap: 40px; }
+  .about-img-outer { max-width: 240px; }
+  .img-label { display: none; }
+  .stats-strip { grid-template-columns: repeat(3,1fr); }
+  .stat-n { font-size: 2rem; }
+
+  /* SKILLS */
+  .skills-layout { grid-template-columns: 1fr; gap: 36px; }
+  .skills-sticky { position: static; }
+  .skills-grid { grid-template-columns: repeat(2,1fr); gap: 10px; }
+  .sk-card { padding: 20px 16px 18px; }
+
+  /* WORK */
+  .work-header { margin-bottom: 48px; }
+  .proj-grid { grid-template-columns: 1fr; }
+  .pc-thumb { height: 190px; }
+  .pc-placeholder { height: 190px; }
+  .pc-body { padding: 18px 18px 22px; }
+  .pc-title { font-size: 1.25rem; }
+
+  /* CONTACT */
+  .contact-grid { grid-template-columns: 1fr; gap: 36px; }
+  .contact-right { text-align: left; }
+  .social-row { justify-content: flex-start; }
+  .footer-bar { flex-direction: column; gap: 6px; text-align: center; }
+
+  /* DRAWER */
+  .drawer {
+    width: 100%;
+    padding: 20px 20px 100px;
+    border-left: none;
+  }
+  .dr-title { font-size: 1.7rem; }
+  .dr-car img { height: 200px; }
+  .dr-ph { height: 200px; }
+  .dr-actions { flex-direction: column; }
+  .dr-actions .btn { justify-content: center; width: 100%; }
 }
 
 @media (max-width: 480px) {
-    .skills-grid { grid-template-columns: 1fr; }
-    .stats-row { flex-direction: column; gap: 20px; }
-    .hero-title { font-size: 2.4rem !important; }
-    .btn-primary, .btn-ghost { padding: 14px 24px; font-size: .85rem; width: 100%; justify-content: center; }
-    .mobile-menu a { font-size: 2rem; }
+  .container { padding: 0 16px; }
+  section { padding: 60px 0; }
+
+  .hero-title { font-size: clamp(2.2rem, 12vw, 3rem); }
+  .hero-actions { flex-direction: column; }
+  .hero-actions .btn { width: 100%; }
+
+  .stats-strip { grid-template-columns: 1fr 1fr; }
+  .stat:last-child { grid-column: span 2; }
+
+  .skills-grid { grid-template-columns: 1fr; }
+
+  .email-row { flex-direction: column; align-items: flex-start; }
+  .email-pill { font-size: .75rem; width: 100%; justify-content: center; }
+
+  .contact-big { font-size: clamp(2.6rem, 10vw, 4rem); }
+
+  .dr-title { font-size: 1.5rem; }
+  .dr-meta { font-size: .75rem; gap: 8px; }
 }
 </style>
 </head>
 <body>
 
 <div id="progress"></div>
-<div id="preloader"><span class="pre-word">Rifky Mardiansyah</span></div>
+
+<!-- PRELOADER -->
+<div id="preloader">
+  <div class="pre-line">
+    <span class="pre-name">Rifky <em>Mardiansyah</em></span>
+  </div>
+  <div class="pre-bar-wrap"><div class="pre-bar"></div></div>
+</div>
+
 <button id="btt" onclick="scrollTo(0,0)" title="Back to top"><i class="bi bi-arrow-up"></i></button>
 
-<div id="mobile-menu" class="mobile-menu">
-    <a href="#about" onclick="closeMobile()">About</a>
-    <a href="#skills" onclick="closeMobile()">Skills</a>
-    <a href="#work" onclick="closeMobile()">Work</a>
-    <a href="#contact" onclick="closeMobile()">Contact</a>
-    <button class="theme-btn" onclick="toggleTheme();closeMobile();" style="margin-top:20px;font-size:1.5rem"><i id="theme-icon-m" class="bi bi-moon-stars-fill"></i></button>
+<!-- MOBILE MENU -->
+<div id="mob-menu" class="mob-menu">
+  <button class="mob-menu-close" onclick="closeMob()"><i class="bi bi-x"></i></button>
+  <a href="#about" onclick="closeMob(); return true;">About</a>
+  <a href="#skills" onclick="closeMob(); return true;">Skills</a>
+  <a href="#work" onclick="closeMob(); return true;">Work</a>
+  <a href="#contact" onclick="closeMob(); return true;">Contact</a>
+  <div style="margin-top:24px;display:flex;gap:12px;align-items:center">
+    <button class="theme-btn" onclick="toggleTheme()" style="width:44px;height:44px;font-size:1rem">
+      <i class="bi bi-sun-fill" id="theme-icon-m"></i>
+    </button>
+    <a href="CV_Rifky_Mardiansyah_v2.docx" download class="btn btn-primary" style="font-size:.65rem;padding:12px 20px" onclick="closeMob()">
+      <i class="bi bi-download"></i> Download CV
+    </a>
+  </div>
 </div>
 
-<nav id="navbar">
-    <a class="nav-logo" href="#">Rifky<em style="font-style:italic;color:var(--accent)">.</em></a>
-    <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#work">Work</a>
-        <a href="#contact">Contact</a>
-        <button class="theme-btn" onclick="toggleTheme()"><i class="bi bi-moon-stars-fill" id="theme-icon"></i></button>
-    </div>
-    <button class="nav-hamburger" onclick="openMobile()"><i class="bi bi-list"></i></button>
+<!-- NAVBAR -->
+<nav id="nav">
+  <a class="nav-logo" href="#">Rifky<em>.</em></a>
+  <div class="nav-center">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="nav-right">
+    <button class="theme-btn" onclick="toggleTheme()" title="Toggle theme">
+      <i class="bi bi-sun-fill" id="theme-icon"></i>
+    </button>
+    <a href="#contact" class="nav-cta">Hire Me</a>
+    <button class="hamburger" onclick="openMob()"><i class="bi bi-list"></i></button>
+  </div>
 </nav>
 
-<!-- HERO -->
+<!-- ══════ HERO ════════════════════════════════════════ -->
 <section id="hero">
-    <div class="container">
-        <div class="hero-eyebrow reveal"><span class="dot-live"></span>Available — Internship & Professional Roles</div>
-        <h1 class="hero-title reveal" style="transition-delay:.1s">Turning Office Chaos<br>Into <em>Clean Systems.</em></h1>
-        <p class="hero-desc reveal" style="transition-delay:.2s">
-            Hi, I'm <strong style="color:var(--ink);font-weight:600">Rifky Mardiansyah</strong>.<br>
-            <span style="color:var(--accent);font-weight:600">></span> <span id="typed"></span><span id="type-cursor">|</span>
-        </p>
-        <div class="hero-actions reveal" style="transition-delay:.3s">
-            <a href="#work" class="btn-primary">See My Work <i class="bi bi-arrow-down"></i></a>
-            <a href="CV_Rifky_Mardiansyah_v2.pdf" download class="btn-ghost"><i class="bi bi-download"></i> Download CV</a>
-        </div>
+  <div class="container hero-inner">
+    <div class="hero-status">
+      <span class="live-dot"></span>
+      Available — Internship &amp; Professional Roles
     </div>
+    <h1 class="hero-title">
+      Turning Office<br>
+      Chaos Into <span class="red">Clean</span><br>
+      <span class="outline">Systems.</span>
+    </h1>
+    <div class="hero-foot">
+      <div class="hero-desc">
+        Hi, I'm <strong>Rifky Mardiansyah</strong>.<br>
+        <span id="typed"></span><span id="typed-cursor">|</span>
+      </div>
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-primary">See My Work <i class="bi bi-arrow-down"></i></a>
+        <a href="CV_Rifky_Mardiansyah_v2.docx" download class="btn btn-ghost"><i class="bi bi-download"></i> Download CV</a>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- ABOUT -->
+
+
+<!-- ══════ ABOUT ══════════════════════════════════════ -->
 <section id="about">
-    <div class="container">
-        <div class="about-grid">
-            <div class="about-img-wrap reveal">
-                <img src="foto-profil.jpg" alt="Rifky Mardiansyah" loading="lazy">
-                <div class="about-img-label">Jakarta, 2026</div>
-            </div>
-            <div class="about-text">
-                <span class="label reveal">About Me</span>
-                <h2 class="heading reveal" style="transition-delay:.1s">More Than<br>Just Admin.</h2>
-                <div class="reveal" style="transition-delay:.2s">
-                    <p>Final-year student of <strong>D4 Digital Office Administration</strong> at Universitas Negeri Jakarta, GPA 3.82. I sit at the intersection of administration and technology — I don't just manage documents, I build the systems that manage them.</p>
-                    <p>Currently completing my internship at <strong>TVRI</strong>, Indonesia's national broadcaster, where I catalogue decades of broadcast archives and maintain real-time documentation systems.</p>
-                </div>
-                <div class="stats-row reveal" style="transition-delay:.3s">
-                    <div class="stat"><span class="stat-n">3.82</span><span class="stat-l">GPA / 4.00</span></div>
-                    <div class="stat"><span class="stat-n">10+</span><span class="stat-l">Tools Mastered</span></div>
-                    <div class="stat"><span class="stat-n">9+</span><span class="stat-l">Projects Built</span></div>
-                </div>
-                <div class="badges reveal" style="transition-delay:.4s">
-                    <div class="badge-item"><i class="bi bi-trophy-fill badge-icon"></i><span><strong style="color:var(--ink);font-weight:600">Winner</strong> — Best HR Services Innovation, Intl. Exhibition FEB UNJ 2024</span></div>
-                    <div class="badge-item"><i class="bi bi-patch-check-fill badge-icon"></i><span>Multimedia II Competency License</span></div>
-                </div>
-            </div>
+  <div class="container">
+    <div class="about-grid">
+
+      <!-- Image -->
+      <div class="about-img-outer rv-l">
+        <div class="about-img-frame">
+          <img src="foto-profil.jpg" alt="Rifky Mardiansyah" loading="lazy">
         </div>
+        <div class="img-label">Jakarta, 2026</div>
+      </div>
+
+      <!-- Text -->
+      <div class="about-body">
+        <div class="eyebrow rv">About Me</div>
+        <h2 class="display rv" style="transition-delay:.08s">More Than<br>Just <em>Admin.</em></h2>
+
+        <div class="rv" style="transition-delay:.16s; margin-top: 24px;">
+          <p>Final-year student of <strong>D4 Digital Office Administration</strong> at Universitas Negeri Jakarta, GPA 3.82. I sit at the intersection of administration and technology — I don't just manage documents, I build the systems that manage them.</p>
+          <p>Currently completing my internship at <strong>TVRI</strong>, Indonesia's national broadcaster, where I catalogue decades of broadcast archives and maintain real-time documentation systems.</p>
+        </div>
+
+        <div class="stats-strip rv" style="transition-delay:.22s">
+          <div class="stat"><span class="stat-n">3.82</span><span class="stat-l">GPA / 4.00</span></div>
+          <div class="stat"><span class="stat-n">10+</span><span class="stat-l">Tools Mastered</span></div>
+          <div class="stat"><span class="stat-n">9+</span><span class="stat-l">Projects Built</span></div>
+        </div>
+
+        <div class="achieve-list rv" style="transition-delay:.28s">
+          <div class="achieve-item">
+            <i class="bi bi-trophy-fill achieve-icon"></i>
+            <span><strong>Winner</strong> — Best HR Services Innovation, Intl. Exhibition FEB UNJ 2024</span>
+          </div>
+          <div class="achieve-item">
+            <i class="bi bi-patch-check-fill achieve-icon"></i>
+            <span>Multimedia II Competency License</span>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
-<!-- SKILLS -->
+<!-- ══════ SKILLS ═════════════════════════════════════ -->
 <section id="skills">
-    <div class="container">
-        <div class="skills-header reveal">
-            <div><span class="label">What I Work With</span><h2 class="heading">Core Skills.</h2></div>
+  <div class="container">
+    <div class="skills-layout">
+      <div class="skills-sticky rv">
+        <div class="eyebrow">Toolkit</div>
+        <h2 class="display">Core<br><em>Skills.</em></h2>
+        <p>Tools I use to turn messy data and manual workflows into clean, reliable systems.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="sk-card rv">
+          <img src="https://img.icons8.com/color/96/microsoft-excel-2019--v1.png" alt="Excel" class="sk-icon">
+          <div class="sk-name">Data Analysis & Excel</div>
+          <div class="sk-desc">SUMIF, VLOOKUP, PivotTables, dashboard design with real datasets</div>
         </div>
-        <div class="skills-grid">
-            <div class="skill-item reveal"><img src="https://img.icons8.com/color/96/microsoft-excel-2019--v1.png" alt="Excel"><div class="skill-n">Data Analysis & Excel</div><div class="skill-d">SUMIF, VLOOKUP, PivotTables, dashboard design with real datasets</div></div>
-            <div class="skill-item reveal" style="transition-delay:.05s"><img src="https://img.icons8.com/color/96/microsoft-office-2019.png" alt="Office"><div class="skill-n">Office Suite</div><div class="skill-d">Word, PowerPoint, advanced document formatting and automation</div></div>
-            <div class="skill-item reveal" style="transition-delay:.1s"><img src="https://img.icons8.com/color/96/html-5--v1.png" alt="HTML"><div class="skill-n">Web Development</div><div class="skill-d">HTML, CSS, Bootstrap, Supabase — functional web apps from scratch</div></div>
-            <div class="skill-item reveal" style="transition-delay:.15s"><img src="https://img.icons8.com/color/96/smartphone.png" alt="AppSheet"><div class="skill-n">No-Code / AppSheet</div><div class="skill-d">GPS attendance, role-based apps, automated PDF reports — zero code</div></div>
-            <div class="skill-item reveal" style="transition-delay:.2s"><img src="https://img.icons8.com/color/96/adobe-creative-cloud--v1.png" alt="Adobe"><div class="skill-n">Creative Media</div><div class="skill-d">Adobe Suite, visual communication, event documentation</div></div>
-            <div class="skill-item reveal" style="transition-delay:.25s"><img src="https://img.icons8.com/color/96/database.png" alt="Archive"><div class="skill-n">Digital Archiving</div><div class="skill-d">Metadata systems, document retention policy, broadcast archives</div></div>
+        <div class="sk-card rv" style="transition-delay:.06s">
+          <img src="https://img.icons8.com/color/96/microsoft-office-2019.png" alt="Office" class="sk-icon">
+          <div class="sk-name">Office Suite</div>
+          <div class="sk-desc">Word, PowerPoint, advanced document formatting and automation</div>
         </div>
+        <div class="sk-card rv" style="transition-delay:.12s">
+          <img src="https://img.icons8.com/color/96/html-5--v1.png" alt="HTML" class="sk-icon">
+          <div class="sk-name">Web Development</div>
+          <div class="sk-desc">HTML, CSS, Bootstrap, Supabase — functional web apps from scratch</div>
+        </div>
+        <div class="sk-card rv" style="transition-delay:.18s">
+          <img src="https://img.icons8.com/color/96/smartphone.png" alt="AppSheet" class="sk-icon">
+          <div class="sk-name">No-Code / AppSheet</div>
+          <div class="sk-desc">GPS attendance, role-based apps, automated PDF reports — zero code</div>
+        </div>
+        <div class="sk-card rv" style="transition-delay:.24s">
+          <img src="https://img.icons8.com/color/96/adobe-creative-cloud--v1.png" alt="Adobe" class="sk-icon">
+          <div class="sk-name">Creative Media</div>
+          <div class="sk-desc">Adobe Suite, visual communication, event documentation</div>
+        </div>
+        <div class="sk-card rv" style="transition-delay:.30s">
+          <img src="https://img.icons8.com/color/96/database.png" alt="Archive" class="sk-icon">
+          <div class="sk-name">Digital Archiving</div>
+          <div class="sk-desc">Metadata systems, document retention policy, broadcast archives</div>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
-<!-- WORK -->
+<!-- ══════ WORK ═══════════════════════════════════════ -->
 <section id="work">
-    <div class="container">
-        <div class="work-header reveal">
-            <span class="label">Portfolio</span>
-            <h2 class="heading">Selected Work.</h2>
-        </div>
-
-        <!-- INTERNSHIP -->
-        <div class="group-label reveal"><i class="bi bi-building"></i> Internship Experience</div>
-        <div class="projects-grid reveal">
-            <div class="proj-card" onclick="openDrawer('tvri')">
-                <div class="arrow-chip"><i class="bi bi-arrow-right"></i></div>
-                <div class="proj-thumb-placeholder"><span class="emoji">📺</span><span style="font-size:.68rem;font-weight:700;color:var(--muted)">TVRI · Feb – Mei 2026</span></div>
-                <div class="proj-body">
-                    <span class="proj-cat">Broadcast & Archive</span>
-                    <h3 class="proj-title">TVRI: Broadcast Archive</h3>
-                    <p class="proj-desc">Managing historical physical assets and daily digital broadcast records at Indonesia's national broadcaster.</p>
-                    <div class="proj-tags"><span class="tag">Metadata</span><span class="tag">Archiving</span><span class="tag">SPS System</span></div>
-                </div>
-            </div>
-            <div class="proj-card" onclick="openDrawer('telkom')">
-                <div class="arrow-chip"><i class="bi bi-arrow-right"></i></div>
-                <div class="proj-thumb"><img src="project2.jpg" alt="Telkom" loading="lazy"></div>
-                <div class="proj-body">
-                    <span class="proj-cat">IT & Admin</span>
-                    <h3 class="proj-title">Telkom: Network Data Audit</h3>
-                    <p class="proj-desc">Verified 100+ ONT device records at PT Telkom Indonesia, cleaning regional asset data to eliminate inconsistencies.</p>
-                    <div class="proj-tags"><span class="tag">Excel</span><span class="tag">Audit</span><span class="tag">IT Support</span></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- SYSTEMS -->
-        <div class="group-label reveal"><i class="bi bi-gear"></i> Systems & Development</div>
-        <div class="projects-grid reveal">
-            <div class="proj-card" onclick="openDrawer('sedap')">
-                <div class="arrow-chip"><i class="bi bi-arrow-right"></i></div>
-                <div class="proj-thumb"><img src="project1.jpg" alt="SeDaP" loading="lazy"></div>
-                <div class="proj-body">
-                    <span class="proj-cat">Web App</span>
-                    <h3 class="proj-title">SeDaP: Digital Archiving</h3>
-                    <p class="proj-desc">Web-based document management with automated archive expiry, real-time activity logs, and role-based access.</p>
-                    <div class="proj-tags"><span class="tag">HTML/CSS</span><span class="tag">Supabase</span><span class="tag">System Design</span></div>
-                </div>
-            </div>
-            <div class="proj-card" onclick="openDrawer('hris')">
-                <div class="arrow-chip"><i class="bi bi-arrow-right"></i></div>
-                <div class="proj-thumb"><img src="project4.jpg" alt="HRIS" loading="lazy"></div>
-                <div class="proj-body">
-                    <span class="proj-cat">No-Code App</span>
-                    <h3 class="proj-title">Mobile HRIS (AppSheet)</h3>
-                    <p class="proj-desc">A full HR mobile app — GPS attendance, photo check-in, role-based views, auto PDF reports. Built without code.</p>
-                    <div class="proj-tags"><span class="tag">AppSheet</span><span class="tag">No-Code</span><span class="tag">Automation</span></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- DATA ANALYTICS -->
-        <div class="group-label reveal"><i class="bi bi-bar-chart"></i> Data Analytics</div>
-        <div class="projects-grid reveal">
-            <!-- Olist -->
-            <div class="proj-card" onclick="openDrawer('olist')">
-                <div class="arrow-chip"><i class="bi bi-arrow-right"></i></div>
-                <div class="proj-thumb-placeholder"><span class="emoji">📊</span><span style="font-size:.68rem;font-weight:700;color:var(--muted)">Real Dataset · 99k Rows</span></div>
-                <div class="proj-body">
-                    <span class="proj-cat">Excel Dashboard</span>
-                    <h3 class="proj-title">E-Commerce Sales Dashboard</h3>
-                    <p class="proj-desc">99,441 real orders from Olist (Kaggle), turned into a multi-sheet Excel dashboard with 1,263 formulas.</p>
-                    <div class="proj-tags"><span class="tag">Excel</span><span class="tag">SUMIF</span><span class="tag">Real Data</span></div>
-                </div>
-            </div>
-            <!-- Electronics -->
-            <div class="proj-card" onclick="openDrawer('elec')">
-                <div class="arrow-chip"><i class="bi bi-arrow-right"></i></div>
-                <div class="proj-thumb-placeholder"><span class="emoji">🛒</span><span style="font-size:.68rem;font-weight:700;color:var(--muted)">Structured Dummy</span></div>
-                <div class="proj-body">
-                    <span class="proj-cat">Excel Dashboard</span>
-                    <h3 class="proj-title">Electronics Sales Dashboard</h3>
-                    <p class="proj-desc">KPI cards, monthly trends, product and regional breakdown for a fictional retailer using clean SUMIF structures.</p>
-                    <div class="proj-tags"><span class="tag">Excel</span><span class="tag">VLOOKUP</span><span class="tag">Dashboard</span></div>
-                </div>
-            </div>
-            <!-- Broadcast Archive -->
-            <div class="proj-card" onclick="openDrawer('archive')">
-                <div class="arrow-chip"><i class="bi bi-arrow-right"></i></div>
-                <div class="proj-thumb-placeholder"><span class="emoji">📼</span><span style="font-size:.68rem;font-weight:700;color:var(--muted)">Broadcast Simulation</span></div>
-                <div class="proj-body">
-                    <span class="proj-cat">Excel Dashboard</span>
-                    <h3 class="proj-title">Broadcast Archive Tracker</h3>
-                    <p class="proj-desc">Simulated TVRI-style archive system tracking inactive tapes and active news rundowns with COUNTIF-based dashboards.</p>
-                    <div class="proj-tags"><span class="tag">Excel</span><span class="tag">COUNTIF</span><span class="tag">Archive Data</span></div>
-                </div>
-            </div>
-            <!-- HR Payroll -->
-            <div class="proj-card" onclick="openDrawer('hrpay')">
-                <div class="arrow-chip"><i class="bi bi-arrow-right"></i></div>
-                <div class="proj-thumb-placeholder"><span class="emoji">👥</span><span style="font-size:.68rem;font-weight:700;color:var(--muted)">20 Employees · April 2026</span></div>
-                <div class="proj-body">
-                    <span class="proj-cat">Excel Dashboard</span>
-                    <h3 class="proj-title">HR & Payroll Tracker</h3>
-                    <p class="proj-desc">Employee master data, attendance recap, and automated payroll using VLOOKUP across sheets — simulating a real HR workflow.</p>
-                    <div class="proj-tags"><span class="tag">Excel</span><span class="tag">VLOOKUP</span><span class="tag">Payroll</span></div>
-                </div>
-            </div>
-            <!-- Inventory -->
-            <div class="proj-card" onclick="openDrawer('inventory')">
-                <div class="arrow-chip"><i class="bi bi-arrow-right"></i></div>
-                <div class="proj-thumb-placeholder"><span class="emoji">📦</span><span style="font-size:.68rem;font-weight:700;color:var(--muted)">20 Items · 50 Mutations</span></div>
-                <div class="proj-body">
-                    <span class="proj-cat">Excel Dashboard</span>
-                    <h3 class="proj-title">Inventory & Stock Management</h3>
-                    <p class="proj-desc">Stock tracking with automatic reorder alerts, stock movement log, and category breakdown — all formula-driven.</p>
-                    <div class="proj-tags"><span class="tag">Excel</span><span class="tag">IF / SUMIF</span><span class="tag">Inventory</span></div>
-                </div>
-            </div>
-            <!-- Budget -->
-            <div class="proj-card" onclick="openDrawer('budget')">
-                <div class="arrow-chip"><i class="bi bi-arrow-right"></i></div>
-                <div class="proj-thumb-placeholder"><span class="emoji">💰</span><span style="font-size:.68rem;font-weight:700;color:var(--muted)">Q2 2026 Simulation</span></div>
-                <div class="proj-body">
-                    <span class="proj-cat">Excel Dashboard</span>
-                    <h3 class="proj-title">Budget & Expense Report</h3>
-                    <p class="proj-desc">Budget plan vs actual spending per division, with variance analysis and automatic On Track / Over Budget status.</p>
-                    <div class="proj-tags"><span class="tag">Excel</span><span class="tag">SUMIF</span><span class="tag">Budget Analysis</span></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- OPERATIONS -->
-        <div class="group-label reveal"><i class="bi bi-calendar-event"></i> Operations</div>
-        <div class="projects-grid full reveal">
-            <div class="proj-card" onclick="openDrawer('event')">
-                <div class="arrow-chip"><i class="bi bi-arrow-right"></i></div>
-                <div class="proj-thumb"><img src="project3.jpg" alt="Event" loading="lazy"></div>
-                <div class="proj-body">
-                    <span class="proj-cat">Event Operations</span>
-                    <h3 class="proj-title">LinkedToTalk: Stage Manager</h3>
-                    <p class="proj-desc">Full venue setup and stage flow for a 100+ person talk show — zero broadcast delays.</p>
-                    <div class="proj-tags"><span class="tag">Stage Management</span><span class="tag">Operations</span></div>
-                </div>
-            </div>
-        </div>
+  <div class="container">
+    <div class="work-header rv">
+      <div>
+        <div class="eyebrow">Portfolio</div>
+        <h2 class="display">Selected <em>Work.</em></h2>
+      </div>
+      <span class="work-count">9 Projects</span>
     </div>
+
+    <!-- INTERNSHIP -->
+    <div class="sec-label rv"><i class="bi bi-building"></i> Internship Experience</div>
+    <div class="proj-grid rv">
+      <div class="pc" onclick="openDr('tvri')">
+        <div class="pc-arrow"><i class="bi bi-arrow-right"></i></div>
+        <div class="pc-thumb">
+          <img src="project-tvri.jpg" alt="TVRI"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="pc-placeholder" style="display:none"><span>📺</span></div>
+        </div>
+        <div class="pc-body">
+          <span class="pc-cat">Broadcast & Archive</span>
+          <h3 class="pc-title">TVRI: Broadcast Archive</h3>
+          <p class="pc-desc">Managing historical physical assets and daily digital broadcast records at Indonesia's national broadcaster.</p>
+          <div class="tag-row"><span class="tag">Metadata</span><span class="tag">Archiving</span><span class="tag">SPS System</span></div>
+        </div>
+      </div>
+      <div class="pc" onclick="openDr('telkom')">
+        <div class="pc-arrow"><i class="bi bi-arrow-right"></i></div>
+        <div class="pc-thumb">
+          <img src="project2.jpg" alt="Telkom"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="pc-placeholder" style="display:none"><span>📡</span></div>
+        </div>
+        <div class="pc-body">
+          <span class="pc-cat">IT & Admin</span>
+          <h3 class="pc-title">Telkom: Network Data Audit</h3>
+          <p class="pc-desc">Verified 100+ ONT device records at PT Telkom Indonesia, cleaning regional asset data to eliminate inconsistencies.</p>
+          <div class="tag-row"><span class="tag">Excel</span><span class="tag">Audit</span><span class="tag">IT Support</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SYSTEMS -->
+    <div class="sec-label rv" style="transition-delay:.1s"><i class="bi bi-gear"></i> Systems & Development</div>
+    <div class="proj-grid rv" style="transition-delay:.1s">
+      <div class="pc" onclick="openDr('sedap')">
+        <div class="pc-arrow"><i class="bi bi-arrow-right"></i></div>
+        <div class="pc-thumb">
+          <img src="project1.jpg" alt="SeDaP"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="pc-placeholder" style="display:none"><span>🗂️</span></div>
+        </div>
+        <div class="pc-body">
+          <span class="pc-cat">Web App</span>
+          <h3 class="pc-title">SeDaP: Digital Archiving</h3>
+          <p class="pc-desc">Web-based document management with automated archive expiry, real-time activity logs, and role-based access.</p>
+          <div class="tag-row"><span class="tag">HTML/CSS</span><span class="tag">Supabase</span><span class="tag">System Design</span></div>
+        </div>
+      </div>
+      <div class="pc" onclick="openDr('hris')">
+        <div class="pc-arrow"><i class="bi bi-arrow-right"></i></div>
+        <div class="pc-thumb">
+          <img src="project4.jpg" alt="HRIS"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="pc-placeholder" style="display:none"><span>📱</span></div>
+        </div>
+        <div class="pc-body">
+          <span class="pc-cat">No-Code App</span>
+          <h3 class="pc-title">Mobile HRIS (AppSheet)</h3>
+          <p class="pc-desc">A full HR mobile app — GPS attendance, photo check-in, role-based views, auto PDF reports. Built without code.</p>
+          <div class="tag-row"><span class="tag">AppSheet</span><span class="tag">No-Code</span><span class="tag">Automation</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DATA ANALYTICS -->
+    <div class="sec-label rv" style="transition-delay:.2s"><i class="bi bi-bar-chart"></i> Data Analytics</div>
+    <div class="proj-grid rv" style="transition-delay:.2s">
+      <div class="pc" onclick="openDr('olist')">
+        <div class="pc-arrow"><i class="bi bi-arrow-right"></i></div>
+        <div class="pc-thumb">
+          <img src="project-olist.jpg" alt="Olist"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="pc-placeholder" style="display:none"><span>📊</span></div>
+        </div>
+        <div class="pc-body">
+          <span class="pc-cat">Excel Dashboard</span>
+          <h3 class="pc-title">E-Commerce Sales Dashboard</h3>
+          <p class="pc-desc">99,441 real orders from Olist (Kaggle), turned into a multi-sheet Excel dashboard with 1,263 formulas.</p>
+          <div class="tag-row"><span class="tag">Excel</span><span class="tag">SUMIF</span><span class="tag">Real Data</span></div>
+        </div>
+      </div>
+      <div class="pc" onclick="openDr('crm')">
+        <div class="pc-arrow"><i class="bi bi-arrow-right"></i></div>
+        <div class="pc-thumb">
+          <img src="project-crm.jpg" alt="CRM"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="pc-placeholder" style="display:none"><span>🤝</span></div>
+        </div>
+        <div class="pc-body">
+          <span class="pc-cat">Excel Dashboard</span>
+          <h3 class="pc-title">Customer Database & CRM</h3>
+          <p class="pc-desc">25 clients, 60 interactions, and a sales pipeline — all connected via VLOOKUP with weighted pipeline value tracking.</p>
+          <div class="tag-row"><span class="tag">Excel</span><span class="tag">VLOOKUP</span><span class="tag">CRM</span></div>
+        </div>
+      </div>
+      <div class="pc" onclick="openDr('hrpay')">
+        <div class="pc-arrow"><i class="bi bi-arrow-right"></i></div>
+        <div class="pc-thumb">
+          <img src="project-hrpayroll.jpg" alt="HR Payroll"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="pc-placeholder" style="display:none"><span>👥</span></div>
+        </div>
+        <div class="pc-body">
+          <span class="pc-cat">Excel Dashboard</span>
+          <h3 class="pc-title">HR & Payroll Tracker</h3>
+          <p class="pc-desc">Employee master data, attendance recap, and automated payroll using VLOOKUP across sheets — simulating a real HR workflow.</p>
+          <div class="tag-row"><span class="tag">Excel</span><span class="tag">VLOOKUP</span><span class="tag">Payroll</span></div>
+        </div>
+      </div>
+      <div class="pc" onclick="openDr('inventory')">
+        <div class="pc-arrow"><i class="bi bi-arrow-right"></i></div>
+        <div class="pc-thumb">
+          <img src="project-inventory.jpg" alt="Inventory"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="pc-placeholder" style="display:none"><span>📦</span></div>
+        </div>
+        <div class="pc-body">
+          <span class="pc-cat">Excel Dashboard</span>
+          <h3 class="pc-title">Inventory & Stock Management</h3>
+          <p class="pc-desc">Stock tracking with automatic reorder alerts, stock movement log, and category breakdown — all formula-driven.</p>
+          <div class="tag-row"><span class="tag">Excel</span><span class="tag">IF / SUMIF</span><span class="tag">Inventory</span></div>
+        </div>
+      </div>
+      <div class="pc" onclick="openDr('budget')">
+        <div class="pc-arrow"><i class="bi bi-arrow-right"></i></div>
+        <div class="pc-thumb">
+          <img src="project-budget.jpg" alt="Budget"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="pc-placeholder" style="display:none"><span>💰</span></div>
+        </div>
+        <div class="pc-body">
+          <span class="pc-cat">Excel Dashboard</span>
+          <h3 class="pc-title">Budget & Expense Report</h3>
+          <p class="pc-desc">Budget plan vs actual spending per division, with variance analysis and automatic On Track / Over Budget status.</p>
+          <div class="tag-row"><span class="tag">Excel</span><span class="tag">SUMIF</span><span class="tag">Budget Analysis</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- OPERATIONS -->
+    <div class="sec-label rv" style="transition-delay:.3s"><i class="bi bi-calendar-event"></i> Operations</div>
+    <div class="proj-grid one rv" style="transition-delay:.3s">
+      <div class="pc" onclick="openDr('event')">
+        <div class="pc-arrow"><i class="bi bi-arrow-right"></i></div>
+        <div class="pc-thumb">
+          <img src="project3.jpg" alt="Event"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="pc-placeholder" style="display:none"><span>🎤</span></div>
+        </div>
+        <div class="pc-body">
+          <span class="pc-cat">Event Operations</span>
+          <h3 class="pc-title">LinkedToTalk: Stage Manager</h3>
+          <p class="pc-desc">Full venue setup and stage flow for a 100+ person talk show — zero broadcast delays.</p>
+          <div class="tag-row"><span class="tag">Stage Management</span><span class="tag">Operations</span><span class="tag">Live Events</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- FOOTER -->
+<!-- ══════ FOOTER / CONTACT ═══════════════════════════ -->
 <footer id="contact">
-    <div class="container">
-        <div class="footer-grid reveal">
-            <div>
-                <span class="label">Get in Touch</span>
-                <h2 class="footer-heading">Let's build<br>something<br><a href="mailto:rifkymardiansyah19@gmail.com">together.</a></h2>
-                <button class="email-chip" onclick="copyEmail()">
-                    <i class="bi bi-envelope"></i> rifkymardiansyah19@gmail.com
-                </button>
-                <span id="copy-fb" style="display:block;font-size:12px;color:var(--accent);margin-top:8px;opacity:0;transition:opacity .3s">Copied ✓</span>
-            </div>
-            <div class="footer-right reveal" style="transition-delay:.1s">
-                <p>Open for internships,<br>freelance, and collaborations.</p>
-                <div class="social-row">
-                    <a href="https://linkedin.com/in/rifkymardi" target="_blank" class="social-btn"><i class="bi bi-linkedin"></i></a>
-                    <a href="https://instagram.com/ikymars" target="_blank" class="social-btn"><i class="bi bi-instagram"></i></a>
-                    <a href="https://github.com/rifkymardiansyah" target="_blank" class="social-btn"><i class="bi bi-github"></i></a>
-                    <a href="https://medium.com/@rifky_mardi" target="_blank" class="social-btn"><i class="bi bi-medium"></i></a>
-                </div>
-            </div>
+  <div class="container">
+    <div class="contact-grid">
+      <div class="rv">
+        <div class="eyebrow">Get in Touch</div>
+        <h2 class="contact-big">
+          Let's build<br>
+          something<br>
+          <a href="mailto:rifkymardiansyah19@gmail.com">together.</a>
+        </h2>
+        <div class="email-row">
+          <button class="email-pill" onclick="copyEmail()">
+            <i class="bi bi-envelope"></i> rifkymardiansyah19@gmail.com
+          </button>
+          <span id="copy-fb">Copied ✓</span>
         </div>
-        <div class="footer-bottom">
-            <p>© 2026 Rifky Mardiansyah</p>
-            <p>rifkymardiansyah.my.id</p>
+      </div>
+      <div class="contact-right rv" style="transition-delay:.1s">
+        <p>Open for internships,<br>freelance &amp; collaborations.</p>
+        <div class="social-row">
+          <a href="https://linkedin.com/in/rifkymardi" target="_blank" class="soc-btn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="https://instagram.com/ikymars" target="_blank" class="soc-btn" title="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://github.com/rifkymardiansyah" target="_blank" class="soc-btn" title="GitHub"><i class="bi bi-github"></i></a>
+          <a href="https://medium.com/@rifky_mardi" target="_blank" class="soc-btn" title="Medium"><i class="bi bi-medium"></i></a>
         </div>
+      </div>
     </div>
+    <div class="footer-bar">
+      <p>© 2026 Rifky Mardiansyah</p>
+      <p>rifkymardiansyah.my.id</p>
+    </div>
+  </div>
 </footer>
 
-<div class="modal-overlay" id="overlay" onclick="closeDrawer()"></div>
+<!-- ══════ OVERLAY ═════════════════════════════════════ -->
+<div class="overlay" id="overlay" onclick="closeDr()"></div>
 
-<!-- DRAWERS -->
-<div class="drawer" id="d-tvri">
-    <button class="drawer-close" onclick="closeDrawer()"><i class="bi bi-x"></i></button>
-    <div class="drawer-cat">Broadcast & Archive</div>
-    <h2 class="drawer-title">TVRI — Student Intern</h2>
-    <div class="drawer-meta"><i class="bi bi-building"></i> Pengelola Materi Audio Visual (PMAV) &nbsp;·&nbsp; <i class="bi bi-calendar3"></i> Feb – Mei 2026</div>
-    <div class="drawer-carousel"><div class="dc-placeholder"><span style="font-size:3rem">📺</span></div></div>
-    <h4>What I Did Here</h4>
-    <p>As a Student Intern at the PMAV division, my role covered both inactive physical tape archives and active daily digital broadcast documentation — keeping everything catalogued and findable.</p>
-    <ul class="drawer-list">
-        <li><i class="bi bi-check2-circle"></i>Entered <strong>active metadata</strong> — daily news rundowns and broadcast scripts — into the SPS system in real time</li>
-        <li><i class="bi bi-check2-circle"></i>Catalogued <strong>inactive physical tape archives</strong>, labelling cassettes and entering structured metadata into a centralised spreadsheet</li>
-        <li><i class="bi bi-check2-circle"></i>Performed content transcription from broadcast materials for TVRI's digital platforms (YouTube)</li>
-        <li><i class="bi bi-check2-circle"></i>Maintained consistency between physical tape records and their digital documentation counterparts</li>
-        <li><i class="bi bi-check2-circle"></i>Supported the division's data entry workflow across both inactive archive and active broadcast materials</li>
-    </ul>
-    <div class="drawer-tags"><span class="tag">Metadata</span><span class="tag">Archiving</span><span class="tag">SPS System</span><span class="tag">Transcription</span><span class="tag">Spreadsheet DB</span></div>
+<!-- ══════ DRAWERS ════════════════════════════════════ -->
+
+<!-- TVRI -->
+<div class="drawer" id="dr-tvri">
+  <button class="dr-close" onclick="closeDr()"><i class="bi bi-x"></i></button>
+  <div class="dr-cat">Broadcast & Archive</div>
+  <h2 class="dr-title">TVRI — Student Intern</h2>
+  <div class="dr-meta"><i class="bi bi-building"></i> Pengelola Materi Audio Visual (PMAV) &nbsp;·&nbsp; <i class="bi bi-calendar3"></i> Feb – Mei 2026</div>
+  <div class="dr-car" id="dc-tvri">
+    <a href="project-tvri.jpg" data-fancybox="g-tvri" id="ml-tvri">
+      <img src="project-tvri.jpg" alt="TVRI" id="mi-tvri"
+           onerror="this.parentElement.parentElement.querySelector('.dr-ph').style.display='flex';this.parentElement.style.display='none'">
+    </a>
+    <div class="dr-ph" style="display:none">📺<small>Tambahkan foto: project-tvri.jpg</small></div>
+    <div class="dr-thumbs">
+      <img src="project-tvri.jpg" class="dr-thumb on" onclick="setSlide('tvri',this,'project-tvri.jpg')" alt="">
+      <img src="project-tvri-b.jpg" class="dr-thumb" onclick="setSlide('tvri',this,'project-tvri-b.jpg')" alt="">
+      <img src="project-tvri-c.jpg" class="dr-thumb" onclick="setSlide('tvri',this,'project-tvri-c.jpg')" alt="">
+    </div>
+  </div>
+  <h4>What I Did Here</h4>
+  <p>As a Student Intern at the PMAV division, my role covered both inactive physical tape archives and active daily digital broadcast documentation — keeping everything catalogued and findable.</p>
+  <ul class="dr-list">
+    <li><i class="bi bi-check2-circle"></i>Entered <strong>active metadata</strong> — daily news rundowns and broadcast scripts — into the SPS system in real time</li>
+    <li><i class="bi bi-check2-circle"></i>Catalogued <strong>inactive physical tape archives</strong>, labelling cassettes and entering structured metadata into a centralised spreadsheet</li>
+    <li><i class="bi bi-check2-circle"></i>Performed content transcription from broadcast materials for TVRI's digital platforms (YouTube)</li>
+    <li><i class="bi bi-check2-circle"></i>Maintained consistency between physical tape records and their digital documentation counterparts</li>
+    <li><i class="bi bi-check2-circle"></i>Supported the division's data entry workflow across both inactive archive and active broadcast materials</li>
+  </ul>
+  <div class="dr-tags"><span class="tag">Metadata</span><span class="tag">Archiving</span><span class="tag">SPS System</span><span class="tag">Transcription</span><span class="tag">Spreadsheet DB</span></div>
 </div>
 
-<div class="drawer" id="d-telkom">
-    <button class="drawer-close" onclick="closeDrawer()"><i class="bi bi-x"></i></button>
-    <div class="drawer-cat">IT & Admin</div>
-    <h2 class="drawer-title">PT Telkom Indonesia — Data Audit</h2>
-    <div class="drawer-meta"><i class="bi bi-building"></i> Internship &nbsp;·&nbsp; <i class="bi bi-calendar3"></i> Feb – Apr 2020</div>
-    <div class="drawer-carousel" id="dc-telkom">
-        <a href="project2.jpg" data-fancybox="gallery-telkom" id="main-link-telkom"><img src="project2.jpg" alt="Telkom" id="main-img-telkom"></a>
-        <div class="dc-thumbs">
-            <img src="project2.jpg" class="dc-thumb active" onclick="setSlide('telkom',this,'project2.jpg')" alt="">
-            <img src="project2-b.jpg" class="dc-thumb" onclick="setSlide('telkom',this,'project2-b.jpg')" alt="">
-            <img src="project2-c.jpg" class="dc-thumb" onclick="setSlide('telkom',this,'project2-c.jpg')" alt="">
-        </div>
+<!-- TELKOM -->
+<div class="drawer" id="dr-telkom">
+  <button class="dr-close" onclick="closeDr()"><i class="bi bi-x"></i></button>
+  <div class="dr-cat">IT & Admin</div>
+  <h2 class="dr-title">PT Telkom Indonesia — Data Audit</h2>
+  <div class="dr-meta"><i class="bi bi-building"></i> Internship &nbsp;·&nbsp; <i class="bi bi-calendar3"></i> Feb – Apr 2020</div>
+  <div class="dr-car">
+    <a href="project2.jpg" data-fancybox="g-telkom" id="ml-telkom">
+      <img src="project2.jpg" alt="Telkom" id="mi-telkom"
+           onerror="this.parentElement.parentElement.querySelector('.dr-ph').style.display='flex';this.parentElement.style.display='none'">
+    </a>
+    <div class="dr-ph" style="display:none">📡</div>
+    <div class="dr-thumbs">
+      <img src="project2.jpg" class="dr-thumb on" onclick="setSlide('telkom',this,'project2.jpg')" alt="">
+      <img src="project2-b.jpg" class="dr-thumb" onclick="setSlide('telkom',this,'project2-b.jpg')" alt="">
+      <img src="project2-c.jpg" class="dr-thumb" onclick="setSlide('telkom',this,'project2-c.jpg')" alt="">
     </div>
-    <h4>What I Did Here</h4>
-    <p>Tasked with auditing Optical Network Terminal (ONT) device records for Telkom's regional division — the data was inconsistent with mismatched IDs and outdated statuses.</p>
-    <ul class="drawer-list">
-        <li><i class="bi bi-check2-circle"></i>Cross-checked 100+ ONT device records against field technician reports</li>
-        <li><i class="bi bi-check2-circle"></i>Consolidated everything into a clean, verified Excel report for regional management</li>
-        <li><i class="bi bi-check2-circle"></i>Coordinated directly with field technicians to resolve on-site data discrepancies</li>
-        <li><i class="bi bi-check2-circle"></i>Streamlined the reporting process with timely status updates to supervisors</li>
-    </ul>
-    <div class="drawer-tags"><span class="tag">Excel</span><span class="tag">Database Audit</span><span class="tag">IT Support</span><span class="tag">Regional Reporting</span></div>
+  </div>
+  <h4>What I Did Here</h4>
+  <p>Tasked with auditing Optical Network Terminal (ONT) device records for Telkom's regional division — the data was inconsistent with mismatched IDs and outdated statuses.</p>
+  <ul class="dr-list">
+    <li><i class="bi bi-check2-circle"></i>Cross-checked 100+ ONT device records against field technician reports</li>
+    <li><i class="bi bi-check2-circle"></i>Consolidated everything into a clean, verified Excel report for regional management</li>
+    <li><i class="bi bi-check2-circle"></i>Coordinated directly with field technicians to resolve on-site data discrepancies</li>
+    <li><i class="bi bi-check2-circle"></i>Streamlined the reporting process with timely status updates to supervisors</li>
+  </ul>
+  <div class="dr-tags"><span class="tag">Excel</span><span class="tag">Database Audit</span><span class="tag">IT Support</span><span class="tag">Regional Reporting</span></div>
 </div>
 
-<div class="drawer" id="d-sedap">
-    <button class="drawer-close" onclick="closeDrawer()"><i class="bi bi-x"></i></button>
-    <div class="drawer-cat">Web App</div>
-    <h2 class="drawer-title">SeDaP — Smart Archiving System</h2>
-    <div class="drawer-meta"><i class="bi bi-code-square"></i> HTML / CSS / Bootstrap / Supabase &nbsp;·&nbsp; <i class="bi bi-calendar3"></i> Mar – Jun 2025</div>
-    <div class="drawer-carousel" id="dc-sedap">
-        <a href="project1.jpg" data-fancybox="gallery-sedap" id="main-link-sedap"><img src="project1.jpg" alt="SeDaP" id="main-img-sedap"></a>
-        <div class="dc-thumbs">
-            <img src="project1.jpg" class="dc-thumb active" onclick="setSlide('sedap',this,'project1.jpg')" alt="">
-            <img src="project1-b.jpg" class="dc-thumb" onclick="setSlide('sedap',this,'project1-b.jpg')" alt="">
-            <img src="project1-c.jpg" class="dc-thumb" onclick="setSlide('sedap',this,'project1-c.jpg')" alt="">
-            <img src="project1-d.jpg" class="dc-thumb" onclick="setSlide('sedap',this,'project1-d.jpg')" alt="">
-            <img src="project1-e.jpg" class="dc-thumb" onclick="setSlide('sedap',this,'project1-e.jpg')" alt="">
-        </div>
+<!-- SEDAP -->
+<div class="drawer" id="dr-sedap">
+  <button class="dr-close" onclick="closeDr()"><i class="bi bi-x"></i></button>
+  <div class="dr-cat">Web App</div>
+  <h2 class="dr-title">SeDaP — Smart Archiving System</h2>
+  <div class="dr-meta"><i class="bi bi-code-square"></i> HTML / CSS / Bootstrap / Supabase &nbsp;·&nbsp; <i class="bi bi-calendar3"></i> Mar – Jun 2025</div>
+  <div class="dr-car">
+    <a href="project1.jpg" data-fancybox="g-sedap" id="ml-sedap">
+      <img src="project1.jpg" alt="SeDaP" id="mi-sedap"
+           onerror="this.parentElement.parentElement.querySelector('.dr-ph').style.display='flex';this.parentElement.style.display='none'">
+    </a>
+    <div class="dr-ph" style="display:none">🗂️</div>
+    <div class="dr-thumbs">
+      <img src="project1.jpg" class="dr-thumb on" onclick="setSlide('sedap',this,'project1.jpg')" alt="">
+      <img src="project1-b.jpg" class="dr-thumb" onclick="setSlide('sedap',this,'project1-b.jpg')" alt="">
+      <img src="project1-c.jpg" class="dr-thumb" onclick="setSlide('sedap',this,'project1-c.jpg')" alt="">
+      <img src="project1-d.jpg" class="dr-thumb" onclick="setSlide('sedap',this,'project1-d.jpg')" alt="">
+      <img src="project1-e.jpg" class="dr-thumb" onclick="setSlide('sedap',this,'project1-e.jpg')" alt="">
     </div>
-    <h4>The Problem I Solved</h4>
-    <p>SeDaP replaces messy physical filing with a centralised web system featuring automated archive expiry and full activity logs.</p>
-    <ul class="drawer-list">
-        <li><i class="bi bi-check2-circle"></i>Built a responsive web app for centralised document tracking and retrieval</li>
-        <li><i class="bi bi-check2-circle"></i>Implemented automated archive destruction logic based on document retention rules</li>
-        <li><i class="bi bi-check2-circle"></i>Engineered real-time activity logs for every user action — security and audit ready</li>
-        <li><i class="bi bi-check2-circle"></i>Integrated Supabase for database operations and user authentication</li>
-        <li><i class="bi bi-check2-circle"></i>Designed clean dashboard UI using Bootstrap — no prototyping tools</li>
-    </ul>
-    <div class="drawer-actions">
-        <a href="manual-sedap.pdf" data-fancybox data-type="pdf" class="btn-primary"><i class="bi bi-file-earmark-pdf"></i> Read Manual</a>
-    </div>
+  </div>
+  <h4>The Problem I Solved</h4>
+  <p>SeDaP replaces messy physical filing with a centralised web system featuring automated archive expiry and full activity logs.</p>
+  <ul class="dr-list">
+    <li><i class="bi bi-check2-circle"></i>Built a responsive web app for centralised document tracking and retrieval</li>
+    <li><i class="bi bi-check2-circle"></i>Implemented automated archive destruction logic based on document retention rules</li>
+    <li><i class="bi bi-check2-circle"></i>Engineered real-time activity logs for every user action — security and audit ready</li>
+    <li><i class="bi bi-check2-circle"></i>Integrated Supabase for database operations and user authentication</li>
+    <li><i class="bi bi-check2-circle"></i>Designed clean dashboard UI using Bootstrap — no prototyping tools</li>
+  </ul>
+  <div class="dr-actions">
+    <a href="manual-sedap.pdf" data-fancybox data-type="pdf" class="btn btn-primary"><i class="bi bi-file-earmark-pdf"></i> Read Manual</a>
+  </div>
 </div>
 
-<div class="drawer" id="d-hris">
-    <button class="drawer-close" onclick="closeDrawer()"><i class="bi bi-x"></i></button>
-    <div class="drawer-cat">No-Code App</div>
-    <h2 class="drawer-title">Mobile HRIS — AppSheet</h2>
-    <div class="drawer-meta"><i class="bi bi-phone"></i> Google AppSheet &nbsp;·&nbsp; <i class="bi bi-trophy-fill" style="color:var(--accent)"></i> Award Winner 2024</div>
-    <div class="drawer-carousel" id="dc-hris">
-        <a href="project4.jpg" data-fancybox="gallery-hris" id="main-link-hris"><img src="project4.jpg" alt="HRIS" id="main-img-hris"></a>
-        <div class="dc-thumbs">
-            <img src="project4.jpg" class="dc-thumb active" onclick="setSlide('hris',this,'project4.jpg')" alt="">
-            <img src="project4-b.jpg" class="dc-thumb" onclick="setSlide('hris',this,'project4-b.jpg')" alt="">
-            <img src="project4-c.jpg" class="dc-thumb" onclick="setSlide('hris',this,'project4-c.jpg')" alt="">
-            <img src="project4-d.jpg" class="dc-thumb" onclick="setSlide('hris',this,'project4-d.jpg')" alt="">
-            <img src="project4-e.jpg" class="dc-thumb" onclick="setSlide('hris',this,'project4-e.jpg')" alt="">
-        </div>
+<!-- HRIS -->
+<div class="drawer" id="dr-hris">
+  <button class="dr-close" onclick="closeDr()"><i class="bi bi-x"></i></button>
+  <div class="dr-cat">No-Code App</div>
+  <h2 class="dr-title">Mobile HRIS — AppSheet</h2>
+  <div class="dr-meta"><i class="bi bi-phone"></i> Google AppSheet &nbsp;·&nbsp; <i class="bi bi-trophy-fill" style="color:var(--red)"></i> Award Winner 2024</div>
+  <div class="dr-car">
+    <a href="project4.jpg" data-fancybox="g-hris" id="ml-hris">
+      <img src="project4.jpg" alt="HRIS" id="mi-hris"
+           onerror="this.parentElement.parentElement.querySelector('.dr-ph').style.display='flex';this.parentElement.style.display='none'">
+    </a>
+    <div class="dr-ph" style="display:none">📱</div>
+    <div class="dr-thumbs">
+      <img src="project4.jpg" class="dr-thumb on" onclick="setSlide('hris',this,'project4.jpg')" alt="">
+      <img src="project4-b.jpg" class="dr-thumb" onclick="setSlide('hris',this,'project4-b.jpg')" alt="">
+      <img src="project4-c.jpg" class="dr-thumb" onclick="setSlide('hris',this,'project4-c.jpg')" alt="">
+      <img src="project4-d.jpg" class="dr-thumb" onclick="setSlide('hris',this,'project4-d.jpg')" alt="">
+      <img src="project4-e.jpg" class="dr-thumb" onclick="setSlide('hris',this,'project4-e.jpg')" alt="">
     </div>
-    <h4>No Code. Full Functionality.</h4>
-    <p>Replaced paper-based HR processes with a functional mobile app using Google AppSheet — no custom backend needed.</p>
-    <ul class="drawer-list">
-        <li><i class="bi bi-check2-circle"></i>GPS geofencing to verify attendance location in real time</li>
-        <li><i class="bi bi-check2-circle"></i>Mandatory photo verification for every clock-in and clock-out</li>
-        <li><i class="bi bi-check2-circle"></i>Role-based access control — separate admin and employee views</li>
-        <li><i class="bi bi-check2-circle"></i>Automated monthly PDF attendance reports — zero manual compiling</li>
-        <li><i class="bi bi-check2-circle"></i>Result: 100% elimination of paper-based HR forms</li>
-    </ul>
-    <div class="drawer-tags"><span class="tag">AppSheet</span><span class="tag">Google Sheets</span><span class="tag">GPS Geofencing</span><span class="tag">Auto PDF</span></div>
+  </div>
+  <h4>No Code. Full Functionality.</h4>
+  <p>Replaced paper-based HR processes with a functional mobile app using Google AppSheet — no custom backend needed.</p>
+  <ul class="dr-list">
+    <li><i class="bi bi-check2-circle"></i>GPS geofencing to verify attendance location in real time</li>
+    <li><i class="bi bi-check2-circle"></i>Mandatory photo verification for every clock-in and clock-out</li>
+    <li><i class="bi bi-check2-circle"></i>Role-based access control — separate admin and employee views</li>
+    <li><i class="bi bi-check2-circle"></i>Automated monthly PDF attendance reports — zero manual compiling</li>
+    <li><i class="bi bi-check2-circle"></i>Result: 100% elimination of paper-based HR forms</li>
+  </ul>
+  <div class="dr-tags"><span class="tag">AppSheet</span><span class="tag">Google Sheets</span><span class="tag">GPS Geofencing</span><span class="tag">Auto PDF</span></div>
 </div>
 
-<div class="drawer" id="d-olist">
-    <button class="drawer-close" onclick="closeDrawer()"><i class="bi bi-x"></i></button>
-    <div class="drawer-cat">Excel Dashboard</div>
-    <h2 class="drawer-title">E-Commerce Sales Dashboard</h2>
-    <div class="drawer-meta"><i class="bi bi-table"></i> 99,441 Real Orders &nbsp;·&nbsp; <i class="bi bi-database"></i> Kaggle / Olist Dataset</div>
-    <div class="drawer-carousel"><div class="dc-placeholder"><span style="font-size:3rem">📊</span></div></div>
-    <h4>What This Is</h4>
-    <p>Olist's public e-commerce dataset turned into a proper multi-sheet Excel dashboard. Every number is formula-driven — no hardcoded values.</p>
-    <ul class="drawer-list">
-        <li><i class="bi bi-check2-circle"></i>5-sheet workbook: Dashboard, Data helpers, Monthly Summary, Category Summary</li>
-        <li><i class="bi bi-check2-circle"></i>1,263 real Excel formulas — SUMIF, COUNTIF, IF, cross-sheet references</li>
-        <li><i class="bi bi-check2-circle"></i>73 product categories analyzed across 3 years (2016–2018)</li>
-        <li><i class="bi bi-check2-circle"></i>Year-on-year growth, monthly trends, and delivery performance included</li>
-    </ul>
-    <div class="drawer-actions">
-        <a href="Olist_WithFormulas_Rifky.xlsx" download class="btn-primary"><i class="bi bi-download"></i> Download .xlsx</a>
-        <a href="https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce" target="_blank" class="btn-ghost"><i class="bi bi-database"></i> Data Source</a>
-    </div>
+<!-- OLIST -->
+<div class="drawer" id="dr-olist">
+  <button class="dr-close" onclick="closeDr()"><i class="bi bi-x"></i></button>
+  <div class="dr-cat">Excel Dashboard</div>
+  <h2 class="dr-title">E-Commerce Sales Dashboard</h2>
+  <div class="dr-meta"><i class="bi bi-table"></i> 99,441 Real Orders &nbsp;·&nbsp; <i class="bi bi-database"></i> Kaggle / Olist Dataset</div>
+  <div class="dr-car"><div class="dr-ph">📊<small>project-olist.jpg</small></div></div>
+  <h4>What This Is</h4>
+  <p>Olist's public e-commerce dataset turned into a proper multi-sheet Excel dashboard. Every number is formula-driven — no hardcoded values.</p>
+  <ul class="dr-list">
+    <li><i class="bi bi-check2-circle"></i>5-sheet workbook: Dashboard, Data helpers, Monthly Summary, Category Summary</li>
+    <li><i class="bi bi-check2-circle"></i>1,263 real Excel formulas — SUMIF, COUNTIF, IF, cross-sheet references</li>
+    <li><i class="bi bi-check2-circle"></i>73 product categories analyzed across 3 years (2016–2018)</li>
+    <li><i class="bi bi-check2-circle"></i>Year-on-year growth, monthly trends, and delivery performance included</li>
+  </ul>
+  <div class="dr-actions">
+    <a href="Olist_WithFormulas_Rifky.xlsx" download class="btn btn-primary"><i class="bi bi-download"></i> Download .xlsx</a>
+    <a href="https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce" target="_blank" class="btn btn-ghost"><i class="bi bi-database"></i> Data Source</a>
+  </div>
 </div>
 
-<div class="drawer" id="d-elec">
-    <button class="drawer-close" onclick="closeDrawer()"><i class="bi bi-x"></i></button>
-    <div class="drawer-cat">Excel Dashboard</div>
-    <h2 class="drawer-title">Electronics Sales Dashboard</h2>
-    <div class="drawer-meta"><i class="bi bi-table"></i> 480 Rows &nbsp;·&nbsp; Structured Dummy Data</div>
-    <div class="drawer-carousel"><div class="dc-placeholder"><span style="font-size:3rem">🛒</span></div></div>
-    <h4>What This Is</h4>
-    <p>A practice dashboard for a fictional electronics retailer — demonstrating clean data structure, aggregation logic, and professional visual reporting.</p>
-    <ul class="drawer-list">
-        <li><i class="bi bi-check2-circle"></i>4 sheets: Dashboard, Raw Data, Product Summary, Regional Summary</li>
-        <li><i class="bi bi-check2-circle"></i>480 rows across 8 products, 5 cities, and 12 months</li>
-        <li><i class="bi bi-check2-circle"></i>KPI cards: Total Revenue, Total Orders, Avg Gross Profit Margin</li>
-        <li><i class="bi bi-check2-circle"></i>Auto-filter and conditional formatting applied throughout</li>
-    </ul>
-    <div class="drawer-actions">
-        <a href="Sales_Dashboard_RifkyMardiansyah.xlsx" download class="btn-primary"><i class="bi bi-download"></i> Download .xlsx</a>
-    </div>
+<!-- CRM -->
+<div class="drawer" id="dr-crm">
+  <button class="dr-close" onclick="closeDr()"><i class="bi bi-x"></i></button>
+  <div class="dr-cat">Excel Dashboard</div>
+  <h2 class="dr-title">Customer Database & CRM</h2>
+  <div class="dr-meta"><i class="bi bi-people-fill"></i> 25 Clients · 60 Interactions &nbsp;·&nbsp; Sales Pipeline</div>
+  <div class="dr-car"><div class="dr-ph">🤝</div></div>
+  <h4>What This Is</h4>
+  <p>A full CRM simulation covering customer master data, interaction logs, and an active sales pipeline — all connected via VLOOKUP with weighted pipeline value per stage.</p>
+  <ul class="dr-list">
+    <li><i class="bi bi-check2-circle"></i>4 sheets: CRM Dashboard, Database Pelanggan, Log Interaksi, Sales Pipeline</li>
+    <li><i class="bi bi-check2-circle"></i>VLOOKUP auto-fills company name and industry in every interaction log row</li>
+    <li><i class="bi bi-check2-circle"></i>Pipeline weighted value = estimated value × closing probability per stage</li>
+    <li><i class="bi bi-check2-circle"></i>COUNTIF & SUMIF breakdown by status, industry, pipeline stage, and lead source</li>
+    <li><i class="bi bi-check2-circle"></i>183 real Excel formulas across all sheets</li>
+  </ul>
+  <div class="dr-actions">
+    <a href="Customer_CRM_Rifky.xlsx" download class="btn btn-primary"><i class="bi bi-download"></i> Download .xlsx</a>
+  </div>
 </div>
 
-<div class="drawer" id="d-archive">
-    <button class="drawer-close" onclick="closeDrawer()"><i class="bi bi-x"></i></button>
-    <div class="drawer-cat">Excel Dashboard</div>
-    <h2 class="drawer-title">Broadcast Archive Tracker</h2>
-    <div class="drawer-meta"><i class="bi bi-camera-video"></i> TVRI Simulation &nbsp;·&nbsp; 60 Tapes · 80 Rundowns</div>
-    <div class="drawer-carousel"><div class="dc-placeholder"><span style="font-size:3rem">📼</span></div></div>
-    <h4>What This Is</h4>
-    <p>A simulated archive management system inspired by real workflows at TVRI's PMAV division. Tracks both inactive tape archives and active news rundown metadata.</p>
-    <ul class="drawer-list">
-        <li><i class="bi bi-check2-circle"></i>3 sheets: Summary Dashboard, Arsip Inaktif (Kaset), Arsip Aktif (Rundown)</li>
-        <li><i class="bi bi-check2-circle"></i>60 inactive tape records with status: Aktif Tersimpan / Perlu Restorasi / Rusak</li>
-        <li><i class="bi bi-check2-circle"></i>80 active rundown records with SPS input status tracking</li>
-        <li><i class="bi bi-check2-circle"></i>COUNTIF & COUNTIFS dashboard showing breakdown by category, status, and program</li>
-        <li><i class="bi bi-check2-circle"></i>Color-coded status cells for immediate visual scan</li>
-    </ul>
-    <div class="drawer-actions">
-        <a href="Broadcast_Archive_Tracker_Rifky.xlsx" download class="btn-primary"><i class="bi bi-download"></i> Download .xlsx</a>
-    </div>
+<!-- HR PAYROLL -->
+<div class="drawer" id="dr-hrpay">
+  <button class="dr-close" onclick="closeDr()"><i class="bi bi-x"></i></button>
+  <div class="dr-cat">Excel Dashboard</div>
+  <h2 class="dr-title">HR & Payroll Tracker</h2>
+  <div class="dr-meta"><i class="bi bi-people"></i> 20 Employees &nbsp;·&nbsp; April 2026 Simulation</div>
+  <div class="dr-car"><div class="dr-ph">👥</div></div>
+  <h4>What This Is</h4>
+  <p>End-to-end HR simulation covering employee master data, attendance, and automated payroll — all connected via VLOOKUP across sheets.</p>
+  <ul class="dr-list">
+    <li><i class="bi bi-check2-circle"></i>4 sheets: HR Dashboard, Data Karyawan, Rekap Absensi, Slip Gaji</li>
+    <li><i class="bi bi-check2-circle"></i>Payroll auto-calculates gaji bersih using VLOOKUP from employee master data</li>
+    <li><i class="bi bi-check2-circle"></i>Attendance IF formula labels each employee: Baik / Cukup / Perlu Perhatian</li>
+    <li><i class="bi bi-check2-circle"></i>SUMIF breakdown of salary totals and headcount per division</li>
+    <li><i class="bi bi-check2-circle"></i>265 real Excel formulas — VLOOKUP, SUMIF, COUNTIF, AVERAGE, IF</li>
+  </ul>
+  <div class="dr-actions">
+    <a href="HR_Payroll_Tracker_Rifky.xlsx" download class="btn btn-primary"><i class="bi bi-download"></i> Download .xlsx</a>
+  </div>
 </div>
 
-<div class="drawer" id="d-hrpay">
-    <button class="drawer-close" onclick="closeDrawer()"><i class="bi bi-x"></i></button>
-    <div class="drawer-cat">Excel Dashboard</div>
-    <h2 class="drawer-title">HR & Payroll Tracker</h2>
-    <div class="drawer-meta"><i class="bi bi-people"></i> 20 Employees &nbsp;·&nbsp; April 2026 Simulation</div>
-    <div class="drawer-carousel"><div class="dc-placeholder"><span style="font-size:3rem">👥</span></div></div>
-    <h4>What This Is</h4>
-    <p>End-to-end HR simulation covering employee master data, attendance, and automated payroll — all connected via VLOOKUP across sheets.</p>
-    <ul class="drawer-list">
-        <li><i class="bi bi-check2-circle"></i>4 sheets: HR Dashboard, Data Karyawan, Rekap Absensi, Slip Gaji</li>
-        <li><i class="bi bi-check2-circle"></i>Payroll auto-calculates gaji bersih using VLOOKUP from employee master data</li>
-        <li><i class="bi bi-check2-circle"></i>Attendance IF formula labels each employee: Baik / Cukup / Perlu Perhatian</li>
-        <li><i class="bi bi-check2-circle"></i>SUMIF breakdown of salary totals and headcount per division</li>
-        <li><i class="bi bi-check2-circle"></i>265 real Excel formulas — VLOOKUP, SUMIF, COUNTIF, AVERAGE, IF</li>
-    </ul>
-    <div class="drawer-actions">
-        <a href="HR_Payroll_Tracker_Rifky.xlsx" download class="btn-primary"><i class="bi bi-download"></i> Download .xlsx</a>
-    </div>
+<!-- INVENTORY -->
+<div class="drawer" id="dr-inventory">
+  <button class="dr-close" onclick="closeDr()"><i class="bi bi-x"></i></button>
+  <div class="dr-cat">Excel Dashboard</div>
+  <h2 class="dr-title">Inventory & Stock Management</h2>
+  <div class="dr-meta"><i class="bi bi-box-seam"></i> 20 Items · 50 Mutations &nbsp;·&nbsp; April 2026</div>
+  <div class="dr-car"><div class="dr-ph">📦</div></div>
+  <h4>What This Is</h4>
+  <p>A stock management dashboard tracking 20 office supply items with automatic reorder alerts, movement logs, and category breakdown.</p>
+  <ul class="dr-list">
+    <li><i class="bi bi-check2-circle"></i>3 sheets: Inventory Dashboard, Stok Barang, Mutasi Barang</li>
+    <li><i class="bi bi-check2-circle"></i>IF formula auto-flags status: Aman / REORDER / HABIS based on minimum stock</li>
+    <li><i class="bi bi-check2-circle"></i>VLOOKUP pulls item price into every mutation transaction automatically</li>
+    <li><i class="bi bi-check2-circle"></i>50 stock movement records (in/out) with total value calculation</li>
+    <li><i class="bi bi-check2-circle"></i>SUMIF breakdown of total stock value per category</li>
+  </ul>
+  <div class="dr-actions">
+    <a href="Inventory_Stock_Rifky.xlsx" download class="btn btn-primary"><i class="bi bi-download"></i> Download .xlsx</a>
+  </div>
 </div>
 
-<div class="drawer" id="d-inventory">
-    <button class="drawer-close" onclick="closeDrawer()"><i class="bi bi-x"></i></button>
-    <div class="drawer-cat">Excel Dashboard</div>
-    <h2 class="drawer-title">Inventory & Stock Management</h2>
-    <div class="drawer-meta"><i class="bi bi-box-seam"></i> 20 Items · 50 Mutations &nbsp;·&nbsp; April 2026</div>
-    <div class="drawer-carousel"><div class="dc-placeholder"><span style="font-size:3rem">📦</span></div></div>
-    <h4>What This Is</h4>
-    <p>A stock management dashboard tracking 20 office supply items with automatic reorder alerts, movement logs, and category breakdown.</p>
-    <ul class="drawer-list">
-        <li><i class="bi bi-check2-circle"></i>3 sheets: Inventory Dashboard, Stok Barang, Mutasi Barang</li>
-        <li><i class="bi bi-check2-circle"></i>IF formula auto-flags status: Aman / REORDER / HABIS based on minimum stock</li>
-        <li><i class="bi bi-check2-circle"></i>VLOOKUP pulls item price into every mutation transaction automatically</li>
-        <li><i class="bi bi-check2-circle"></i>50 stock movement records (in/out) with total value calculation</li>
-        <li><i class="bi bi-check2-circle"></i>SUMIF breakdown of total stock value per category</li>
-    </ul>
-    <div class="drawer-actions">
-        <a href="Inventory_Stock_Rifky.xlsx" download class="btn-primary"><i class="bi bi-download"></i> Download .xlsx</a>
-    </div>
+<!-- BUDGET -->
+<div class="drawer" id="dr-budget">
+  <button class="dr-close" onclick="closeDr()"><i class="bi bi-x"></i></button>
+  <div class="dr-cat">Excel Dashboard</div>
+  <h2 class="dr-title">Budget & Expense Report</h2>
+  <div class="dr-meta"><i class="bi bi-currency-dollar"></i> Q2 2026 &nbsp;·&nbsp; 6 Divisions · 45 Transactions</div>
+  <div class="dr-car"><div class="dr-ph">💰</div></div>
+  <h4>What This Is</h4>
+  <p>A Q2 budget planning and expense tracking workbook with automatic variance analysis — showing exactly where each division is over or under budget.</p>
+  <ul class="dr-list">
+    <li><i class="bi bi-check2-circle"></i>4 sheets: Budget Dashboard, Anggaran, Realisasi, Budget vs Aktual</li>
+    <li><i class="bi bi-check2-circle"></i>IF formula auto-assigns status: On Track / Over Budget / Under Utilized</li>
+    <li><i class="bi bi-check2-circle"></i>VLOOKUP pulls division and category from budget plan into expense records</li>
+    <li><i class="bi bi-check2-circle"></i>SUMIF aggregates actual spending per division for real-time comparison</li>
+    <li><i class="bi bi-check2-circle"></i>236 real Excel formulas — SUMIF, VLOOKUP, IF, cross-sheet references</li>
+  </ul>
+  <div class="dr-actions">
+    <a href="Budget_Expense_Report_Rifky.xlsx" download class="btn btn-primary"><i class="bi bi-download"></i> Download .xlsx</a>
+  </div>
 </div>
 
-<div class="drawer" id="d-budget">
-    <button class="drawer-close" onclick="closeDrawer()"><i class="bi bi-x"></i></button>
-    <div class="drawer-cat">Excel Dashboard</div>
-    <h2 class="drawer-title">Budget & Expense Report</h2>
-    <div class="drawer-meta"><i class="bi bi-currency-dollar"></i> Q2 2026 &nbsp;·&nbsp; 6 Divisions · 45 Transactions</div>
-    <div class="drawer-carousel"><div class="dc-placeholder"><span style="font-size:3rem">💰</span></div></div>
-    <h4>What This Is</h4>
-    <p>A Q2 budget planning and expense tracking workbook with automatic variance analysis — showing exactly where each division is over or under budget.</p>
-    <ul class="drawer-list">
-        <li><i class="bi bi-check2-circle"></i>4 sheets: Budget Dashboard, Anggaran, Realisasi, Budget vs Aktual</li>
-        <li><i class="bi bi-check2-circle"></i>IF formula auto-assigns status: On Track / Over Budget / Under Utilized</li>
-        <li><i class="bi bi-check2-circle"></i>VLOOKUP pulls division and category from budget plan into expense records</li>
-        <li><i class="bi bi-check2-circle"></i>SUMIF aggregates actual spending per division for real-time comparison</li>
-        <li><i class="bi bi-check2-circle"></i>236 real Excel formulas — SUMIF, VLOOKUP, IF, cross-sheet references</li>
-    </ul>
-    <div class="drawer-actions">
-        <a href="Budget_Expense_Report_Rifky.xlsx" download class="btn-primary"><i class="bi bi-download"></i> Download .xlsx</a>
+<!-- EVENT -->
+<div class="drawer" id="dr-event">
+  <button class="dr-close" onclick="closeDr()"><i class="bi bi-x"></i></button>
+  <div class="dr-cat">Event Operations</div>
+  <h2 class="dr-title">LinkedToTalk — Stage Manager</h2>
+  <div class="dr-meta"><i class="bi bi-people"></i> 100+ Attendees &nbsp;·&nbsp; <i class="bi bi-calendar3"></i> Sep – Nov 2025</div>
+  <div class="dr-car">
+    <a href="project3.jpg" data-fancybox="g-event" id="ml-event">
+      <img src="project3.jpg" alt="Event" id="mi-event"
+           onerror="this.parentElement.parentElement.querySelector('.dr-ph').style.display='flex';this.parentElement.style.display='none'">
+    </a>
+    <div class="dr-ph" style="display:none">🎤</div>
+    <div class="dr-thumbs">
+      <img src="project3.jpg" class="dr-thumb on" onclick="setSlide('event',this,'project3.jpg')" alt="">
+      <img src="project3-b.jpg" class="dr-thumb" onclick="setSlide('event',this,'project3-b.jpg')" alt="">
+      <img src="project3-c.jpg" class="dr-thumb" onclick="setSlide('event',this,'project3-c.jpg')" alt="">
+      <img src="project3-d.jpg" class="dr-thumb" onclick="setSlide('event',this,'project3-d.jpg')" alt="">
     </div>
+  </div>
+  <h4>What I Did Here</h4>
+  <p>Made sure every segment ran on cue and every technical element was in place before the lights went up.</p>
+  <ul class="dr-list">
+    <li><i class="bi bi-check2-circle"></i>Managed full venue setup and stage flow across all event segments</li>
+    <li><i class="bi bi-check2-circle"></i>Coordinated vendors, performers, and technical crew pre-show</li>
+    <li><i class="bi bi-check2-circle"></i>Resolved on-site technical issues in real time — zero delays</li>
+    <li><i class="bi bi-check2-circle"></i>Supervised crowd movement and safety around the stage area</li>
+  </ul>
+  <div class="dr-tags"><span class="tag">Event Management</span><span class="tag">Stage Coordination</span><span class="tag">Live Operations</span></div>
 </div>
 
-<div class="drawer" id="d-event">
-    <button class="drawer-close" onclick="closeDrawer()"><i class="bi bi-x"></i></button>
-    <div class="drawer-cat">Event Operations</div>
-    <h2 class="drawer-title">LinkedToTalk — Stage Manager</h2>
-    <div class="drawer-meta"><i class="bi bi-people"></i> 100+ Attendees &nbsp;·&nbsp; <i class="bi bi-calendar3"></i> Sep – Nov 2025</div>
-    <div class="drawer-carousel" id="dc-event">
-        <a href="project3.jpg" data-fancybox="gallery-event" id="main-link-event"><img src="project3.jpg" alt="Event" id="main-img-event"></a>
-        <div class="dc-thumbs">
-            <img src="project3.jpg" class="dc-thumb active" onclick="setSlide('event',this,'project3.jpg')" alt="">
-            <img src="project3-b.jpg" class="dc-thumb" onclick="setSlide('event',this,'project3-b.jpg')" alt="">
-            <img src="project3-c.jpg" class="dc-thumb" onclick="setSlide('event',this,'project3-c.jpg')" alt="">
-            <img src="project3-d.jpg" class="dc-thumb" onclick="setSlide('event',this,'project3-d.jpg')" alt="">
-        </div>
-    </div>
-    <h4>What I Did Here</h4>
-    <p>Made sure every segment ran on cue and every technical element was in place before the lights went up.</p>
-    <ul class="drawer-list">
-        <li><i class="bi bi-check2-circle"></i>Managed full venue setup and stage flow across all event segments</li>
-        <li><i class="bi bi-check2-circle"></i>Coordinated vendors, performers, and technical crew pre-show</li>
-        <li><i class="bi bi-check2-circle"></i>Resolved on-site technical issues in real time — zero delays</li>
-        <li><i class="bi bi-check2-circle"></i>Supervised crowd movement and safety around the stage area</li>
-    </ul>
-    <div class="drawer-tags"><span class="tag">Event Management</span><span class="tag">Stage Coordination</span><span class="tag">Live Operations</span></div>
-</div>
-
+<!-- ══════════════════════════════════════════════════════
+     SCRIPTS
+══════════════════════════════════════════════════════ -->
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 <script>
 Fancybox.bind("[data-fancybox]", {});
 
-/* Preloader */
-window.addEventListener('load', () => setTimeout(() => document.getElementById('preloader').classList.add('gone'), 1200));
-
-/* Scroll */
-const navSections = ['hero','about','skills','work','contact'];
-const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
-window.addEventListener('scroll', () => {
-    const s = document.documentElement.scrollTop;
-    const h = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    document.getElementById('progress').style.width = (s/h*100) + '%';
-    document.getElementById('navbar').classList.toggle('scrolled', s > 60);
-    document.getElementById('btt').classList.toggle('show', s > 400);
-    let cur = '';
-    navSections.forEach(id => { const el = document.getElementById(id); if (el && el.offsetTop - 150 <= s) cur = id; });
-    navLinks.forEach(a => a.classList.toggle('nav-active', a.getAttribute('href') === '#' + cur));
+/* ── Preloader ── */
+window.addEventListener('load', () => {
+  setTimeout(() => document.getElementById('preloader').classList.add('gone'), 1600);
 });
 
-/* Reveal */
-const obs = new IntersectionObserver(entries => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
-}, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
-document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+/* ── Scroll: progress + nav + btt + active link ── */
+const $nav = document.getElementById('nav');
+const $btt = document.getElementById('btt');
+const $prog = document.getElementById('progress');
+const navAs = document.querySelectorAll('.nav-center a');
+const sectionIds = ['hero','about','skills','work','contact'];
 
-/* Theme */
+window.addEventListener('scroll', () => {
+  const st = document.documentElement.scrollTop;
+  const sh = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  $prog.style.width = (st / sh * 100) + '%';
+  $nav.classList.toggle('scrolled', st > 60);
+  $btt.classList.toggle('show', st > 500);
+
+  let cur = '';
+  sectionIds.forEach(id => {
+    const el = document.getElementById(id);
+    if (el && el.offsetTop - 130 <= st) cur = id;
+  });
+  navAs.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + cur));
+}, { passive: true });
+
+/* ── Reveal on scroll ── */
+const rvObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('on');
+      rvObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.07, rootMargin: '0px 0px -20px 0px' });
+document.querySelectorAll('.rv, .rv-l').forEach(el => rvObs.observe(el));
+
+/* ── Theme ── */
 function toggleTheme() {
-    const isDark = document.body.getAttribute('data-theme') === 'dark';
-    document.body.setAttribute('data-theme', isDark ? 'light' : 'dark');
-    const icon = isDark ? 'bi-moon-stars-fill' : 'bi-sun-fill';
-    document.getElementById('theme-icon').className = 'bi ' + icon;
-    document.getElementById('theme-icon-m').className = 'bi ' + icon;
-    localStorage.setItem('theme', isDark ? 'light' : 'dark');
+  const isLight = document.body.getAttribute('data-theme') === 'light';
+  document.body.setAttribute('data-theme', isLight ? 'dark' : 'light');
+  const icon = isLight ? 'bi bi-sun-fill' : 'bi bi-moon-stars-fill';
+  document.getElementById('theme-icon').className = icon;
+  const im = document.getElementById('theme-icon-m');
+  if (im) im.className = icon;
+  localStorage.setItem('theme', isLight ? 'dark' : 'light');
 }
-if (localStorage.getItem('theme') === 'dark') {
-    document.body.setAttribute('data-theme', 'dark');
-    document.getElementById('theme-icon').className = 'bi bi-sun-fill';
-    document.getElementById('theme-icon-m').className = 'bi bi-sun-fill';
+if (localStorage.getItem('theme') === 'light') {
+  document.body.setAttribute('data-theme', 'light');
+  const icon = 'bi bi-moon-stars-fill';
+  document.getElementById('theme-icon').className = icon;
+  const im = document.getElementById('theme-icon-m');
+  if (im) im.className = icon;
 }
 
-/* Typing */
-const lines = ["Digital Administration Student", "Data Analytics Enthusiast", "System Builder & No-Code Developer"];
-let li=0, ci=0, del=false;
+/* ── Typewriter ── */
+const lines = [
+  "Digital Administration Student.",
+  "Data Analytics Enthusiast.",
+  "System Builder & No-Code Developer."
+];
+let li = 0, ci = 0, del = false;
 (function type() {
-    const txt = lines[li];
-    document.getElementById('typed').textContent = del ? txt.slice(0,--ci) : txt.slice(0,++ci);
-    if (!del && ci===txt.length) { setTimeout(()=>{ del=true; type(); }, 2000); return; }
-    if (del && ci===0) { del=false; li=(li+1)%lines.length; setTimeout(type,400); return; }
-    setTimeout(type, del?30:60);
+  const txt = lines[li];
+  document.getElementById('typed').textContent = del ? txt.slice(0, --ci) : txt.slice(0, ++ci);
+  if (!del && ci === txt.length) { setTimeout(() => { del = true; type(); }, 2400); return; }
+  if (del && ci === 0) { del = false; li = (li + 1) % lines.length; setTimeout(type, 500); return; }
+  setTimeout(type, del ? 26 : 60);
 }());
 
-/* Drawer */
-function openDrawer(id) {
-    const d = document.getElementById('d-'+id);
-    if (!d) return;
-    d.classList.add('open');
-    document.getElementById('overlay').classList.add('open');
-    document.body.style.overflow = 'hidden';
+/* ── Drawer ── */
+function openDr(id) {
+  const d = document.getElementById('dr-' + id);
+  if (!d) return;
+  d.classList.add('open');
+  document.getElementById('overlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
 }
-function closeDrawer() {
-    document.querySelectorAll('.drawer.open').forEach(d => d.classList.remove('open'));
-    document.getElementById('overlay').classList.remove('open');
-    document.body.style.overflow = '';
+function closeDr() {
+  document.querySelectorAll('.drawer.open').forEach(d => d.classList.remove('open'));
+  document.getElementById('overlay').classList.remove('open');
+  document.body.style.overflow = '';
 }
-document.addEventListener('keydown', e => { if (e.key==='Escape') closeDrawer(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDr(); });
 
-/* Slide */
+/* ── Carousel ── */
 function setSlide(gid, el, src) {
-    const img = document.getElementById('main-img-'+gid);
-    const lnk = document.getElementById('main-link-'+gid);
-    if (img) img.src = src;
-    if (lnk) lnk.href = src;
-    el.parentElement.querySelectorAll('.dc-thumb').forEach(t => t.classList.remove('active'));
-    el.classList.add('active');
+  const img = document.getElementById('mi-' + gid);
+  const lnk = document.getElementById('ml-' + gid);
+  if (img) img.src = src;
+  if (lnk) lnk.href = src;
+  el.parentElement.querySelectorAll('.dr-thumb').forEach(t => t.classList.remove('on'));
+  el.classList.add('on');
 }
 
-/* Copy Email */
+/* ── Copy email ── */
 function copyEmail() {
-    navigator.clipboard.writeText('rifkymardiansyah19@gmail.com').then(() => {
-        const fb = document.getElementById('copy-fb');
-        fb.style.opacity = '1';
-        setTimeout(() => fb.style.opacity = '0', 2000);
-    });
+  navigator.clipboard.writeText('rifkymardiansyah19@gmail.com').then(() => {
+    const fb = document.getElementById('copy-fb');
+    fb.style.opacity = '1';
+    setTimeout(() => fb.style.opacity = '0', 2400);
+  });
 }
 
-/* Mobile Menu */
-function openMobile() {
-    document.getElementById('mobile-menu').style.display = 'flex';
-    setTimeout(() => document.getElementById('mobile-menu').classList.add('open'), 10);
-    document.body.style.overflow = 'hidden';
+/* ── Mobile menu ── */
+function openMob() {
+  const m = document.getElementById('mob-menu');
+  m.style.display = 'flex';
+  requestAnimationFrame(() => m.classList.add('open'));
+  document.body.style.overflow = 'hidden';
 }
-function closeMobile() {
-    document.getElementById('mobile-menu').classList.remove('open');
-    setTimeout(() => document.getElementById('mobile-menu').style.display = 'none', 300);
-    document.body.style.overflow = '';
+function closeMob() {
+  const m = document.getElementById('mob-menu');
+  m.classList.remove('open');
+  document.body.style.overflow = '';
+  setTimeout(() => { m.style.display = 'none'; }, 350);
 }
 </script>
 </body>
